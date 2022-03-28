@@ -1,0 +1,66 @@
+{
+    "title": "AgFed Credit Union",
+    "Page_Title": "AgFed Credit Union I Personal and Business Banking",
+    "Meta_Description": "AgFed - Agriculture Federal Credit Union - Provides individuals with the best level of service by providing market-leading mortgages, auto loans, credit cards, checking, and a range of other accounts while keeping their customers' best interests in mind. AgFed has been providing financial products and services to our members for over 80 years, including auto loans, mortgages, credit cards, checking, online and mobile banking. We offer low rates and high quality member service.",
+    "img_url": "agfed.png",
+    "link": "https://www.agfed.org/",
+    "content": [
+        {
+            "tab": "About AgFed Credit Union",
+            "format": "none",
+            "content": [
+                "AgFed Credit Union is a credit union that thrives on providing its members with the best service possible. It has established online platforms that meet all current internet banking standards.",
+                "The AgFed Credit Union Foundation is a non-profit charitable foundation founded to better the lives of our community members and workers via scholarships, charitable gifts, and community engagement.",
+                "AgFed was founded in 1934 in Washington, DC and today serve people all around the country. Their first focus is to provide the best service possible. AgFed is an equal housing lender that is federally insured by the NCUA. Members have access to their accounts and services 24 hours a day, seven days a week, over $300 million in assets, over 25,000 members, and six AgFed locations."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "none",
+            "content": [
+                {
+                    "header":"The following individuals are eligible to join AgFed:",
+                    "format": "disc",
+                    "content":[
+                        "Everyone who lives, works, worships or attends school in the city of Washington, DC, as well as their family members.",
+                        "Employees, employee family members, and those who have retired as pensioners or annuitants from our Select Employee Groups (SEGs) firms and organizations",
+                        "Contractors, coworkers, and family members who work with our Select Employee Groups (SEGs) companies.",
+                        "Your spouse, children, siblings, parents, grandparents, grandchildren, stepparents, stepchildren, and stepsiblings are all examples of family members.",
+                        "Household members and domestic partners are also eligible to join and are defined as persons living in the same residence and maintaining a single economic unit; any person who is a permanent member of and participates in the maintenance of the household; and any person who is a permanent member of and participates in the maintenance of the household. Each one of this household's immediate family members might also join"
+                    ]
+                }
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.agfed.org/membership/"
+            },
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "1",
+            "content": [
+                "AgFed's Account Balance is straightforward, with no minimum balance requirement or monthly service charge",
+                "AgFed Credit Union support us by providing market-leading mortgages, auto loans, credit cards, checking, and a range of other accounts",
+                "AgFed Credit Union supports us through savings accounts, Business accounts, retirement accounts, and specialty accounts."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "1",
+            "content": [
+                "Credit unions operate only to serve the financial needs of their member-owners. To that purpose, credit unions not only provide excellent personal service, but members frequently receive greater returns on savings while paying lower interest rates on borrowing.",
+                "Credit unions operate on a one-member, one-vote basis, allowing members the ability to shape Credit Union policy to suit member requirements.",
+                "Credit Unions' non-profit status allows them to operate at a cheaper cost than many for-profit institutions, allowing them to provide competitive lending and savings rates.",
+                "The consumer of Credit Union services is also an owner, and he or she has the right to vote on crucial matters such as the election of member representatives to the Board of Directors."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

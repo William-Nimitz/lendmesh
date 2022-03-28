@@ -1,0 +1,300 @@
+{
+    "categories": [
+        {
+            "folder": "general-best-loan-services-providers-topics",
+            "name": "General Best Loan services providers Topics",
+            "shortName": "General Best Loan",
+            "questions": [
+                {
+                    "highlight": true,
+                    "question": "Why credit unions are better and cheaper than traditional banks and private lenders?",
+                    "file": "question1.json",
+                    "date": "Jan 5, 2022",
+                    "imgUrl": "why-credit-union-are-better-than-traditional-banks-1.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "Who offers best rates for bad credit history holders?",
+                    "file": "question2.json",
+                    "date": "Jan 5, 2022",
+                    "imgUrl": "blog-1.jpg"
+                },
+                {
+                    "highlight": true,
+                    "question": "Tips to increase your credit history",
+                    "file": "question3.json",
+                    "date": "Jan 5, 2022",
+                    "imgUrl": "tips-to-increase-credit-history-2.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "New Immigration to USA, where to get the credit card or personal loan?",
+                    "file": "question4.json",
+                    "date": "Jan 5, 2022",
+                    "imgUrl": "New-Immigration-to-USA-where-to-get-the-credit-card-or-personal-loan.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "No credit history, how to open accounts and build credit history.",
+                    "file": "question5.json",
+                    "date": "Jan 5, 2022",
+                    "imgUrl": "no-credit-history-how-to-open-accounts-and-build-credit-history-1.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "Who offer best loan rates from lenders?",
+                    "file": "question6.json",
+                    "date": "Jan 10, 2022",
+                    "imgUrl": "blog-2.jpg"
+                },
+                {
+                    "highlight": false,
+                    "question": "How to get loans from local communities?",
+                    "file": "question7.json",
+                    "date": "Jan 10, 2022",
+                    "imgUrl": "How-to-get-loans-from-local-communities.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "What is balance transfer and how it works?",
+                    "file": "question8.json",
+                    "date": "Jan 10, 2022",
+                    "imgUrl": "What-is-balance-transfer-and-how-it-works.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "Preparation before applying loan & watch out points",
+                    "file": "question9.json",
+                    "date": "Jan 10, 2022",
+                    "imgUrl": "Preparation-before-applying-loan-and-watch-out-points.png"
+                }
+            ]
+        },
+        {
+            "folder": "personal-loan-topics",
+            "name": "Personal Loan Topics",
+            "shortName": "Personal Loan Topics",
+            "questions": [
+                {
+                    "highlight": true,
+                    "question": "Consolidate loan vs personal loan",
+                    "file": "question1.json",
+                    "date": "Jan 10, 2022",
+                    "imgUrl": "consolidated-vs-personal-loan-1.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "Do and don’t when you apply for personal loan",
+                    "file": "question2.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "Do-and-dont-when-you-apply-for-personal-loan.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "How do personal loans work and how do you apply for one?",
+                    "file": "question3.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "How-do-personal-loans-work-and-how-do-you-apply-for-one.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "How do I get a personal loan with bad credit?",
+                    "file": "question4.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "How-do-I-get-a-personal-loan-with-bad-credit.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "What is the benefit to obtaining a personal loan?",
+                    "file": "question5.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "What-is-the-benefit-to-obtaining-a-personal-loan.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "Is personal loan interest tax deductible?",
+                    "file": "question6.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "Is-personal-loan-interest-tax-deductible.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "How much of a personal loan can I get",
+                    "file": "question7.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "How-much-of-a-personal-loan-can-I-get.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "What is the average interest rate on a personal loan?",
+                    "file": "question8.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "What-is-the-average-interest-rate-on-a-personal-loan.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "How long does it take to be approved for a personal loan?",
+                    "file": "question9.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "How-long-does-it-take-to-be-approved-for-a-personal-loan.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "Are personal loans bad?",
+                    "file": "question10.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "Are-personal-loans-bad.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "Can personal loans build your credit?",
+                    "file": "question11.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "Can-personal-loans-build-your-credit.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "Does the personal loan have fees?",
+                    "file": "question12.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "Does-the-personal-loan-have-fees.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "Do I have a good enough credit score?",
+                    "file": "question13.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "Do-I-have-a-good-enough-credit-score.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "How will a personal loan affect my credit score?",
+                    "file": "question14.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "How-will-a-personal-loan-affect-my-credit-score.png"
+                }
+            ]
+        },
+        {
+            "folder": "auto-loan-topics",
+            "name": "Auto Loan Topics",
+            "shortName": "Auto Loan Topics",
+            "questions": [
+                {
+                    "highlight": true,
+                    "question": "When buying from auto dealer how to process loan faster? Alternatives options",
+                    "file": "question1.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "auto-loan-better-rates-1.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "Are you paying higher auto interest rates and what do you do?",
+                    "file": "question2.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "Are-you-paying-higher-auto-interest-rates-and-what-do-you-do.png"
+                }
+            ]
+        },
+        {
+            "folder": "mortgage-loan-topics",
+            "name": "Mortgage Loan Topics",
+            "shortName": "Mortgage Loan Topics",
+            "questions": [
+                {
+                    "highlight": false,
+                    "question": "Mortgage APR vs Rate",
+                    "file": "question1.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "Mortgage-APR-vs-Rate-1.png"
+                },
+                {
+                    "highlight": true,
+                    "question": "Mortgage Fixed rates vs Variable rates",
+                    "file": "question2.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "mortgage-fixed-vs-variable-rates.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "Why Refinance a loan? How that benefits lender? Awareness and are you doing right thing?",
+                    "file": "question3.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "Why-Refinance-a-loan.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "Benefits of new home purchase and what do you need to know.",
+                    "file": "question4.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "blog-4.jpg"
+                },
+                {
+                    "highlight": true,
+                    "question": "New home purchase process and awareness",
+                    "file": "question5.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "my-first-home-loan.png"
+                },
+                {
+                    "highlight": false,
+                    "question": "Preparation for your credit history before purchasing your home",
+                    "file": "question6.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "Preparation-for-your-credit-history-before-purchasing-your-home.png"
+                }
+            ]
+        },
+        {
+            "folder": "student-loan-topics",
+            "name": "Student Loan Topics",
+            "shortName": "Student Loan Topics",
+            "questions": [
+                {
+                    "highlight": false,
+                    "question": "International / foreign student loans from USA",
+                    "file": "question1.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "blog-1.jpg"
+                },
+                {
+                    "highlight": true,
+                    "question": "Is college free for US Citizens or international students?",
+                    "file": "question2.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "is-college-free-for-US-Citizens-or-international-students.png"
+                },
+                {
+                    "highlight": true,
+                    "question": "is college worth it for USA students?",
+                    "file": "question3.json",
+                    "date": "Dec 27, 2021",
+                    "imgUrl": "blog-3.jpg"
+                }
+            ]
+        }
+    ],
+    "popular_post": [
+        {
+			"highlight": false,
+			"question": "Why Credit unions are better than traditional banks?",
+			"file": "question1.json",
+			"date": "Jan 5, 2022",
+			"imgUrl": "why-credit-union-are-better-than-traditional-banks.png"
+        },
+        {
+			"highlight": false,
+			"question": "Best rates for bad credit history holders?",
+			"file": "question2.json",
+			"date": "Jan 5, 2022",
+			"imgUrl": "blog-1.jpg"
+		},
+		{
+			"highlight": true,
+			"question": "Is college free for US Citizens?",
+			"file": "question3.json",
+			"date": "Dec 27, 2021",
+			"imgUrl": "is-college-free-for-US-Citizens-or-international-students.png"
+		}
+    ]
+}

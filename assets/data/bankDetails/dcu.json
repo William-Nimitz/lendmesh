@@ -1,0 +1,64 @@
+{
+    "title": "DCU",
+    "Page_Title": "DCU | Personal and Business Banking",
+    "Meta_Description": "DCU - Digital Federal Credit Union - Come to us for a better deal on free checking, auto loans, mortgages, credit cards, savings, business banking, and more.",
+    "img_url": "dcu.png",
+    "link": "https://www.dcu.org/",
+    "content": [
+        {
+            "tab": "About DCU",
+            "format": "none",
+            "content": [
+                "Digital Federal Credit Union Bank which is also known as DCU Bank, is a not-for-profit financial cooperative owned by and operated for our members. DCU was chartered in October of 1979. Since then, DCU has been chosen as the credit union for more than 700 companies and organizations. DCU serves more than 900,000 members and their families in all 50 states.  The bank has its headquarters in Marlborough. DCU is the biggest credit union which is situated in England. The members of the Bank can access their Bank accounts at DUC online platforms, through ATM and also through visiting the branch."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "1",
+            "content": [
+                    "Relatives of DCU members are eligible to join if they are spouses, domestic partners, children, grandchildren, parents, grandparents, or siblings (including adoptive, in-law, and step relationships)",
+                    "Eligibility by Company OR by Organization OR by Community, please refer below link for more details."
+            ],
+            "link":{
+                "label": "https://www.dcu.org/about/member-eligibility.html",
+                "type": "a",
+                "url": "https://www.dcu.org/about/member-eligibility.html"
+            },
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "1",
+            "content": [
+                "DCU is having a limit of $5 to open a savings account. For business accounts they do not charging any amount for opening. This will be a great deal for business people to have an account in DCU bank",
+                "DCU can support u through having a savings account, Business services, certificate accounts, Retirement accounts and specialty accounts.",
+                "DCU can support us through having loan accounts like vehicle loan, credit card, student loans, Mortgages, personal loans, commercial lending."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "none",
+            "content": [
+                {
+                    "header":"",
+                    "format": "1",
+                    "content":[
+                        "DCU is a not-for-profit cooperative owned and operated by and for our members.",
+                        "DCU has many participating employers, organizations, communities and condominium associations and this makes it simple for almost anyone to join.",
+                        "The ability of an individual to become a member is determined by whether or not he or she has something in common with the other members, such as a familial relation, employment at a company, membership in an association, or residence in a particular geographic area.",
+                        "Business savings with Complete security, convenient access, and competitive returns.",
+                        "DCU’s primary focus is to always be here for our members and their families in their time of need.",
+                        "DCU team is fully prepared to help those members affected by recent disasters such as wildfires in Colorado in January of 2022, and the storms and tornadoes that impacted the Midwest and Southeast in December of 2021."
+                    ]
+                },
+                "To assist those who may have been affected and ensure all members have quick and easy access to their money, DCU will be waiving overdraft fees and reimbursing ATM transaction fees* for withdrawals made."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

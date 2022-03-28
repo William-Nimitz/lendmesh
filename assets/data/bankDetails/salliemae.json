@@ -1,0 +1,75 @@
+{
+    "title": "Sallie Mae",
+    "Page_Title": "Sallie Mae I Student Loans",
+    "Meta_Description": "Sallie Mae is a company based in the United States that originates, services, and collects student loans. Government guaranteed student loans, private student loans, K-12 loans, money market accounts, high yield savings accounts, insurance services, and college saving schemes are all part of the company's service portfolio.",
+    "img_url": "salliemae.png",
+    "link": "https://www.salliemae.com/",
+    "content": [
+        {
+            "tab": "About Sallie Mae  Student Loans:",
+            "format": "none",
+            "content": [
+                "Sallie Mae is a well-known student loan company that provides private loans to students and graduates in a number of degree programmes. Sallie Mae is a publicly listed firm in the United States that is a leading provider of private student loans. Sallie Mae has $20.5 billion in private student loans as of the third quarter of 2021. Another $703 million was held in federal student loans under the presently Federal Family Education Loan (FFEL) Program. It was a private, for-profit organisation that was subject to government laws."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "disc",
+            "content": [
+                "Borrowers must be of legal age in their state (often 18 years old). Younger candidates will require a cosigner who is both qualified and creditworthy.",
+                "Sallie Mae does not publish a list of qualified schools, but you can search for a school's name at the start of the loan application to discover whether your institution qualifies.",
+                "Sallie Mae does not specify a minimum credit score. At the time of loan origination, Sallie Mae student loans should have a FICO Score of 670 or higher."
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.salliemae.com/resources/school-partners/"
+            },
+            "img":""
+        },
+        {
+            "tab": "Documents Required",
+            "format": "none",
+            "content": [
+                {
+                    "header":"",
+                    "format": "disc",
+                    "content":[
+                        "ID proof (photo ID)",
+                        "School information",
+                        "Social security number",
+                        "Proof of income",
+                        "Employment information"
+                    ]
+                }
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "disc",
+            "content": [
+                "A Certificate of Deposit requires a $2,500 minimum deposit and a $2,500 minimum balance to open.",
+                "There is no minimum deposit required to open a non-CD Account.",
+                "A minimum deposit is not required to start a High-Yield Savings Account.",
+                "They retain the right to terminate an account if it is dormant, with a balance of $100 or less and no activity for the last 12 months."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "disc",
+            "content": [
+                "At an accredited school or institution, you may be able to receive 100% of your school-certified expenditures paid.",
+                "Sallie Mae assists students at all stages of their educational experience, including free study assistance and college price calculators to present and prospective borrowers.",
+                "Sallie Mae provides loans to students who are enrolling in less than half-time programmes, online or summer classes, students studying abroad, and students pursuing professional certification courses."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "title": "Connexus Credit Unions",
+    "Page_Title": "Connexus Credit Unions",
+    "Meta_Description": "Become a member-owner of  Connexus Credit Unions, a not-for-profit, nationwide credit union and enjoy several benefits such as lower rates, greater returns, fewer fees, and personalized service.",
+    "img_url": "connexus.png",
+    "link": "https://www.connexuscu.org/",
+    "content": [
+        {
+            "tab": "About Connexus Credit Union",
+            "format": "none",
+            "content": [
+                "Conexus is a cooperative organization. This implies that they adhere to the principles of Co-operative Voluntary and Open Membership, Democratic Member Control, and Member Economic Participation. Connexus Credit Union is a Wisconsin-based full-service credit union. It provides a wide range of financial services, including checking and savings accounts. Connexus Credit Union was founded in 1935. With $3.73 billion in assets, it is Wisconsin's sixth-biggest credit union. It is headquartered in Wausau, Wisconsin, and its assets total $996,318,002. It serves 146,625 members from 15 locations. NCUA insures Connexus Credit Union deposits. All Connexus CU checking accounts provide a variety of free features, such as early payday, which allows you to access cash a day earlier with direct deposit, no monthly fees, no minimum balance, free e-Statements, and free online bill pay."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "1",
+            "content": [
+                "Employees, retirees, family members, members, students, or student alumni of one of the organizations listed are ALPA FCU, ALPA Union, Aqua Finance, Aspirus Inc, Cincinnati Bell, Cintel, Convergys, Endura, Honeywell, Liberty Mutual Insurance, Marketplace Home Mortgage, Marshfield Clinic, Minnesota Consumer Council, Northcentral Technical College, Orbital ATK, and TSI Incorporated are all members eligible.",
+                "Spouses, family members, and individuals living in the same home as a current member are also eligible.",
+                "Residents of Brooklyn Center, Crystal, Golden Valley, Hopkins, Minneapolis, New Hope, Robbinsdale, St. Louis Park, Cincinnati, Norwood, Adams County, Clark County, Juneau County, Langlade County, Taylor County, Waushara County, Shawano County, and Lincoln County are eligible.",
+                "Connexus Association members. A one-time $5 donation is required."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Documents Required",
+            "format": "none",
+            "content": [
+                {
+                    "header":"To start a Connexus union account, the following documents are required.",
+                    "format": "disc",
+                    "content":[
+                        "Valid driver's license/state identification/passport",
+                        "Valid Social Security Number in the United States",
+                        "Account details for accounts that you want to terminate and transfer"
+                    ]
+                }
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "1",
+            "content": [
+                "This account requires a minimum deposit of $5 from your savings account; there is no monthly cost for the Savings account.",
+                "It provides a wide range of financial services, including checking accounts, savings, and money market accounts; IRAs; consumer and business credit cards",
+                "Connexus credit union can support vehicle loans, recreational loans, personal loans, and credit lines, student loans, and house finance"
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "1",
+            "content": [
+                "Conexus is a member-owned cooperative that provides personal, corporate, and agricultural financial services to its members.", 
+                "Kiplinger, NerdWallet, and The Balance have repeatedly ranked Conexus one of the nation's top credit unions.",
+                "Connexus Cares is dedicated to assisting groups that maintain our communities healthy and vibrant.",
+                "You can manage your account on the trip with digital banking.",
+                "Furthermore, our app is regarded as one of the greatest banking apps accessible.",
+                "Credit unions are non-profit organizations, which means they are less concerned with profit and more focused on assisting people of the community to achieve financial success.",
+                "Connexus Credit Cards provides personal and commercial credit cards with no annual fees, introductory APRs of 0%, rewards programs, and qualified cash back transactions."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

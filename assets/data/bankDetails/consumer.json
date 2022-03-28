@@ -1,0 +1,73 @@
+{
+    "title": "Consumer Credit Union",
+    "Page_Title": "Consumer Credit Union I Personal and Business Banking",
+    "Meta_Description": "Consumer Credit Unions' nonprofit structure allows them to operate at a lesser cost than for-profit banks, allowing them to provide competitive lending and savings rates.",
+    "img_url": "consumer.png",
+    "link": "https://www.consumercreditunion.com/",
+    "content": [
+        {
+            "tab": "About Consumer Credit Union",
+            "format": "none",
+            "content": [
+                "The Consumer Credit Union has been in operation since 1953. It is Tennessee's 13th biggest credit union, with $557.16 million in assets and more than 36,000 members. The credit union provides its members with a comprehensive range of goods and services, including checking, savings, debit and credit cards, automotive and consumer loans, money market accounts and certificates of deposit, and a number of mortgage options. Consumers Credit Union is a federally insured state-chartered credit union located in Waukegan, Illinois, with 10 branches and assets of $610,696,905."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "disc",
+            "content": [
+                "If you live, worship, volunteer, attend school, or work for a business and/or other legal entity in Anderson County, Blount County, Claiborne County, Cocke County, Greene County, Hancock County, Hamblen County, Jefferson County, Knox County, Loudon County, Sullivan County, Union County, or Johnson City, Tennessee, you are eligible for membership in Consumer Credit Union.",
+                "If you and your family members join the credit union and maintain a regular share account, your membership is permanent."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Documents Required",
+            "format": "none",
+            "content": [
+                {
+                    "header":"Following are the information required to complete the application:",
+                    "format": "disc",
+                    "content":[
+                        "Unexpired government-issued ID, driver's license, state ID, or passport with current address",
+                        "A secondary form of identities, such as a Social Security card, an unexpired passport, or a state-issued ID.",
+                        "Date of Birth.",
+                        "Your full physical address",
+                        "SSN (Social Security Number)"
+                    ]
+                }
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.consumercreditunion.com/eligibility.php"
+            },
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "disc",
+            "content": [
+                "To start an account with a $5 minimum balance requirement and retain membership, there is no monthly cost.",
+                "Mortgage Services, Credit Cards, Auto Loans, Personal Loans, and Student Loans are just a few of their best credit card and loan services.",
+                "They have all of your business requirements covered, from checking and savings accounts to loans, credit cards, and business tools."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "disc",
+            "content": [
+                "Over 30,000 free ATMs are accessible. In addition, if you complete the monthly rewards requirements, the credit union will reimburse you for non-network ATM fees.",
+                "Consumers Credit Union is part of a nationwide shared branch network with over 5,000 locations (along with the 30,000 surcharge-free ATMs).",
+                "Credit unions operate exclusively to assist its member-owners. Members of credit unions are consistently more happy with their service than clients of banks or savings and loans, according to consumer studies."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

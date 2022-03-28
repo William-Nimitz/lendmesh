@@ -1,0 +1,76 @@
+{
+    "title": "Alliant Credit Union",
+    "Page_Title": "Alliant Credit Union I Personal and Business Banking",
+    "Meta_Description": "Alliant Credit Union is a financial cooperative located in Illinois that provides depository banking products, retirement and investment services, and several forms of home and personal loans.",
+    "img_url": "alliant.png",
+    "link": "https://www.alliantcreditunion.org/",
+    "content": [
+        {
+            "tab": "About ACU Alliant Credit Union",
+            "format": "none",
+            "content": [
+                "Alliant Credit Union is a not-for-profit financial cooperative, that means all of their customers are also stakeholders. The members-first concept has worked successfully for them. Alliant Credit Union is the largest credit union in Illinois and one of the largest in the country, with over 85 years of existence and more than $14 billion in assets. Residents of California, Colorado, Illinois, Texas, and Virginia can choose from 12 sites. With exceptional online, mobile, and phone banking services, together with an over comprehensive range of competitive products, simplify banking for our 600,000 members across the country."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "disc",
+            "content": [
+                "A present or former employee of one of the various businesses and organisations with which Alliant collaborates in the United States",
+                "A current Alliant member's domestic spouse or immediate family member",
+                "Live or work in one of the areas surrounding our Chicago headquarters.",
+                "If you reside or work in any of the Illinois towns, you are eligible to join Alliant.",
+                "If you are not qualified through another avenue, you can join Foster Care to Success and become eligible for Alliant membership."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Documents Required",
+            "format": "none",
+            "content": [
+                {
+                    "header":"Following are the information required to complete the application:",
+                    "format": "disc",
+                    "content":[
+                        "Valid Driver’s License",
+                        "State ID",
+                        "Passport",
+                        "SSN (Social Security Number)"
+
+                    ]
+                }
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.alliantcreditunion.org/help/which-communities-near-your-headquarters-are-eligible-to-join-alliant"
+            },
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "disc",
+            "content": [
+                "The free checking account has no monthly service cost, no minimum balance requirement, no check writing fees, and it includes a free Visa debit card and free checks.",
+                "Mortgage Services, Credit Cards, Auto Loans, Personal Loans, and Student Loans are just a few of their best credit card and loan services.",
+                "They have all of your business requirements covered, from checking and savings accounts to loans, credit cards, and business tools."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "disc",
+            "content": [
+                "FC2S provides grants and scholarships for further education, as well as care packages, mentorship, and internship opportunities.",
+                "Alliant Credit Union online banking offers personal financial management features for members, including the ability to digitally conduct and integrate account transactions with financial management software for budgeting and planning.",
+                "Throughout the year, Alliant, their employees, and the Alliant Credit Union Foundation volunteer their time and resources to help others in the community via a number of activities and programs."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

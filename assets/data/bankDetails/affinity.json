@@ -1,0 +1,66 @@
+{
+    "title": "Affinity Plus Federal Credit Union",
+    "Page_Title": "Affinity plus federal credit union I Personal and Business Banking",
+    "Meta_Description": "Plus Affinity Federal Credit Union is a non-profit financial cooperative that prioritizes individuals. Their approach to banking is unique. Choose to handle your money in areas where your narrative is important. NCUA-insured.",
+    "img_url": "affinity.png",
+    "link": "https://www.affinityplus.org/",
+    "content": [
+        {
+            "tab": "About Afinity plus federal credit union",
+            "format": "none",
+            "content": [
+                "Affinity Plus Federal Credit Union is a not-for-profit financial cooperative located in Minnesota with 27 locations and over $1.7 billion in assets. It provides financial products and services to over 600,000 members, including bank and savings accounts, consumer loans, mortgages, credit cards, investment and retirement accounts, and more. Affinity Plus is inspired by the credit union slogan \"people helping people\" to provide equitable advantages to all of its members, including low rates, minimum fees, and innovative, member-centric products and services, as well as to give back to the communities in which it conducts business. Dave Larson is the credit union's current president and CEO."
+            ],
+            "link": "",
+            "img": ""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "1",
+            "content": [
+                "If you are a family member, a household member, or an employee, you are eligible to join Affinity Plus.",
+                "Who lives, works, or worships, as well as any eligible person's relative or flatmate, or a current member or dues-paying member of the Affinity Plus Foundation"
+            ],
+            "link": "",
+            "img": ""
+        },
+        {
+            "tab": "Documents Required",
+            "format": "disc",
+            "content": [
+                "SSN (Social Security Number)",
+                "Your government-issued picture ID with your current residence address (driver's licence, passport, state ID). You'll need this in digital format to upload when applying online.",
+                "Account funding for your new account (credit or debit card or bank account information to transfer from)",
+                "If you are an international student or a non-citizen of the United States, your visa and other papers (such as an I-20) will be required to verify your identification."
+            ],
+            "link": {
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.affinityplus.org/membership/become-a-member/eligibility"
+            },
+            "img": ""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "disc",
+            "content": [
+                "The Membership Savings account is needed for all members and reflects your $10 stake in the cooperative. You may even establish another account at the same time if you like.",
+                "There are no monthly maintenance fees.",
+                "Mortgage Services, Credit Cards, Auto Loans, Personal Loans, and Student Loans are just a few of their best credit card and loan services.",
+                "They have all of your business requirements covered, from checking and savings accounts to loans, credit cards, and business tools."
+            ],
+            "link": "",
+            "img": ""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "disc",
+            "content": [
+                "Affinity Checking offers benefits like no monthly service fees or minimum balance limitations, as well as free ATM access at popular retailers.",
+                "They believe in enhancing the financial well-being of its members, and increase financial inclusion in the Minneapolis region."
+            ],
+            "button": "",
+            "img": ""
+        }
+    ]
+}

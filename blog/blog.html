@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <title>Lendmesh | Blog</title>
+    <meta name="author" content="Lendmesh">
+
+    <base href="../">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./assets/css/loan-styles.css" rel="stylesheet">
+    <link href="./assets/css/global.css" rel="stylesheet">
+    <link rel="canonical" href="https://lendmesh.com/blog/blog.html" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+    <script src="./assets/js/angJs/angular-translate.min.js"></script>
+    <script src="./assets/js/angJs/mainModuleApp.js"></script>
+    <script src="./assets/js/angJs/blog.js"></script>
+</head>
+
+<body ng-cloak ng-app="mainModuleApp" ng-controller="BaseCtrl as Base" ng-class="{'menu-open': Base.open}">
+    <header ng-include="'header.html'" class="header-main">
+    </header>
+    <main ng-controller="blogCtrl as Ctrl">
+        <section class="inrpage-banner">
+            <div class="custom-container">
+                <div class="inrpage-banner-inr">
+                    <h1>Blog</h1>
+                </div>
+            </div>
+        </section>
+        <section class="custom-section gray-bg blog-section">
+            <div class="custom-container">
+                <div class="blog-wrapper">
+                    <div class="grid --with-gutter --equal-height">
+                        <div class="grid-cell size-1of4--md +flex-direction-column">
+                            <div id="abcdef" class="rate-table-filters box +bg-gray-lightest +mg-bottom ">
+                                <form class="search-form" action="#">
+                                    <label class="form-label " for="">Search</label>
+                                    <input type="text" ng-model='Ctrl.filterPost' ng-change="Ctrl.filterPostFunc()" placeholder="Search..." />
+                                </form>
+                                <div class="single-sidebar">
+                                    <div class="wedgit-title">
+                                        <h3>Categories</h3>
+                                    </div>
+                                    <ul class="categories clearfix">
+                                        <li ng-repeat="category in Ctrl.categories track by $index">
+                                            <span style="font-weight: bold;" ng-click="Ctrl.myVar = (Ctrl.myVar == $index ? -1 : $index)" ng-class="Ctrl.myVar == $index ? 'clicked': ''">{{category.name}}<span>({{category.questions.length}})</span></span>
+                                            <ul class="questionCls">
+                                                <li ng-repeat="question in category.questions track by $index" ng-click="Ctrl.BlogDetail(question, category.folder)"><span>{{question.question}}</span></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="single-sidebar">
+                                    <div class="wedgit-title">
+                                        <h3>Popular Post</h3>
+                                    </div>
+                                    <ul class="popular-post">
+                                        <li ng-repeat="popular in Ctrl.popularPost track by $index" ng-click="Ctrl.BlogDetail(popular)" style="cursor: pointer;">
+                                            <div class="img-holder">
+                                                <img src="./assets/images/blogs/{{popular.imgUrl}}" alt="{{popular.question}}" title="{{popular.question}}" loading="lazy">
+                                            </div>
+                                            <div class="title-holder">
+                                                <h5 class="post-title">{{popular.question}}</h5>
+                                                <h6 class="post-date">{{popular.date}}</h6>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-cell size-3of4--md +flex-direction-column">
+                            <div class="blog-inr">
+                                <div ng-repeat="shortblog in Ctrl.paginationView track by $index" class="blog-box">
+                                    <a href="" ng-click="Ctrl.BlogDetail(shortblog, shortblog.folder)">
+                                        <div class="blog-img">
+                                            <img src="./assets/images/blogs/{{shortblog.imgUrl}}" alt="{{shortblog.shortName}}" title="{{shortblog.question}}" loading="lazy">
+                                        </div>
+                                        <div class="blog-content">
+                                            <ul class="blog-meta">
+                                                <li>{{shortblog.date}}</li>
+                                                <li>{{shortblog.shortName}}</li>
+                                            </ul>
+                                            <h4>{{shortblog.question}}</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-pagination">
+                                <div class="blog-paginationCon">
+                                    <span class="first" ng-click="Ctrl.firstPage()">《</span>
+                                    <span class="prev" ng-click="Ctrl.prev()">〈</span>
+                                    <span><input type="text" class="current" ng-model="Ctrl.currentPage" ng-change="Ctrl.current()"/></span>
+                                    <span class="next" ng-click="Ctrl.next()">〉</span>
+                                    <span class="last" ng-click="Ctrl.lastPage()">》</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		<!--
+        <section class="custom-section newsletter-section">
+            <div class="custom-container">
+                <div class="sec-head">
+                    <h2>We Help With Both New Loan And Collective Loan</h2>
+                    <p>Whether you need to borrow for renovation, car, holiday or want to combine your loans into one
+                        single loan, we will help you</p>
+                </div>
+                <div class="newsletter-inr">
+                    <ul>
+                        <li>
+                            <a href="" class="custom-btn"> New Loan</a>
+                        </li>
+                        <li>
+                            <a href="" class="custom-btn-bg">Collective Loan</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+		-->
+    </main>
+    <footer ng-include="'footer.html'" class="footer"></footer>
+    <a href="javascript:void(0)" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/bootstrap-select.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>

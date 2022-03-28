@@ -1,0 +1,73 @@
+{
+    "title": "Custom Choice",
+    "Page_Title": "Custom Choice I Student Loans",
+    "Meta_Description": "Undergraduate and graduate loans are available via Custom Choice at both fixed and variable interest rates. Custom Choice enables you to apply with a cosigner, which may lower your interest rate and overall loan cost. Loans are available with terms of seven, ten, or fifteen years",
+    "img_url": "customchoice.png",
+    "link": "https://www.customchoice.com/",
+    "content": [
+        {
+            "tab": "About Custom Choice Student Loans",
+            "format": "none",
+            "content": [
+                "Custom Choice's undergraduate and graduate loans have competitive APRs. Custom Choice offers the lowest maximum interest rate on both fixed rate and variable rate loans for undergraduate and graduate students, which may indicate that it is a suitable option if your credit isn't stellar. SunTrust Bank and Cognition Financial formerly collaborated to provide Custom Choice Loans. When SunTrust's student loan service was pulled out, Cognition Financial partnered with Citizens Bank to offer new loans to students in all 50 states beginning in July 2020."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "disc",
+            "content": [
+                "Be enrolled at least half-time in a degree-granting programme at an approved institution.",
+                "Be the legal age of majority, or at least 17 years old at the time of application if applying with a cosigner who satisfies the age of majority criteria in the cosigner's home state.",
+                "Be a U.S. citizen or permanent resident applying with a qualified U.S. citizen or legal resident cosigner."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Documents Required",
+            "format": "none",
+            "content": [
+                {
+                    "header":"",
+                    "format": "disc",
+                    "content":[
+                        "Pay stubs or other forms of evidence of income (less than 30 days old)",
+                        "The monthly cost of housing",
+                        "Graduation date expected",
+                        "Loan amount Academic loan time"
+                    ]
+                }
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.customchoice.com/"
+            },
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "disc",
+            "content": [
+                "Undergraduate student loans, Graduate student loans, Parent loans, Career loans, and Refinanced student loans are some of the loan options offered by Custom Choice",
+                "The loan amount must be at least $1,000. The maximum yearly loan amount for each academic year to fund in-school fees is $99,999.",
+                "Only loans of $5,000 or more are eligible for the 15-year duration and Flat Payment Repayment option (paying $25 per month while in-school deferral)."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "disc",
+            "content": [
+                "If you opt to make automatic payments from a checking or savings account, you will receive a 0.25 percent rate reduction. Furthermore, Custom Choice provides a 2% principal reduction on your loan once you graduate.",
+                "Custom Choice provides many loan repayment alternatives, including delayed, lump-sum, interest-only, and immediate installments. The ideal repayment plan for you is determined by your circumstances.",
+                "Custom Choice has an A + rating from the Better Business Bureau, a non-profit organisation dedicated to customer protection and trust."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

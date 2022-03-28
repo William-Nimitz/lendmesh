@@ -1,0 +1,200 @@
+{
+    "bankDetails": [
+        {
+            "highlight": false,
+            "name": "AFFCU Atlantic Financial Federal Credit Union",
+            "shortName": "affcu",
+            "file": "affcu.json",
+            "imgUrl": "goaffcu.png"
+        },
+        {
+            "highlight": false,
+            "name": "AgFed Credit Union",
+            "shortName": "agfed",
+            "file": "agfed.json",
+            "imgUrl": "agfed.png"
+        },
+        {
+            "highlight": false,
+            "name": "America's Credit Union",
+            "shortName": "youracu",
+            "file": "youracu.json",
+            "imgUrl": "youracu.png"
+        },
+        {
+            "highlight": false,
+            "name": "Andrews Federal Credit Unions",
+            "shortName": "andrewsfcu",
+            "file": "andrewsfcu.json",
+            "imgUrl": "andrewsfcu.png"
+        },
+        {
+            "highlight": false,
+            "name": "CapEd Federal Credit Union",
+            "shortName": "capedcu",
+            "file": "capedcu.json",
+            "imgUrl": "capedcu.png"
+        },
+        {
+            "highlight": false,
+            "name": "College Ave Student Loans",
+            "shortName": "collegeavestudentsloan",
+            "file": "collegeavestudentsloan.json",
+            "imgUrl": "collegeavestudentsloan.png"
+        },
+        {
+            "highlight": false,
+            "name": "Connexus Credit Unions",
+            "shortName": "connexus",
+            "file": "connexus.json",
+            "imgUrl": "connexus.png"
+        },
+        {
+            "highlight": false,
+            "name": "DCU",
+            "shortName": "dcu",
+            "file": "dcu.json",
+            "imgUrl": "dcu.png"
+        },
+        {
+            "highlight": false,
+            "name": "ELFI",
+            "shortName": "elfi",
+            "file": "elfi.json",
+            "imgUrl": "elfi.png"
+        },
+        {
+            "highlight": false,
+            "name": "First Flight Federal Credit Union",
+            "shortName": "efirstflight",
+            "file": "efirstflight.json",
+            "imgUrl": "efirstflight.png"
+        },
+        {
+            "highlight": false,
+            "name": "Garden Savings Federal Credit Union",
+            "shortName": "gardensavingsfcu",
+            "file": "gardensavingsfcu.json",
+            "imgUrl": "gardensavingsfcu.png"
+        },
+        {
+            "highlight": false,
+            "name": "NASA Federal Credit Union",
+            "shortName": "nasafcu",
+            "file": "nasafcu.json",
+            "imgUrl": "nasafcu.png"
+        },
+        {
+            "highlight": false,
+            "name": "Pen Air Federal Credit Union",
+            "shortName": "penair",
+            "file": "penair.json",
+            "imgUrl": "penair.png"
+        },
+        {
+            "highlight": false,
+            "name": "PenFed Credit Union",
+            "shortName": "penfed",
+            "file": "penfed.json",
+            "imgUrl": "penfed.png"
+        },
+        {
+            "highlight": false,
+            "name": "Pinnacle Federal Credit Union",
+            "shortName": "pinnaclefcu",
+            "file": "pinnaclefcu.json",
+            "imgUrl": "pinnaclefcu.png"
+        },
+        {
+            "highlight": false,
+            "name": "Affinity Plus Federal Credit Union",
+            "shortName": "Affinity",
+            "file": "affinity.json",
+            "imgUrl": "affinity.png"
+        },
+        {
+            "highlight": false,
+            "name": "Alliant Credit Union",
+            "shortName": "alliant",
+            "file": "alliant.json",
+            "imgUrl": "alliant.png"
+        },
+        {
+            "highlight": false,
+            "name": "Ascent Funding",
+            "shortName": "ascent",
+            "file": "ascent.json",
+            "imgUrl": "ascent.png"
+        },
+        {
+            "highlight": false,
+            "name": "Chartway Federal credit Union",
+            "shortName": "chartway",
+            "file": "chartway.json",
+            "imgUrl": "chartway.png"
+        },
+        {
+            "highlight": false,
+            "name": "Common Bond",
+            "shortName": "commonbond",
+            "file": "commonbond.json",
+            "imgUrl": "commonbond.png"
+        },
+        {
+            "highlight": false,
+            "name": "Communitywide Federal Credit Union",
+            "shortName": "communitywide",
+            "file": "communitywide.json",
+            "imgUrl": "communitywide.png"
+        },
+        {
+            "highlight": false,
+            "name": "Consumer Credit Union",
+            "shortName": "consumer",
+            "file": "consumer.json",
+            "imgUrl": "consumer.png"
+        },
+        {
+            "highlight": false,
+            "name": "Corporate America Family Credit Union",
+            "shortName": "cafcu",
+            "file": "cafcu.json",
+            "imgUrl": "cafcu.png"
+        },
+        {
+            "highlight": false,
+            "name": "Custom Choice",
+            "shortName": "customchoice",
+            "file": "customchoice.json",
+            "imgUrl": "customchoice.png"
+        },
+        {
+            "highlight": false,
+            "name": "GTE Financial",
+            "shortName": "gte",
+            "file": "gte.json",
+            "imgUrl": "gte.png"
+        },
+        {
+            "highlight": false,
+            "name": "Northwest Federal Credit Union",
+            "shortName": "northwest",
+            "file": "northwest.json",
+            "imgUrl": "northwest.png"
+        },
+        {
+            "highlight": false,
+            "name": "Nuvision credit union",
+            "shortName": "nuvision",
+            "file": "nuvision.json",
+            "imgUrl": "nuvision.png"
+        },
+        {
+            "highlight": false,
+            "name": "Sallie Mae",
+            "shortName": "salliemae",
+            "file": "salliemae.json",
+            "imgUrl": "salliemae.png"
+        }
+    ]
+}

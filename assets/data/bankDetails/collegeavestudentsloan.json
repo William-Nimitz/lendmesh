@@ -1,0 +1,74 @@
+{
+    "title": "College Ave Student Loans",
+    "Page_Title": "College Ave Student Loans",
+    "Meta_Description": "College Ave is an online lender that offers both private student loans and student loan refinancing established in 2014. College Ave provides private student loans with a variety of repayment choices and the ability to refinance at any time between five and fifteen years.",
+    "img_url": "collegeavestudentsloan.png",
+    "link": "https://www.collegeavestudentloans.com/",
+    "content": [
+        {
+            "tab": "About College Ave Student Loans",
+            "format": "none",
+            "content": [
+                "College Ave is an online lender that offers both private student loans and student loan refinancing. It was created in 2014. Its private loan is ideal for students who wish to pay off their debts while studying in school. Its refinancing loan is appropriate for customers who desire a loan duration that isn't normal — say, six or nine years. College Ave's undergraduate private student loans are ideal for students who wish to pay while still in school. Borrowers can choose from immediate, interest-only, or set $25 payment schedules. Payments might also be postponed till after graduation.",
+                "College Ave offers a variety of private student loans for students of all educational levels. Undergraduate Student Loans, Graduate Student Loans, Parent Loans, Career Loans, and Student Loan Refinance are the types of loans available. So, whatever your educational loan requirements are, College Ave may assist you in achieving your professional objectives."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "none",
+            "content": [
+                {
+                    "header":"Students in all 50 states can apply for College Ave loans, but they must satisfy the following requirements:",
+                    "format": "disc",
+                    "content":[
+                        "Attend classes at a qualifying school while enrolled in a degree program.",
+                        "Have academic success criteria in effect for your school.",
+                        "If you're a foreign student, have a cosigner who is a US citizen.",
+                        "Must be a U.S. citizen or permanent resident.",
+                        "To apply for a College Ave student loan, you must be at least 16 years old."
+                    ]
+                }
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.collegeavestudentloans.com/student-loans/#!"
+            },
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "disc",
+            "content": [
+                "There are no origination or prepayment costs, however, there is a late fee (amount depends on monthly payment amount)",
+                "You will need a cosigner if your salary is less than $35,000 to qualify for a loan.",
+                "Your co-signer must be a US citizen or permanent resident in addition to being creditworthy.",
+                "You have the best chance of being accepted and receiving a reduced interest rate if you have an excellent credit score (usually between 700 and 749).",
+                "Undergraduate student loans, Graduate student loans, Parent loans, Career loans, and Refinanced student loans are some of the loan options offered by College Ave.",
+                "College Education provides two types of student loans that are federal loans and private loans."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "disc",
+            "content": [
+                {
+                    "header":"",
+                    "format": "disc",
+                    "content":[
+                        "College Ave charges no origination or prepayment fees on its undergraduate student loans and provides affordably fixed and variable APRs.",
+                        "College Ave provides student loans for a wide range of degree programs, including undergraduate, graduate, professional training, dental, law school, MBAs, and health care.",
+                        "College Ave provides a variety of repayment alternatives, allowing you to tailor your payments to your specific financial situation. Students can repay their loans over five, eight, ten, or fifteen years."
+                    ]
+                },
+                "If you're looking for student loans that are tailored to your budget and financial objectives, College Ave is a wonderful place to start."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "title": "Pinnacle Federal Credit Union",
+    "Page_Title": "Pinnacle Federal Credit Union I Personal and Business Banking",
+    "Meta_Description": "Pinnacle Federal Credit Union strives to meet its members' expectations by providing checking accounts, savings accounts, share certificates, retirement accounts, and specialty accounts.",
+    "img_url": "pinnaclefcu.png",
+    "link": "https://www.pinnaclecu.org/",
+    "content": [
+        {
+            "tab": "About Pinnacle Federal Credit Union",
+            "format": "none",
+            "content": [
+                "Since 1962, Pinnacle Federal Credit Union has been a trusted, non-profit financial partner to members in Edison, NJ, and the surrounding Middlesex County. They've developed from humble beginnings in the local community to a full-service banking institution in Edison with 300 employer organizations and members from New Jersey, New York, and Pennsylvania in over 50+ years of service. It is the 25th biggest credit union in New Jersey, with assets reaching $115.3 million and more than 12,000 members."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "1",
+            "content": [
+                "You work for or are a member of one of their Employer Groups.",
+                "If you work for or have retired from one of the firms, organizations, or associations, or if you live in the Georgia counties, you are eligible to join Pinnacle.",
+                "Membership is accessible to any family members of active Pinnacle members who are connected by blood, marriage, or adoption.",
+                "That means your spouse, wife, children, grandparents, grandchildren, aunts, uncles, nieces, nephews, and in-laws may all join now and enjoy the benefits of banking with Pinnacle."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Documents Required",
+            "format": "none",
+            "content": [
+                "To start a credit union account, the following documents are normally required.",
+                "</br>",
+                {
+                    "header":"Step 1: Verify Your Identity",
+                    "format": "disc",
+                    "content":[
+                        "A valid Georgia driver's license or picture ID card",
+                        "Additional address verification may be necessary.",
+                        "A legitimate Social Security number in the United States (physical card for youth accounts)"
+                    ]
+                },
+                "</br>",
+                {
+                    "header":"Step 2: SEG Validation",
+                    "format": "disc",
+                    "content":[
+                        "Please bring a salary stub from one of the SEG groups with you.",
+                        "Alternatively, a job offer letter."
+                    ]
+                }
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.pinnaclecu.org/join-us"
+            },
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "disc",
+            "content": [
+                "This account requires a minimum deposit of $5 from your basic savings account; there is no monthly cost for the Savings account.",
+                "Pinnacle Federal Credit Union provides checking accounts, savings accounts, share certificates, retirement accounts, and, specialty accounts",
+                "The Pinnacle Federal Credit Union is a financial cooperative. The Union offers loans, investments, savings, credit and debit cards, internet banking, and other financial services."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "disc",
+            "content": [
+                "Since they're a non-profit organization, their revenues are returned to members in the form of lower lending rates, more interest paid on deposits, and fewer fees.",
+                "Your funds are federally insured up to $250,000 and guaranteed by the full confidence and credit of the United States Government, courtesy of the National Credit Union Administration, a U.S. Government Agency. Pinnacle Credit Union is a home lender that welcomes all applicants.",
+                "It is rare for businesses to be able to provide employee perks at no expense to your company or the employees themselves. Give your employees access to a fantastic employee perk by allowing them to join Pinnacle Federal Credit Union. They are delighted to offer competitive dividend rates on savings, cheap lending rates, and little expenses.",
+                "They have made it our goal to deliver low-cost services and solutions that assist their members in achieving and maintaining financial stability."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

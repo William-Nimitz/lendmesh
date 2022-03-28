@@ -1,0 +1,74 @@
+{
+    "title": "Corporate America Family Credit Union",
+    "Page_Title": "Corporate America Family Credit Union",
+    "Meta_Description": "Corporate America Family Credit Union is a member-owned and directed not-for-profit banking cooperative devoted to serving as its members' primary financial institution.",
+    "img_url": "cafcu.png",
+    "link": "https://www.cafcu.org/",
+    "content": [
+        {
+            "tab": "About Corporate America Family Credit Union",
+            "format": "none",
+            "content": [
+                "Corporate America Family Credit Union is a member-owned and directed not-for-profit banking cooperative devoted to serving as its members' primary financial institution. Corporate America Family Credit Union is the 14th biggest credit union in Illinois, with its headquarters in Elgin. It is also the country's 497th largest credit union. It was founded in 1976 and had expanded to 224 staff and 67,238 members at 23 sites by December 2021. Corporate America Family Credit Union has an A+ rating from the Better Business Bureau."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "disc",
+            "content": [
+                "A spouse, parent, child, grandparent, grandchild, brother, aunt, uncle, cousin, niece, nephew, in-law, step-child, or domestic partner of a current CAFCU member.",
+                "Residents or employees who live or work within a 25-mile radius of a CAFCU branch.",
+                "Anyone who is a member of The Hope Group may easily join by filling out the application."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Documents Required",
+            "format": "none",
+            "content": [
+                {
+                    "header":"To start a credit union account, the following documents are normally required.",
+                    "format": "disc",
+                    "content":[
+                        "One current, valid form of identification is permitted, such as a passport or driver's license, a National ID Card is required.",
+                        "One proof-of-address document, such as a utility bill or a bank statement dated within the last three months.",
+                        "You may also be requested a PPS number."
+                    ]
+                }
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.cafcu.org/about-us/join-today"
+            },
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "1",
+            "content": [
+                "There is no cost to join. All they require is that you have a $25 minimum balance in your Regular Share Account.",
+                "Corporate America Family Credit Union provides checking accounts, savings accounts, share certificates, retirement accounts and, specialty accounts",
+                "Corporate America Family Credit Union can support credit cards, mortgage loans, personal loans, new and used vehicle loans, business services, internet banking, mobile banking, and other financial services."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "disc",
+            "content": [
+                "All of their financial products, services, and educational activities are available to you at no cost.",
+                "On Visa Credit Cards, Vehicle Loans, and Home Loans, there are no monthly fees and incredibly low interest rates.",
+                "Discount on Vehicle or Signature Loans for new members, as well as access to special monthly incentives.",
+                "There are around 6,700 credit union branches in the United States. There are over 60,000 SURCHARGE-FREE ATMs in the United States and Canada.",
+                "The CAFCU Card Management app gives you stress-free control over your CAFCU debit and credit cards."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

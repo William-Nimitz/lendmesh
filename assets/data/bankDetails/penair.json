@@ -1,0 +1,83 @@
+{
+    "title": "Pen Air Federal Credit Union",
+    "Page_Title": "Pen Air Federal Credit Union",
+    "Meta_Description": "Pen Air Federal Credit Union is a not-for-profit, member-owned financial institution that provides many wonderful products and services tailored to the requirements of active duty or retired military personnel, civil sector employees, and others.",
+    "img_url": "penair.png",
+    "link": "https://www.penair.org/",
+    "content": [
+        {
+            "tab": "About Andrews Federal Credit Unions",
+            "format": "none",
+            "content": [
+                "Respect is a fundamental concept of Pen Air Federal Credit Union. Pen Air, the biggest and oldest credit union established in Pensacola, Florida, with $1.4 billion in assets and is committed to improving people's lives through great service, strength, and financial solutions. They have a global reach with sixteen branches in Northwest Florida and Southeast Alabama, as well as online and mobile banking. Pen Air is a non-profit, member-owned financial company that has been serving the community and improving people's lives since 1936. NCUA provides federal insurance. Equal Housing Lender. It provides financial services to over 1000 employee groups and serves both military and civilian clients."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "none",
+            "content": [
+                {
+                    "header":"Anyone who meets the following criteria can open a Pen Air Federal Credit Union CD:",
+                    "format": "disc",
+                    "content":[
+                        "If you are at least 18 years old you are eligible to join",
+                        "US citizen or resident with a home address in the United States",
+                        "Opening deposit of $1,500 for a 3-month CD or $500 for all other terms"
+                    ]
+                }
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Documents Required",
+            "format": "none",
+            "content": [
+                {
+                    "header":"When applying, make sure you have the necessary information on hand:",
+                    "format": "disc",
+                    "content":[
+                        "Name, email address, and phone number are required.",
+                        "Date of Birth",
+                        "Number of Social Security",
+                        "a government-issued identification number",
+                        "Residential Address in the United States",
+                        "Employment status"
+                    ]
+                }
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.penair.org/relate/membership/"
+            },
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "disc",
+            "content": [
+                "A minimum initial deposit of $25 is needed and is a minimum maintaining balance in your account. This is your ownership stake in Pen Air, and it is held in your savings account. With their Mobile App and Online Banking, you may manage your savings account at any time.",
+                "Pen Air Federal Credit Union provides checking accounts, savings accounts, share certificates, retirement accounts, and, specialty accounts",
+                "Pen Air Federal Credit Union can support credit cards, mortgage loans, personal loans, new and used vehicle loans, business services, internet banking, mobile banking, and other financial services."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "disc",
+            "content": [
+                "Pen Air is a member of the CO-OP Shared Branch Network, a collaboration of over 7,000 credit unions that allows any member to deposit and withdraw money, make loan payments, and transfer cash while traveling or moving away.",
+                "By joining Pen Air Federal Credit Union, you will have control over your funds. Being a non-profit and member-owned organization means that they operate in the best interests of its members.",
+                "They provide a wide range of excellent savings and loan programs to meet your financial dreams and objectives.",
+                "Their purpose is to make their members' lives better by providing great service and solutions. Unlike many other traditional banks, they desire the best for all of their customers.",
+                "Everyone has the right to an amazing banking experience, and Pen Air FCU makes it simple for those who want to join and become members to do so!"
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

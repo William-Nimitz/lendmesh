@@ -1,0 +1,36 @@
+{
+    "questions": [
+        {
+            "highlight": false,
+            "question": "Top 15 questions about Credit Unions",
+            "shortName": "General Loan Questions",
+            "file": "general-loan-questions.json",
+            "date": "Jan 02, 2022",
+            "imgUrl": "why-credit-union-are-better-than-traditional-banks-1.png"
+        },
+        {
+            "highlight": false,
+            "question": "Top 20 questions about Student Loan",
+            "shortName": "Student Loan",
+            "file": "Top-20-questions-about-Student-Loan.json",
+            "date": "Jan 16, 2022",
+            "imgUrl": "Top-20-questions-about-Student-Loan.png"
+        },
+        {
+            "highlight": false,
+            "question": "Top 10 Auto Loan Questions and Answers",
+            "shortName": "Auto Loan",
+            "file": "Top-10-Auto-Loan-Questions-and-Answers.json",
+            "date": "Feb 02, 2022",
+            "imgUrl": "Top-10-Auto-Loan-Questions-and-Answers.png"
+        },
+        {
+            "highlight": false,
+            "question": "Top 10 Mortgage Loan Questions and Answers",
+            "shortName": "Mortgage Loan",
+            "file": "Top-10-Mortgage-Loan-Questions-and-Answers.json",
+            "date": "Feb 10, 2022",
+            "imgUrl": "Top-10-Mortgage-Loan-Questions-and-Answers.png"
+        }
+    ]
+}

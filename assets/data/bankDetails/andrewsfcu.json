@@ -1,0 +1,83 @@
+{
+    "title": "Andrews Federal Credit Unions",
+    "Page_Title": "Andrews Federal Credit Unions I Personal and Business Banking",
+    "Meta_Description": "United Federal Credit Union has been serving its members to establish a secure financial future through their service by providing savings accounts, business services, internet banking, mobile banking, and other financial services.",
+    "img_url": "andrewsfcu.png",
+    "link": "https://www.creditunion.ie/",
+    "content": [
+        {
+            "tab": "About Andrews Federal Credit Unions",
+            "format": "none",
+            "content": [
+                "Since 1949, Andrews Federal Credit Unions has been a non-profit financial cooperative dedicated to providing exceptional member service at all times. The Andrews Federal Credit Union is a mid-Atlantic regional credit union with branches across the United States, including Washington, D.C., Maryland, Virginia, and New Jersey. They also have sites around Europe to assist consumers who are military personnel stationed abroad. The Andrews Federal Credit Union has approximately 120,000 members and over $1.5 billion in assets globally."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "1",
+            "content": [
+                {
+                    "header":"If you are at least 18 years old and one of the following applies to you, you are eligible to join:",
+                    "format": "disc",
+                    "content":[
+                        "You work for or are a member of one of their Employer Groups.",
+                        "You live, work, go to school, or worship in Washington, D.C.",
+                        "You are a member of the American Consumer Council or an immediate family or household member of an existing Andrews Federal member.",
+                        "You are an active duty or retired military member (or their wives, dependents, or dependent survivors).",
+                        "If you are eligible for and are currently receiving benefits or services from Joint Base Andrews or Joint Base McGuire-Dix-Lakehurst.",
+                        "Civilian persons from US Military forces (or their dependents or dependent survivors) who work or are posted at Joint Base Andrews or Joint Base McGuire-Dix-Lakehurst.",
+                        "Service on Active Duty US Military or Civilian personnel of the Department of Defense who have a valid Uniformed Services Identification and Privilege Card."
+                    ]
+                }
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Documents Required",
+            "format": "none",
+            "content": [
+                {
+                    "header":"To start a credit union account, the following documents are normally required.",
+                    "format": "disc",
+                    "content":[
+                        "One current, valid form of identification is permitted, such as a passport or driver's license, a National ID Card is required.",
+                        "One proof-of-address document, such as a utility bill or a bank statement dated within the last three months.",
+                        "You may also be requested a PPS number."
+                    ]
+                }
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.creditunion.ie/blog/how-to-open-a-credit-union-account"
+            },
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "1",
+            "content": [
+                "This account requires a minimum deposit of $5 from your basic share savings account; there is no monthly cost for the Base Share Savings account.",
+                "Andrews credit union provides checking accounts, savings accounts, share certificates, retirement accounts and, specialty accounts",
+                "Andrews credit union can support credit cards, mortgage loans, personal loans, new and used vehicle loans, business services, internet banking, mobile banking, and other financial services."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "1",
+            "content": [
+                "Since they're a non-profit organization, their revenues are returned to members in the form of lower lending rates, more interest paid on deposits, and fewer fees.",
+                "When you join up, you become a part-owner with an equal vote to elect members of their governing Board of Directors.",
+                "A part of a community institution that focuses on service. Many activities, like the Annual Cherry Blossom Ten-Mile Run and the S.H.A.P.E. International Basketball Tournament, are sponsored, hosted, and volunteered by them.",
+                "Every year, they give away $20,000 in scholarship money and $5,000 in summer camp scholarships."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

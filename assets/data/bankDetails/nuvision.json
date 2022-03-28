@@ -1,0 +1,75 @@
+{
+    "title": "Nuvision credit union",
+    "Page_Title": "Nuvision credit union  I Personal and Business Banking",
+    "Meta_Description": "The Nuvision Federal Credit Union is a financial cooperative. The Union offers loans, investments, deposit accounts, insurance, security, credit and debit cards, internet banking, and other financial services.",
+    "img_url": "nuvision.png",
+    "link": "https://nuvisionfederal.studentchoice.org/",
+    "content": [
+        {
+            "tab": "About Nuvision credit union",
+            "format": "none",
+            "content": [
+                "Nuvision Federal Credit Union is a California-based financial institution. Since 1935, NuVision Federal Credit Union has been in operation. It is California's 24th biggest credit union, with assets of $2.82 billion and more than 156,000 members. The Nuvision team is proud to serve more than its members by providing amazing service, best-in-class products, and extraordinary member experiences. They feel that their distinct approach to banking makes a significant impact on all of our members. In an ever-changing world, their credit union has changed and grown over the last 85 years.Nuvision Credit Union has branches in California, Arizona, Alaska, Washington, and Wyoming, and services a five-state region."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "disc",
+            "content": [
+                "A NuVision member's immediate family or household members",
+                "Any Boeing employee in Southern California or Mesa, Arizona, as well as their immediate family and household members",
+                "Any employee of the Select Employer Group (SEG), as well as their immediate family and household members",
+                "You may be able to join our credit union as a customer if you are a member of the American Consumer Council (ACC)"
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Documents Required",
+            "format": "none",
+            "content": [
+                {
+                    "header":"Following are the information required to complete the application:",
+                    "format": "disc",
+                    "content":[
+                        "Unexpired government-issued ID, driver's license, state ID, or passport with current address",
+                        "A secondary form of identity, such as a Social Security card, an unexpired passport, or a state-issued ID.",
+                        "Date of Birth.",
+                        "Your full physical address",
+                        "SSN (Social Security Number)"
+                    ]
+                }
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://nuvisionfederal.studentchoice.org/college/undergraduate/"
+            },
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "disc",
+            "content": [
+                "To start an account with a $5 minimum balance requirement and retain membership, there is no monthly cost.",
+                "Nuvision credit union provides checking accounts, Regular Share Savings, Individual Retirement Accounts / IRAs, Money Market, and Share Certificates / CDs.",
+                "They have all of your business requirements covered, from checking and savings accounts to loans, credit cards, and business tools."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "disc",
+            "content": [
+                "When you join NuVision Credit Union, you'll have access to a variety of tools and services that you won't find at a regular national bank.",
+                "They have reasonable rates and can get you a vehicle loan for as little as 2.39 percent APR.",
+                "They also provide a variety of loan alternatives tailored to your unique needs, such as motorbike loans, mortgages, and even school loans."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

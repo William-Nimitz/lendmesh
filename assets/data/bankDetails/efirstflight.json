@@ -1,0 +1,74 @@
+{
+    "title": "First Flight Federal Credit Union",
+    "Page_Title": "First Flight Federal Credit Union I Personal and Business Banking",
+    "Meta_Description": "First Flight Federal Credit Union is a full-service financial institute searching for the finest and brightest in mind, heart, and soul, with the tagline \"people helping people.\"",
+    "img_url": "efirstflight.png",
+    "link": "https://www.efirstflight.com/",
+    "content": [
+        {
+            "tab": "About First Flight Federal Credit Union",
+            "format": "none",
+            "content": [
+                "First Flight Federal Credit Union is a full-service financial institution federal credit union located in CARY, North Carolina with 8 branch locations and total assets of around $216.28 million. First Flight Federal Credit Union was established in 1952 and has around 18,160 members by September 2021. It employs 72 full and part-time staff and offers different banking and financial related services such as Checking & Savings accounts, ATM/Debit Card Program, and more. It is North Carolina's 19th biggest credit union, with assets of Million and banking services for its members. It is also the nation's 1,183rd largest credit union. First Flight Federal Credit Union got an A+ grade for its health rating."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "1",
+            "content": [
+                "If you are in the military or work for the government (current or retired)",
+                "If you live, work, or worship in one of the following communities: Lenoir County, Pitt County, Morehead City, New Bern, or Havelock.",
+                "If Carteret-Craven EMC provides you with electricity.",
+                "If First Flight has a business connection with your company or organization. Hundreds of companies have partnered with First Flight to provide membership as an employee incentive.",
+                "You may simply become a member of one of these organizations when you establish an account online or at one of their financial center locations.",
+                "Members of your family and any member of your household can join and benefit from First Flight membership after you become a member."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Documents Required",
+            "format": "none",
+            "content": [
+                {
+                    "header":"To start a credit union account, the following documents are normally required.",
+                    "format": "disc",
+                    "content":[
+                        "One current, valid form of identification is permitted, such as a passport or driver's license, a National ID Card is required.",
+                        "One proof-of-address document, such as a utility bill or a bank statement dated within the last three months."
+                    ]
+                }
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.efirstflight.com/about-us/membership/"
+            },
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "1",
+            "content": [
+                "This account requires a minimum deposit of $5 from your savings account; there is no monthly cost for the Savings account.",
+                "The first Flight credit union provides checking accounts, savings accounts, share certificates, retirement accounts, and, specialty accounts",
+                "The first Flight credit union can support credit cards, mortgage loans, personal loans, new and used vehicle loans, business services, internet banking, mobile banking, and other financial services"
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "disc",
+            "content": [
+                "Members of First Flight Federal Credit Union enjoy competitively low-interest rates, dividends, and 24-hour account access via the eBranch or a mobile device. Most significantly, membership in First Flight implies a stake in the credit union.",
+                "The member experience is at the heart of FirstLight Federal Credit Union. Their working cooperative is a major.",
+                "First Flight also provides several services that make doing business easier i.e Notary public, Check Imaging, Deposit Bags, Wire Transfers, 24-hour Night Depository services (at certain branch locations), Full suite of e-Services, including e-statements, internet banking, and Bill Pay are among the services available."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

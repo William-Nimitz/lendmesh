@@ -1,0 +1,71 @@
+{
+    "title": "AFFCU Atlantic Financial Federal Credit Union",
+    "Page_Title": "AFFCU Atlantic Financial Federal Credit UnionI Personal and Business Banking",
+    "Meta_Description": "AFFCU combines honesty, service, and quality to fulfill all of your financial needs by providing a broad variety of banking services such as checking accounts, loans, mortgages, internet banking, and bill pay with worldwide access and technologies.",
+    "img_url": "goaffcu.png",
+    "link": "https://www.affcu.org/",
+    "content": [
+        {
+            "tab": "About AFFCU Atlantic Financial Federal Credit Union",
+            "format": "none",
+            "content": [
+                "The cooperative structure of AFFCU establishes a foundation of solidarity for a common aim of financial well-being for everybody. Atlantic Financial Federal Credit Union is a credit union. They are comparable to a bank or other financial institution in that they provide checking, savings, credit cards, loans, and other services, but that is where the similarities end.",
+                "Credit unions are one-of-a-kind, non-profit, cooperative financial entities that are owned by their members. They are a Credit Union — a non-profit financial institution that focuses on and is committed to you! As a member, their gains are returned to you in the form of cheaper fees, greater savings rates, lower loan rates, and more everyday perks. In addition, they offer complete financial wellness services with personalized attention and care."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "none",
+            "content": [
+                {
+                    "header":"Please keep in mind that before we can establish your account, we will contact you to confirm your AFFCU membership eligibility.An applicant must satisfy the following requirements to be considered for a volunteer position:",
+                    "format": "disc",
+                    "content":[
+                        "Must have been a member of AFFCU for at least one (1) year.",
+                        "You must be an active member of Atlantic Financial Federal Credit Union.",
+                        "It is not permitted to be a family member or significant other of any Atlantic Financial Federal Credit Union employee or volunteer.",
+                        "Background checks and bonds are required.",
+                        "Minimum age limit must be at least 18 years old.",
+                        "Should agree to a credit check.",
+                        "There must be no prior criminal convictions or ongoing criminal allegations.",
+                        "If chosen, you must sign a confidentiality agreement.",
+                        "Anyone who lives, works, worships, volunteers, attends school, or has relatives in Baltimore County, Baltimore City, Carroll County, or Harford County, Maryland, is eligible for AFFCU membership."
+                    ]
+                }
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.affcu.org/join-our-board-or-volunteer-committee/"
+            },
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "1",
+            "content": [
+                "There is no minimum balance requirement on any of your bank accounts however to maintain membership, a $5 minimum deposit is required.",
+                "AFFCU supports us through savings accounts, Business accounts, journey accounts, and money market accounts.",
+                "AFFCU fulfills all of your financial needs by providing a broad variety of banking services such as checking accounts, loans, mortgages, internet banking, and bill pay."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "1",
+            "content": [
+                "AFFCU is a non-profit financial organization that is wholly owned by its members and administered for the benefit of all members.",
+                "Every year, AFFCU sponsors non-profit military and veteran groups, as well as several on-base base activities.",
+                "AFFCU offers competitive rates, reduced fees in the form of fewer fees, greater deposit rates, and cheaper lending rates.",
+                "Excellent Service and Support - Always there for assistance, great customer service, you will be treated like family which is genuinely helpful.",
+                "Accessibility, Ease, and Convenience- You can pay whenever and wherever you want with mobile banking, internet banking, 55,000 fee-free ATMs, and around 5,600 shared branching sites nationwide.",
+                "They concentrate on the financial demands of customers in the greater Baltimore area. Anyone who lives, works, worships, volunteers, attends school, or has a family is eligible to join AFFCU."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

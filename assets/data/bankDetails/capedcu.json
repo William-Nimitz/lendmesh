@@ -1,0 +1,74 @@
+{
+    "title": "CapEd Federal Credit Union",
+    "Page_Title": "CapEd Federal Credit Union  I Personal and Business Banking",
+    "Meta_Description": "Through our EPIC principles of Empowerment, Professionalism, Innovation, and Collaboration, CapEd provides competitive remuneration and employee benefits, as well as training and career growth.",
+    "img_url": "capedcu.png",
+    "link": "https://www.capedcu.com/",
+    "content": [
+        {
+            "tab": "About CapEd Federal Credit Unions",
+            "format": "none",
+            "content": [
+                "The CapEd Federal Credit Union is a non-profit, member-owned financial cooperative that offers financial services to a variety of member groups, but principally to education personnel. Since 1936, CapEd Federal Credit Union has been in existence. It is the fourth biggest credit union in Idaho, with assets reaching $1.09 billion and more than 90,000 members. The National Credit Union Share Insurance Fund (NCUSIF), established by Congress in 1970 to guarantee member deposits in federal credit unions, insures CapEd Federal Credit Union. The National Credit Union Administration (NCUA) administers NCUSIF, which provides a minimum of $250,000 in insurance on credit union member deposits."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "disc",
+            "content": [
+                "You work for, are a retiree from, volunteer for, or are a student at one of the following public, private, or parochial schools: Ada, Adams, Blaine, Boise, Camas, Canyon, Cassia, Elmore, Gem, Gooding, Jerome, Lincoln, Minidoka, Owyhee, Payette, Valley, or Washington counties in Idaho.",
+                "Any member of your immediate family or home is eligible for membership.",
+                "Any member of your immediate family or home is a CapEd student.",
+                "With a one-time $20 payment, you become a member of the Idaho CapEd Foundation."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Documents Required",
+            "format": "none",
+            "content": [
+                {
+                    "header":"To start a credit union account, the following documents are normally required.",
+                    "format": "disc",
+                    "content":[
+                        "One current, valid form of identification is permitted, such as a passport or driver's license, a National ID Card is required.",
+                        "One proof-of-address document, such as a utility bill or a bank statement dated within the last three months.",
+                        "You may also be requested a PPS number."
+                    ]
+                }
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.capedcu.com/about/membership/become-a-member.html"
+            },
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "disc",
+            "content": [
+                "To start an account with CapEd Credit Union, there is no minimum initial deposit required. If you retain a balance of $2,500, you can avoid the monthly charge.",
+                "CapEd Federal Credit Union provides checking accounts, Regular Share Savings, Individual Retirement Accounts / IRAs, Money Market, and Share Certificates / CDs.",
+                "CapEd Federal Credit Union can support credit cards, mortgage loans, personal loans, new and used vehicle loans, business services, internet banking, mobile banking, and other financial services."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "disc",
+            "content": [
+                "CapEd is well-known in Idaho's Treasure and Magic Valleys as a provider of financial products, services, and educational resources that assist teachers, their families, and others involved in the education community in maintaining good financial well-being.",
+                "They inform you about budgeting, financing, retirement, and a variety of other financial subjects. You may start enhancing your financial knowledge right now by visiting CapEd's Online Learning Center.",
+                "If you satisfy the requirements, the $100 will be transferred into your CapEd bank account, and the $100 School District/Foundation monies will be sent straight to them.",
+                "CapEd Credit Union membership not only saves you money over traditional banks and lenders at one of Idaho's best credit unions. It also contributes to Idaho education by funding activities and events that assist students and instructors."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

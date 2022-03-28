@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
+    <title>Best Home Loan Lenders in the USA in 2022, Cheap Rate Loans in the USA | Mortgage Rates - Best Home Loan</title>
+	<meta name="author" content="Lendmesh">
+	<meta name="description"  content="Looking for the best home mortgage loan rates? LendMesh can help to find a lender for a home loan with the best interest rates in the USA in 2022. Here are our best Home Loan Banks and Credit Unions that can offer you the Lowest Interest Home Loans in the USA." />
+	<meta content="Best Home loan Banks in USA 2022, Cheap Rate Loans in USA, Best Mortgage Loans in USA, Best Home Loan, Best Mortgage Loan, Best Mortgage Rates, Best Mortgage Lenders, Best Home Equity Loan Rates" name="keywords">
+
+	<link rel="canonical" href="https://www.lendmesh.com/home-loan.html">
+
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+	<link href="./assets/css/loan-styles.css" rel="stylesheet">
+	<link href="./assets/css/global.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+		//var dmd1 = new Date();
+		//var version = dmd1.getFullYear()+""+(dmd1.getMonth()+1)+""+dmd1.getDate();
+	</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+    <script src="./assets/js/angJs/angular-translate.min.js"></script>
+	<script src="./assets/js/angJs/mainModuleApp.js"></script>
+    <script src="./assets/js/angJs/home_loan.js"></script>
+    <script src="./assets/js/zipcode_validate.js"></script>
+	<script>
+		//document.write('<link rel="stylesheet" href="./assets/css/loan-styles.css?version=' + version + '"\><\/link>');
+		//document.write('<link rel="stylesheet" href="./assets/css/global.css?version=' + version + '"\><\/link>');
+		//document.write('<script src="./assets/js/angJs/mainModuleApp.js?version=' + version + '"\><\/script>');
+		//document.write('<script src="./assets/js/angJs/home_loan.js?version=' + version + '"\><\/script>');
+	</script>
+	
+</head>
+
+<body ng-cloak ng-app="mainModuleApp" ng-controller="BaseCtrl as Base" ng-class="{'menu-open': Base.open}">
+    <header ng-include="'header.html'" class="header-main"></header>
+    <main ng-controller="homeLoanCtrl as Ctrl">
+        <section class="inrpage">
+            <div class="custom-container">
+                <div class="inrpage-inr">
+                    <h1>Home Loan</h1>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="custom-section gray-bg loan-process-sec">
+            <div class="custom-container">
+                <div class="sec-head">
+                    <h2>Simple Loan Process</h2>
+                    <p>The passages of Lorem Ipsum available but the majority have suffered alteration embarrased</p>
+                </div>
+                <div class="loan-process-inr">
+                    <div class="loan-process-box">
+                        <div class="loan-process-box-inr">
+                            <div class="icon-box">
+                                <i class="fa fa-edit"></i>
+                            </div>
+                            <div class="process-desc">
+                                <h4>Choose Loan Amount</h4>
+                                <p>Choose your loan amount and terms to use loan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loan-process-box">
+                        <div class="loan-process-box-inr">
+                            <div class="icon-box">
+                                <i class="fa fa-file-text-o"></i>
+                            </div>
+                            <div class="process-desc">
+                                <h4>Provide Document</h4>
+                                <p>Need to provide some basic document to verification</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loan-process-box">
+                        <div class="loan-process-box-inr">
+                            <div class="icon-box">
+                                <i class="fa fa-check-circle-o"></i>
+                            </div>
+                            <div class="process-desc">
+                                <h4>Approved Loan</h4>
+                                <p>Our loan specialist ask fews question and verify docuements.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loan-process-box">
+                        <div class="loan-process-box-inr">
+                            <div class="icon-box">
+                                <i class="fa fa-money"></i>
+                            </div>
+                            <div class="process-desc">
+                                <h4>Get your Money</h4>
+                                <p>Once loan aprroved you get loan amount credit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="custom-section calculator-sec">
+            <div class="custom-container">
+                <div class="sec-head">
+                    <h2>Best home loan rates for {{Base.currentMonth}} {{Base.currentYear}}</h2>
+                </div>
+                <div class="loan-sec-innr">
+                    <div class="">
+                        <div id="abcdef" class="rate-table-filters box +bg-gray-lightest +mg-bottom " style="display: block!important;">
+                            <div class="mobile-filter-header  +display-flex +align-items-center +mg-bottom-md">
+                                <span class="+type-heading-four ">Filters</span>
+                                <button ng-click="Ctrl.closeFilter()" class="rate-table-filters__close button --bare +fill-gray-darkest +mg-bottom-sm" type="button">
+                                    <svg class="icon__glyph " viewBox="0 0 16 16" height="16" width="16">
+                                        <polygon points="13 11.57 9.43 8 13 4.43 11.57 3 8 6.57 4.43 3 3 4.43 6.57 8 3 11.57 4.43 13 8 9.43 11.57 13 13 11.57">
+                                        </polygon>
+                                    </svg>
+                                </button>
+                            </div>
+                            <form action="#" class="grid --with-gutter ng-pristine ng-valid">
+                                <div style="display:flex;flex-wrap: wrap">
+									<!--
+                                    <div class="filterW m-r-1">
+                                        <div class="form-control --with-left-icon" data-format="$">
+                                            <label class="form-label  " for="loanAmount">Loan amount ($)</label>
+                                            <input type="text" inputmode="numeric" class="form-input ng-pristine ng-untouched ng-valid ng-empty" name="loanAmount" id="loanAmount" placeholder="e.g. 15,000">
+                                        </div>
+                                    </div>
+									-->
+                                    <div class="filterW m-r-1">
+                                        <div class="form-control --with-right-icon">
+                                            <label class="form-label " for="creditScore">Credit score</label>
+                                            <select name="creditScore" ng-model="Ctrl.creditScore" class="form-select" id="creditScore">
+                                                <option value="750" class="">Excellent (750+)</option>
+                                                <option value="700" class="">Good (700-749)</option>
+                                                <option value="640" class="">Fair (640-699)</option>
+                                                <option value="639" class="">Needs Work (&lt; 640)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="filterW m-r-1">
+                                        <div class="form-control">
+                                            <label class="form-label" for="zip">Zip code</label>
+                                            <input name="zip" ng-model="Ctrl.zip" value="" class="form-input" id="zip" inputmode="numeric">
+                                        </div>
+                                    </div>
+									<!--
+                                    <div class="filterW m-r-1">
+                                        <div class="form-control --with-left-icon">
+                                            <label class="form-label " for="annualIncome">Annual income ($)</label>
+                                            <input type="text" inputmode="numeric" class="form-input" name="annualIncome" id="annualIncome" placeholder="e.g. 55,000">
+                                        </div>
+                                    </div>
+									
+                                    <div class="filterW m-r-1">
+                                        <div class="form-control --with-right-icon">
+                                            <label class="form-label" for="degrees">Degree</label>
+                                            <select name="degrees" class="form-select" id="degrees">
+                                                <option selected="" value="1" class="">Undergrad</option>
+                                                <option value="2" class="">Grad</option>
+                                                <option value="3" class="">Undergrad &amp; Grad</option>
+                                            </select>
+                                        </div>
+                                    </div>
+									-->
+                                </div>
+                                <div class="grid-cell size-full +display-block" style="margin-top:10px">
+                                    <button type="button" class="apl-btn custom-btn-bg" ng-click="Ctrl.customFilter()">Apply</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="">
+                            <div class="grid-cell +flex-direction-column">
+                                <div>
+                                    <ul class="tabs --fill +mg-bottom-none" role="tablist" aria-label="tabs">
+                                        <li class="tabs__item" role="presentation">
+                                            <button id="foo-tab" type="button" role="tab" aria-controls="foo" aria-selected="true" class="tabs__link --is-active" ng-click="Ctrl.make_loan_tab_active('p-l-r')">
+                                                <span class="+display-none +display-block--sm">New Mortage Loan</span>
+                                                <span class="+display-none--sm +display-block">New Mortage Loan</span>
+                                            </button>
+                                        </li>
+                                        <li class="tabs__item " role="presentation">
+                                            <button id="bar-tab" type="button" role="tab" aria-controls="bar" aria-selected="false" class="tabs__link " ng-click="Ctrl.make_loan_tab_active('p-p-l')">
+                                                <span class="+display-none +display-block--sm">Refinance </span>
+                                                <span class="+display-none--sm +display-block">Refinance </span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="table-container">
+                                    <table class="table --bordered-rows --spacing-md" role="table">
+                                        <thead class="+display-block--md">
+                                            <tr class="rate-table-header__row">
+                                                <th class="rate-table-header__cell grid-cell">
+                                                    <button type="button" ng-click="Ctrl.customSort('_name')" class="button --bare +display-flex +align-items-center +pd-right-xs">
+                                                    <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs">Lending Partners</span>
+                                                    <div class="table-sort +mg-left-xs ">
+                                                        <span ng-class="{selected: Ctrl.selectedSort == '_name' && !Ctrl.sortObj._name}" class="table-sort__icon icon">
+                                                            <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
+                                                                <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                    <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                        <polygon points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                        </polygon>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                        <span ng-class="{selected: Ctrl.selectedSort == '_name' && Ctrl.sortObj._name}" class="table-sort__icon icon">
+                                                            <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
+                                                                <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                    <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                        <polygon points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                        </polygon>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                </button>
+                                                </th>
+                                                <th class="rate-table-header__cell grid-cell">
+                                                    <button type="button" ng-click="Ctrl.customSort('fixedRate')" class="button --bare +display-flex +align-items-center +pd-right-xs">
+                                                    <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs ">Fixed Rate</span>
+                                                    <div class="table-sort +mg-left-xs">
+                                                        <span ng-class="{selected: Ctrl.selectedSort == 'fixedRate' && !Ctrl.sortObj.fixedRate}" class="table-sort__icon icon">
+                                                            <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph">
+                                                                <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                    <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                        <polygon points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                        </polygon>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                        <span ng-class="{selected: Ctrl.selectedSort == 'fixedRate' && Ctrl.sortObj.fixedRate}" class="table-sort__icon icon">
+                                                            <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
+                                                                <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                    <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                        <polygon points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                        </polygon>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                </button>
+                                                </th>
+                                                <th class="rate-table-header__cell grid-cell">
+                                                    <button type="button" ng-click="Ctrl.customSort('fixedApr')" class="button --bare +display-flex +align-items-center +pd-right-xs">
+                                                    <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs ">Fixed APR</span>
+                                                    <div class="table-sort +mg-left-xs">
+                                                        <span ng-class="{selected: Ctrl.selectedSort == 'fixedApr' && !Ctrl.sortObj.fixedApr}" class="table-sort__icon icon">
+                                                            <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph">
+                                                                <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                    <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                        <polygon points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                        </polygon>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                        <span ng-class="{selected: Ctrl.selectedSort == 'fixedApr' && Ctrl.sortObj.fixedApr}" class="table-sort__icon icon">
+                                                            <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
+                                                                <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                    <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                        <polygon points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                        </polygon>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                </button>
+                                                </th>
+                                                <th class="rate-table-header__cell grid-cell">
+                                                    <button type="button" ng-click="Ctrl.customSort('variableRate')" class="button --bare +display-flex +align-items-center +pd-right-xs">
+                                                    <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs ">Variable Rate</span>
+                                                    <div class="table-sort +mg-left-xs">
+                                                        <span ng-class="{selected: Ctrl.selectedSort == 'variableRate' && !Ctrl.sortObj.variableRate}" class="table-sort__icon icon">
+                                                            <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph">
+                                                                <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                    <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                        <polygon points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                        </polygon>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                        <span ng-class="{selected: Ctrl.selectedSort == 'variableRate' && Ctrl.sortObj.variableRate}" class="table-sort__icon icon">
+                                                            <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
+                                                                <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                    <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                        <polygon points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                        </polygon>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                </button>
+                                                </th>
+                                                <th class="rate-table-header__cell grid-cell">
+                                                    <button type="button" ng-click="Ctrl.customSort('variableApr')" class="button --bare +display-flex +align-items-center +pd-right-xs">
+                                                    <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs ">Variable APR</span>
+                                                    <div class="table-sort +mg-left-xs">
+                                                        <span ng-class="{selected: Ctrl.selectedSort == 'variableApr' && !Ctrl.sortObj.variableApr}" class="table-sort__icon icon">
+                                                            <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph">
+                                                                <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                    <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                        <polygon points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                        </polygon>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                        <span ng-class="{selected: Ctrl.selectedSort == 'variableApr' && Ctrl.sortObj.variableApr}" class="table-sort__icon icon">
+                                                            <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
+                                                                <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                    <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                        <polygon points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                        </polygon>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                </button>
+                                                </th>
+                                                <th class="rate-table-header__cell grid-cell">
+                                                    <button type="button" ng-click="Ctrl.customSort('term')" class="button --bare +display-flex +align-items-center +pd-right-xs">
+                                                    <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs ">Term</span>
+                                                    <div class="table-sort +mg-left-xs ">
+                                                        <span ng-class="{selected: Ctrl.selectedSort == 'term' && !Ctrl.sortObj.term}" class="table-sort__icon icon">
+                                                            <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph">
+                                                                <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                    <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                        <polygon points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                        </polygon>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                        <span ng-class="{selected: Ctrl.selectedSort == 'term' && Ctrl.sortObj.term}" class="table-sort__icon icon">
+                                                            <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
+                                                                <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                    <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                        <polygon points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                        </polygon>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                </button>
+                                                </th>
+                                                <th class="rate-table-header__cell grid-cell"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody ng-repeat="obj in Ctrl.maindataLoan" ng-show="(obj.type == 'purchase')?Ctrl.Showed:!Ctrl.Showed">
+                                            <tr class="rate-table-row">
+                                                <td class="grid-cell">
+                                                    <div class="grid --align-middle">
+                                                        <div class="grid-cell size-1of2 size-full--md">
+                                                            <a href="{{obj.bankUrl}}" target="_blank">
+                                                                <button type="button" class="button lender-logo">
+                                                                <img class="lender-logo__image +display-block +center-content"
+                                                                    src="./assets/images/bank/{{obj.bankName}}.png" alt="{{obj.bankUrl}}" loading="lazy" width="120" style="max-height: 50px;">
+                                                            </button>
+                                                            </a>
+                                                        </div>
+                                                        <div class="grid-cell size-1of2 size-full--md" ng-show="obj.lendmeshScore > 0">
+                                                            <div class=" +display-flex +align-items-center +justify-content-center">
+                                                                <div class="rating-stars +mg-right-xs" aria-label="star rating">
+                                                                    <div class="rating-stars__icon-mask" ng-style="{'width': ((obj.lendmeshScore * 20) + '%')}">
+                                                                        <ul class="rating-stars__icon-container">
+                                                                            <li class="rating-stars__icon icon --icon-xs +fill-blue">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
+                                                                                <path
+                                                                                    d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
+                                                                                </path>
+                                                                            </svg>
+                                                                            </li>
+                                                                            <li class="rating-stars__icon icon --icon-xs +fill-blue">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
+                                                                                <path
+                                                                                    d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
+                                                                                </path>
+                                                                            </svg>
+                                                                            </li>
+                                                                            <li class="rating-stars__icon icon --icon-xs +fill-blue">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
+                                                                                <path
+                                                                                    d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
+                                                                                </path>
+                                                                            </svg>
+                                                                            </li>
+                                                                            <li class="rating-stars__icon icon --icon-xs +fill-blue">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
+                                                                                <path
+                                                                                    d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
+                                                                                </path>
+                                                                            </svg>
+                                                                            </li>
+                                                                            <li class="rating-stars__icon icon --icon-xs +fill-blue">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
+                                                                                <path
+                                                                                    d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
+                                                                                </path>
+                                                                            </svg>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <ul class="rating-stars__icon-container +mg-bottom-xs">
+                                                                        <li class="rating-stars__icon icon --icon-xs +fill-gray">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
+                                                                            <path
+                                                                                d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
+                                                                            </path>
+                                                                        </svg>
+                                                                        </li>
+                                                                        <li class="rating-stars__icon icon --icon-xs +fill-gray">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
+                                                                            <path
+                                                                                d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
+                                                                            </path>
+                                                                        </svg>
+                                                                        </li>
+                                                                        <li class="rating-stars__icon icon --icon-xs +fill-gray">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
+                                                                            <path
+                                                                                d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
+                                                                            </path>
+                                                                        </svg>
+                                                                        </li>
+                                                                        <li class="rating-stars__icon icon --icon-xs +fill-gray">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
+                                                                            <path
+                                                                                d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
+                                                                            </path>
+                                                                        </svg>
+                                                                        </li>
+                                                                        <li class="rating-stars__icon icon --icon-xs +fill-gray">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
+                                                                            <path
+                                                                                d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
+                                                                            </path>
+                                                                        </svg>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <p class="+type-body-one +font-circular-bold +mg-bottom-xs +mg-right-sm">{{obj.lendmeshScore}}
+                                                                </p>
+                                                            </div>
+                                                            <div class="+type-body-two +fg-slate +text-center +mg-top-sm">LendMesh Rating
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="grid-cell">
+                                                    <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap">{{obj.fixedRateRange}}<span ng-if="obj.fixedRateRange" class="numeral__accent">%</span></p>
+                                                </td>
+                                                <td class="grid-cell">
+                                                    <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap">{{obj.fixedAprRange}}<span ng-if="obj.fixedAprRange" class="numeral__accent">%</span></p>
+                                                </td>
+                                                <td class="grid-cell">
+                                                    <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap">{{obj.variableRateRange}}<span ng-if="obj.variableRateRange" class="numeral__accent">%</span></p>
+                                                </td>
+                                                <td class="grid-cell">
+                                                    <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap">{{obj.variableAprRange}}<span ng-if="obj.variableAprRange" class="numeral__accent">%</span></p>
+                                                </td>
+                                                <td class="grid-cell">
+                                                    <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap">{{obj.PeriodRange}}<span ng-if="obj.PeriodRange" class="numeral__accent">yr</span></p>
+                                                </td>
+                                                <td class="grid-cell">
+                                                    <div class="grid --with-gutter --align-middle +flex-direction-row-reverse +flex-direction-row--md">
+                                                        <div class="grid-cell size-1of2 size-full--md">
+                                                            <a href="{{obj.personalLoanUrl}}" target="_blank">
+                                                                <button class="btn custom-btn-bg">Next
+                                                                <svg class="button__icon icon --icon-xs +mg-left-sm" width="24px" height="15px" viewBox="0 0 24 15">
+                                                                    <g id="Arrow" stroke="" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                        <path
+                                                                            d="M18.73577,6.31578947 L14.4214286,2.0739346 L16.0787699,0.444438785 L23.2214286,7.46709159 L16.0787699,14.4897444 L14.4214286,12.8602486 L18.6688284,8.68421053 L0.642857143,8.68421053 L0.642857143,6.31578947 L18.73577,6.31578947 Z"
+                                                                            fill="" fill-rule="nonzero"></path>
+                                                                    </g>
+                                                                </svg>
+                                                            </button>
+                                                            </a>
+                                                        </div>
+                                                        <div ng-show="obj.joinDetails.length > 0" class="grid-cell size-1of2 size-full--md">
+                                                            <button type="button" ng-click="Ctrl.moreDetail($event)" class="button --full-width modal__trigger--button expand-toggle">More Details</button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="expand-wrap" style="display: none;">
+                                                <td colspan="5">
+                                                    <div>
+                                                        <p ng-repeat="joindetail in obj.joinDetails track by $index">{{joindetail}}</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="custom-section loan-about">
+            <div class="custom-container">
+                <div class="loan-about-inr">
+                    <div class="loan-about-left">
+                        <div class="sec-head">
+                            <h2>About Home Loan</h2>
+                            <p>Are you looking for a home loan, mortgage refinancing, or a lіnе оf credit? You are in the right place.</p>
+                            <p>At LendMesh, we offer the best rates in the industry, enabling you to save money when you refinance or buy a new home. Finding the lowest interest rates leaves you with extra $$$ in your pocket every month!</p>
+							<p>LendMesh partners with banks and credit unions that offer up-to-date rates, low closing costs, and competitive fees so you can compare all your options in one place. And LendMesh will never charge you any fees. What's not to like?</p>
+							<p>At LendMesh, you work with experienced professionals who really know what they're doing. This means you'll get through the process quickly and without any hassle whatsoever.</p>
+                            <ul class="aboutcontent-list">
+                                <li><i class="fa fa-check"> </i>Offers from several Banks/Credit Unions</li>
+                                <li><i class="fa fa-check"> </i>LendMesh is Free & there is No Obligation to accept a loan offer</li>
+                                <li><i class="fa fa-check"> </i>Compare safely and securely</li>
+                                <li><i class="fa fa-check"> </i>Receive a Home Loan Offer within a few days</li>
+                                <p>* Checking your rate won't affect your credit score.</p>
+                            </ul>
+                            <a href="./contact.html" class="btn custom-btn-bg">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="loan-about-right">
+                        <img src="assets/images/confiscation-gd637f5ff9_1920.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+		<div id="included-home-faq-Content"></div>
+        <section class="custom-section newsletter-section">
+            <div class="custom-container">
+                <div class="sec-head">
+                    <h2>LendMesh Can Help with New Home Loans and Refinancing Existing Home Loans</h2>
+                    <p>Whether you need to borrow for a new home, renovation, or to refinance an existing loan, LendMesh can help find you the best interest rates and conditions to suit YOU!</p>
+                </div>
+				<!--
+                <div class="newsletter-inr">
+                    <ul>
+                        <li>
+                            <a href="./home-loan.html" class="custom-btn">New Home Loan</a>
+                        </li>
+                        <li>
+                            <a href="./home-loan.html" class="custom-btn-bg">Refinance Home Loan</a>
+                        </li>
+                    </ul>
+                </div>
+				-->
+            </div>
+        </section>
+    </main>
+    <footer ng-include="'footer.html'" class="footer"></footer>
+    <a href="javascript:void(0)" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/bootstrap-select.min.js"></script>
+	<script src="./assets/js/custom.js"></script>
+</body>
+
+</html>

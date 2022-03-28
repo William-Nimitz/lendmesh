@@ -1,0 +1,85 @@
+{
+    "title": "PenFed Credit Union",
+    "Page_Title": "PenFed Credit Union I Personal and Business Banking",
+    "Meta_Description": "As a member-owned charity, their success is inextricably linked to yours.That's why PenFed is committed to providing exceptional service and savings to its members in the spirit of 'Let's Grow Together'",
+    "img_url": "penfed.png",
+    "link": "https://www.penfed.org/",
+    "content": [
+        {
+            "tab": "About PenFed Credit Union",
+            "format": "none",
+            "content": [
+                "PenFed (Pentagon Federal Credit Union) was founded in 1935 as a credit union for military and civilian government personnel and their families. PenFed services members in all 50 states, as well as the District of Columbia, Guam, Puerto Rico, and Okinawa. The National Credit Union Administration regulates PenFed Credit Union. It is the third-largest federal credit union in the United States, with over $25 billion in assets and over two million members. As a result, it is a trusted lender with all of the most recent security and privacy safeguards in place to protect its members. Through the Allpoint and CO-OP ATM networks, PenFed members have access to over 85,000 fee-free ATMs."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "1",
+            "content": [
+                "Applicants must be a member of the United States.",
+                "Applicants must be of the legal age in their state of residence.",
+                "Applicants must have at least one outstanding, completely private education loan, federally backed education loan, or Parent Loan.",
+                "On the loan application and the promissory note, applicants must be listed as the borrower.",
+                "Applicants with a bachelor's degree or above may be eligible for student loan refinancing.",
+                "Applicants are required to present verification of income.",
+                "Applicants must be able to fulfill the credit standards of the borrower."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Documents Required",
+            "format": "none",
+            "content": [
+                {
+                    "header":"Depending on their sources of income, the type of loan, and whether it's a buy or refinance, each borrower will have various documentation requirements.",
+                    "format": "1",
+                    "content":[
+                        "Identification — A driver's license, passport, or other government-issued identification.",
+                        "2 months of bank statements (all pages)",
+                        "Pay Stubs from the last 30 days",
+                        "2 years of W2s or 1099s",
+                        "2 to 3 months of retirement statements",
+                        "The most recent award letter from the Social Security Administration",
+                        "2 years of personal tax returns",
+                        "Business tax returns — 2 years",
+                        "Statement of Debt (for refi)",
+                        "Insurance coverage for your home (for refi)"
+                    ]
+                }
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.penfed.org/mortgage-knowledge-center/top-10-documents-needed-for-mortgage"
+            },
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "1",
+            "content": [
+                "To become a member of PenFed, you must first create a savings account with a $5 minimum deposit.",
+                "PenFed Credit Union provides affordable rates on mortgages, VA loans, and HELOCs, as well as loans for automobiles, students, and personal loans.",
+                "To qualify for an installment loan, you must have a credit score of at least 650.",
+                "PenFed is a federal credit union based in the United States that provides loans, savings and deposit accounts, credit cards, and other financial services."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "1",
+            "content": [
+                "Their network comprises ATMs in a variety of retail venues such as department shops, pharmacies, petrol stations, and grocery stores.", 
+                "The Premium Online Savings account from PenFed offers a competitive 0.55 percent annual percentage interest on all balances.",
+                "They also provide installments loans for debt reduction, special occasions, health care, and home renovation.",
+                "The Armed Forces, Department of Homeland Security, Department of Defense, military associations, retirees, veterans, and their families are all supported and served by PenFed Credit Union."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

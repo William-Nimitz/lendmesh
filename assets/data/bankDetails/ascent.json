@@ -1,0 +1,69 @@
+{
+    "title": "Ascent Funding",
+    "Page_Title": "Ascent Funding I Student Loans",
+    "Meta_Description": "Every year, Ascent is on a mission to give education to millions of marginalized youngsters. They think that education is an investment in students' futures, and they aim to enable students from all economic backgrounds and disciplines to get the most out of that investment.",
+    "img_url": "ascent.png",
+    "link": "https://www.ascentfunding.com/",
+    "content": [
+        {
+            "tab": "About Ascent Funding  Student Loans",
+            "format": "none",
+            "content": [
+                "Ascent Funding is a private loan organisation that prioritises students by providing school loans and consumer loans for boot camps. Students, like other loan providers, can apply for an Ascent student loan that requires a cosigner. Ascent, on the other hand, offers non-cosigned loans that may be based on a student's credit or future earning potential. Ascent Funding was established in 2015 and is headquartered in San Diego. Students who are neither nationals nor permanent residents of the United States, or who have Deferred Action for Childhood Arrivals status – known as 'Dreamers' – are able to apply for Ascent private student loans."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "disc",
+            "content": [
+                "College students (both undergraduate and graduate) who are enrolled at least half-time in a degree programme at a recognized school are eligible for Ascent loans.",
+                "If you are a student borrower without a cosigner and have at least two years of credit history, you must meet Ascent's income requirements.",
+                "Student borrowers must have a monthly debt-to-income ratio of less than 50% and a minimum gross annual income of $24,000 for the current and prior years.",
+                "Co-signers must have earned at least $24,000 in gross annual income in the current and prior years."
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.ascentfunding.com/borrowerbenefits/"
+            },
+            "img":""
+        },
+        {
+            "tab": "Documents Required",
+            "format": "disc",
+            "content": [
+                "ID proof (photo ID)", 
+                "School information", 
+                "Social security number", 
+                "Proof of income", 
+                "Employment information"
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "disc",
+            "content": [
+                "Ascent offers three distinct repayment alternatives. Among them are fully deferred, interest-only, and $25 minimum payback choices.",
+                "Ascent Funding provides student loans for a wide range of degree programs, including undergraduate, graduate, professional training, dental, law school, MBAs, and health care.",
+                "Ascent Funding provides a variety of repayment alternatives, allowing you to tailor your payments to your specific financial situation."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "disc",
+            "content": [
+                "There are no application, origination, or disbursement fees with an Ascent student loan, so you may complete the whole procedure and receive your loan at no additional expense.",
+                "Ascent Funding offers students numerous repayment choices, including the ability to postpone or reduce payments.",
+                "There will be no penalty costs if you return your student loan. If you pay off your loan early, your monthly payments will be lower once you graduate."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

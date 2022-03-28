@@ -1,0 +1,79 @@
+{
+    "title": "NASA Federal Credit Union",
+    "Page_Title": "NASA Federal Credit Union (FCU) I Personal and Business Banking",
+    "Meta_Description": "NASA Federal Credit Union (FCU) is a nationally known and regulated credit union that offers a wide range of financial services and products, including loans, mortgages, credit cards, and mobile banking.",
+    "img_url": "nasafcu.png",
+    "link": "https://www.nasafcu.com/",
+    "content": [
+        {
+            "tab": "About NASA Federal Credit Union (FCU)",
+            "format": "none",
+            "content": [
+                "NASA Federal Credit Union (FCU) is a nationally known and regulated credit union that offers a wide range of financial services and products, including loans, mortgages, credit cards, and mobile banking. NASA Federal Credit Union, which has over 200,000 members and consumers, offers a variety of credit limits based on a variety of parameters. NASA Federal Credit Union is situated in Upper Marlboro and is Maryland's third-biggest credit union. It is also the nation's 109th largest credit union. It was founded in 1949 and had grown to 337 staff and 204,902 members at 14 sites by September 2021. NASA Federal Credit Union gets an A+ grade for its health."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "none",
+            "content": [
+                {
+                    "header":"There are various methods to become a member of NASA Federal Credit Union:",
+                    "format": "disc",
+                    "content":[
+                        "Be a current or retired employee of NASA Headquarters, a NASA Center or Facility, or NAS.",
+                        "Be a member or employee of one of the 900 NASA Federal Credit Union partner firms or organizations.",
+                        "You must be a family member or household member of an existing NASA Federal Credit Union member.",
+                        "You can join NASA FCU if you have a free membership in the National Space Society (NSS)."
+                    ]
+                }
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Documents Required",
+            "format": "none",
+            "content": [
+                {
+                    "header":"To start a credit union account, the following documents are normally required.",
+                    "format": "disc",
+                    "content":[
+                        "One current, valid form of identification is permitted, such as a passport or driver's license, a National ID Card is required.",
+                        "One proof-of-address document, such as a utility bill or a bank statement dated within the last three months.",
+                        "You may also be requested a PPS number."
+                    ]
+                }
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.nasafcu.com/personal/membership"
+            },
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "1",
+            "content": [
+                "This account requires a minimum deposit of $5 from your basic share savings account; there is no monthly cost for the Base Share Savings account.",
+                "NASA Federal Credit Union provides checking accounts, savings accounts, share certificates, retirement accounts, and, specialty accounts",
+                "NASA Federal Credit Union can support credit cards, mortgage loans, personal loans, new and used vehicle loans, business services, internet banking, mobile banking, and other financial services."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "disc",
+            "content": [
+                "NASA Federal volunteers and runs in a yearly event called the Credit Union Cherry Blossom 10 mile race, generating thousands of dollars for the Children's Miracle Network. This event attracts around 20,000 runners in total.",
+                "NASA Federal awards scholarships to DC-area high school students through the Mitchell-Beall-Rosen Memorial Scholarship Contes and the yearly event honors and awards the writing abilities of young Credit Union members pursuing four-year or two-year undergraduate degrees or vocational training.",
+                "NASA Federal provides zero-down mortgages up to $650,000 with no private mortgage insurance, as well as a $1,000 \"lender credit\" toward closing expenses if the property transaction does not close by the contract date."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "title": "GTE Financial",
+    "Page_Title": "GTE Financial I Personal and Business Banking",
+    "Meta_Description": "GTE Financial is a not-for-profit cooperative based in Tampa Bay, Florida that offers a Visa Platinum or Visa Secured credit card, as well as a variety of other financial goods and services to its consumers.",
+    "img_url": "gte.png",
+    "link": "https://www.gtefinancial.org/",
+    "content": [
+        {
+            "tab": "About GTE Financial",
+            "format": "none",
+            "content": [
+                "GTE Federal Credit Union, often known as GTE Financial, is a Florida-based credit union that is authorized and administered by the National Credit Union Administration (NCUA). GTE has 262,538 members as of 2018. GTE Financial was established in 1935 as a not-for-profit cooperative. Members from all around the United States are accepted and served by the financial services firm. The National Credit Union Association insures GTE Financial, making it an equal housing lender."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "disc",
+            "content": [
+                "The primary member's spouse, kid, parent, brother, sister, stepparent, stepchild, grandchild, or grandparent are all eligible for membership.",
+                "Companies that join Community Partners can provide no-cost membership to their workers.",
+                "You can join if you or a member of your immediate family works for a GTE Financial Community Partner.",
+                "GTE Financial is a non-profit educational financial club that you may join through CU Savers with a one-time $10 membership fee."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Documents Required",
+            "format": "none",
+            "content": [
+                {
+                    "header":"Following are the information required to complete the application:",
+                    "format": "disc",
+                    "content":[
+                        "Unexpired government-issued ID",
+                        "Social Security card.",
+                        "an unexpired passport, or a state-issued ID.",
+                        "Date of Birth.",
+                        "Your full physical address",
+                        "SSN (Social Security Number)"
+                    ]
+                }
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.gtefinancial.org/services/eligibility#:"
+            },
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "disc",
+            "content": [
+                "To start an account with a $5 minimum balance requirement and retain membership, there is no monthly cost.",
+                "Mortgage Services, Credit Cards, Auto Loans, Personal Loans, and Student Loans are just a few of their best credit card and loan services.",
+                "They have all of your business requirements covered, from checking and savings accounts to loans, credit cards, and business tools."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "disc",
+            "content": [
+                "GTE Financial's Visa cards offer a variety of bonuses and features. Visa Alerts allow cardholders to keep track of all their spending.",
+                "Customers may earn 1% back on qualified purchases, which can be redeemed for over 3,000 potential incentives through the CURewards program, which is optional.",
+                "Purchases, cash advances, and balance transfers have APRs ranging from 8.24 to 17.99 percent.",
+                "Most cards have no annual fees, with the exception of the Visa Platinum with CURewards, which has a $25 cost.",
+                "GTE Financial members get access to a variety of books, video podcasts, and financial toolkits."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

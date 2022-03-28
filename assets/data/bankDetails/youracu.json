@@ -1,0 +1,83 @@
+{
+    "title": "America's Credit Union",
+    "Page_Title": "America's Credit Union I Personal and Business Banking",
+    "Meta_Description": "Because your business is personal, it only makes sense that you engage with a financial institution that respects you as an individual when looking for business banking. ACU Business Services is large enough to handle your financial requirements while keeping choices quick, localized, and personal.",
+    "img_url": "youracu.png",
+    "link": "https://www.youracu.org/",
+    "content": [
+        {
+            "tab": "About ACU America's Credit Union",
+            "format": "none",
+            "content": [
+                "ACU is a not-for-profit credit union whose objective is to improve the lives of our neighbors in the South Sound. Since 1934, America's Credit Union has been serving its members. The credit union has $410.46 million in assets and serves over 33,000 members, making it Washington's 22nd largest credit union. Whether you're saving money, borrowing money, or seeking other financial services, ACU provides a wide range of goods and services to assist you in achieving your objectives. Their objective at America's Credit Union is to empower member-owners to better their financial well-being."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "1",
+            "content": [
+                "Armed Forces people (active, retired, and reservists), civilian personnel, and family members of these persons.",
+                "Anyone who lives, works, worships or attends school in Dallas, Collin, or Rockwall County, you are eligible.",
+                "Must be a member of the United States Army Association (AUSA).",
+                "If you are a volunteer for a club or organization in Dallas, Collin, or Rockwall County.",
+                "You are eligible if someone in your immediate family is a member (or eligible for membership) of America's Credit Union.",
+                "The minimum age limit must be at least 18 years old.",
+                "Any Dallas, Collin, or Rockwall County companies or organizations.",
+                "Employed by an SEG under Charter"
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Documents Required",
+            "format": "none",
+            "content": [
+                {
+                    "header":"Following are the information required to complete the application:",
+                    "format": "disc",
+                    "content":[
+                        "Unexpired government-issued ID, driver's license, state ID, or passport with current address",
+                        "A secondary form of identities, such as a Social Security card, an unexpired passport, or a state-issued ID.",
+                        "Date of Birth.",
+                        "Your full physical address",
+                        "SSN (Social Security Number)"
+                    ]
+                }
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.youracu.org/join-us/"
+            },
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "disc",
+            "content": [
+                "There is no minimum balance requirement on any of your bank accounts however ACU charges $25 to create an account.",
+                "The monthly service fee is $10 with direct transfer and $15 without direct deposit.",
+                "Online and mobile banking are both free, as is access to over 2,000 surcharge-free ATMs.",
+                "Mortgage Services, Credit Cards, Auto Loans, Personal Loans, and Student Loans are just a few of their best credit card and loan services.",
+                "They have all of your business requirements covered, from checking and savings accounts to loans, credit cards, and business tools."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "disc",
+            "content": [
+                "Membership at America's Credit Union provides benefits beyond better deposit rates, cheaper lending rates, and fewer fees.",
+                "ACU is a non-profit credit union to improve the lives of civilians, military personnel, active-duty personnel, retirees, and their families.",
+                "America's Credit Union is dedicated to supporting all members, including those with disabilities, throughout its area of membership.",
+                "All earnings are returned to members in the form of reduced loan rates, greater savings rates, customized service, and useful tools.",
+                "ACU serves you with over 30,000 ATMs and 5,300 branch locations around the country."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

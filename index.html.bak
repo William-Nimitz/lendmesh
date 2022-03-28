@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
+    <title>LendMesh – Helping you find the Best Low-Interest Personal and Debt Consolidation Loans</title>
+	<meta name="author" content="Lendmesh">
+	<meta name="description"  content="LendMesh: Find the Best Personal Loan offers in the USA. Find a low-interest loan with multiple lenders. Low-interest Debt Consolidation loan, loans for home improvements. Personal Loans – Auto Loans – Student Loans – Mortgage Loans – Credit Cards – We partner with FDIC-and NCUA-backed banks and credit unions to bring you low-interest loans with payments to suit your budget. Most of our Partners are credit unions and direct banks who offers best loans or offers in very fast." />
+	<meta content="Best Personal Loan banks in USA, low interest debt consolidation loan, Low APR Loans in USA, Best Personal Loan, Cheap Rate Loans, Low rate loans, Low Interest rate loans, Low APR Loans, Best Mortgage Loans, Best Student Loans, Best Auto Loans, Best Credit cards" name="keywords">
+
+	<link rel="canonical" href="https://www.lendmesh.com/index.html">
+
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./assets/css/global.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+    <script src="./assets/js/angJs/angular-translate.min.js"></script>
+    <script src="./assets/js/angJs/mainModuleApp.js"></script>
+    <script src="./assets/js/angJs/index.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body ng-cloak ng-app="mainModuleApp" ng-controller="BaseCtrl as Base" ng-class="{'menu-open': Base.open}">
+    <header ng-include="'header.html'" class="header-main">
+    </header>
+    <main ng-controller="indexCtrl as Ctrl">
+        <section class="banner">
+            <div class="custom-container">
+                <div class="banner-inr">
+                    <div class="banner-left">
+                        <h1>We know how difficult it is to find the best loan to suit your needs, so LendMesh has made it easier for you – For FREE. LendMesh connects you to the best offers from different lending providers across the USA.</h1>
+                        <div class="appy-btn">
+                            <!--<a href="">Apply now</a> -->
+                        </div>
+                    </div>
+                    <div class="banner-right">
+                        <img src="./assets/images/banner-bg.png" alt="Lend Mesh connects you to the best offers from different Lend providers for best loan offers.">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="custom-section sec-service">
+            <div class="custom-container">
+                <div class="sec-head">
+                    <h2>Best Loan offers for Better Savings so you can live your best life!</h2>
+                    <p>We have a range of loan solution products – we can help you find the loan to fit you and your lifestyle with no middle-man charges.</p>
+                </div>
+                <div class="sec-service-inr">
+                    <div class="service-box">
+                        <a href="./home-loan.html">
+                            <div class="service-box-inr">
+                                <div class="ser-icon">
+                                    <img src="./assets/images/001-credit.png" alt="">
+                                </div>
+                                <div class="service-text">
+                                    <h4>
+                                        Mortgage / Home Loan
+                                    </h4>
+                                    <p>Find the Best Mortgage / Home Loan providers in the USA for better savings for you. You can even find an offer to refinance existing loans – with no hidden fees!</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="service-box">
+                        <a href="./auto-loan.html">
+                            <div class="service-box-inr">
+                                <div class="ser-icon">
+                                    <img src="./assets/images/002-automobile.png" alt="">
+                                </div>
+                                <div class="service-text">
+                                    <h4>
+                                        Car Loan
+                                    </h4>
+                                    <p>Low-Interest Auto Loans allow you to compare and choose the best auto loan provider.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="service-box">
+                        <a href="./personal-loan.html">
+                            <div class="service-box-inr">
+                                <div class="ser-icon">
+                                    <img src="./assets/images/003-profits.png" alt="">
+                                </div>
+                                <div class="service-text">
+                                    <h4>
+                                        Personal Loan
+                                    </h4>
+                                    <p>Compare between lenders to find the Lowest Personal Loan Interest Rate providers with the best services to save you $$$$.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- <div class="service-box">
+                        <a href="">
+                            <div class="service-box-inr">
+                                <div class="ser-icon">
+                                    <img src="./assets/images/004-ingots.png" alt="">
+                                </div>
+                                <div class="service-text">
+                                    <h4>
+                                        Gold Loan
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas odio sem, tempor</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div> -->
+                    <div class="service-box">
+                        <a href="./student-loan.html">
+                            <div class="service-box-inr">
+                                <div class="ser-icon">
+                                    <img src="./assets/images/005-mortarboard.png" alt="">
+                                </div>
+                                <div class="service-text">
+                                    <h4>
+                                        Education Loan
+                                    </h4>
+                                    <p>Student Loans made simple! Whether you need a new loan or want to refinance a current loan, LendMesh will help you find the best low-interest loan so you will be hitting the books in no time, with less stress.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- <div class="service-box">
+                        <a href="">
+                            <div class="service-box-inr">
+                                <div class="ser-icon">
+                                    <img src="./assets/images/006-credit-card.png" alt="">
+                                </div>
+                                <div class="service-text">
+                                    <h4>
+                                        Credit Card Issue
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas odio sem, tempor</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <section class="custom-section gray-bg about-section">
+            <div class="custom-container">
+                <div class="sec-head">
+                    <h2>We Have Helped Thousands of Loan Seekers</h2>
+                </div>
+                <div class="about-inr">
+                    <div class="about-top">
+                        <div class="about-img">
+                            <img src="./assets/images/about-sec.jpg" alt="">
+                        </div>
+                        <div class="about-content">
+                            <div class="about-content-left">
+                                <ul class="aboutcontent-list">
+                                    <li><i class="fa fa-check"> </i>LendMesh is FREE to borrowers, and there is never any obligation for you to accept a loan offer</li>
+                                    <li><i class="fa fa-check"> </i>Offers come from several banks & credit unions</li>
+                                    <li><i class="fa fa-check"> </i>Compare loan rates and conditions safely and securely</li>
+                                    <li><i class="fa fa-check"> </i>Real-time interest rates to keep you informed</li>
+                                </ul>
+                            </div>
+                            <div class="about-content-right">
+                                <p>Are you looking for a loan? Don’t know where to start? Well, you have found your way to LendMesh – and this is the perfect place to start.
+                                </p>
+                                <p>LendMesh’s founder knows the struggles to find a loan that suits your financial and lifestyle needs, so he developed a first-of-its-kind decentralized loan process platform to simplify the loan search for borrowers. The whole loan process can be done easily and online, and it’s FREE!
+                                </p>
+                                <p>There is no need for you to go hunting through dozens of lending sites for interest rates and installment plans – LendMesh makes the whole loan application process easier for you. We will bring the loan offers to you!
+                                </p>
+                                <p>LendMesh partners with various lenders across the country to ensure we bring you the best deals from the best lenders. We take pride in our services, offering rates that are unbeatable, and we are always striving to be the best at what we do.
+                                </p>
+                                <p>LendMesh is an easy-to-use website that allows you to compare all the best loan rates and services in one place. We have partnered with the best direct lenders in the industry to offer our customers the lowest interest rates and the fastest approval process. Save money and time – and enjoy the hassle-free process of finding the loan that suits YOUR needs for the BEST rates with LendMesh.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		<section class="custom-section partner-section">
+            <div class="custom-container" style="transform: translate3d(); transition: all 0.25s ease 0s; width: 3200px;">
+                <div class="sec-head">
+                    <h2>Lendmesh Cooperates With These Banks / Credit Unions</h2>
+                    <!--<p><b>3000+ Companies</b> Trust Sturtaplanding to build landing page for their <b>dream product</b></p> -->
+                </div>
+                <div class="partner-inr" id="bank-list">
+                </div>
+                <!-- <div class="partner-inr autoplay" id="bank-list-2">
+                </div> -->
+            </div>
+        </section>
+
+        <section class="custom-section gray-bg blog-section">
+            <div class="custom-container">
+                <div class="sec-head">
+                    <h2>Helpful Blogs</h2>
+                </div>
+                <div class="blog-inr">
+                    <div ng-repeat="shortblog in Ctrl.highlightedBlogs track by $index" class="blog-box">
+                        <a href="" ng-click="Ctrl.BlogDetail(shortblog, shortblog.folder)">
+                            <div class="blog-img">
+                                <img src="./assets/images/blogs/{{shortblog.imgUrl}}" alt="{{shortblog.shortName}}" loading="lazy">
+                            </div>
+                            <div class="blog-content">
+                                <ul class="blog-meta">
+                                    <li>{{shortblog.date}}</li>
+                                    <li>{{shortblog.shortName}}</li>
+                                </ul>
+                                <h4>{{shortblog.question}}</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="custom-section testimonial-section">
+            <div class="custom-container">
+                <div class="sec-head">
+                    <h2>Customer Stories about Choosing Right Loans</h2>
+                    <p></p>
+                </div>
+                <div class="testimonial-inr">
+                    <div class="testimonial-left">
+                        <div class="testimonial-slider owl-carousel">
+                            <div class="review-item">
+                                <div class="review-details"><i class="fa fa-quote-left"></i>
+                                    <p>I was looking for a personal loan and I saw on many sites the same private lenders. When I reached out to them, they advertised low interest rates, but after pulling my credit history, they showed higher interest rates even though I have very good credit history. With LendMesh I got to see all the credit unions and banks in one place with the latest interest rates which helped me to choose the right lender to apply. I got the loan in little time without any hassles.</p>
+                                </div>
+                                <div class="review-author">
+                                    <span class="review-img"><img src="./assets/images/user-1.png" alt="uesr"></span>
+                                    <span class="review-name">Richard John</span>
+                                    <span class="review-desig">(Business Person)</span>
+                                </div>
+                            </div>
+                            <div class="review-item">
+                                <div class="review-details"><i class="fa fa-quote-left"></i>
+                                    <p>I was looking for a mortgage loan with better interest rates. LendMesh helped me to find all the best and most reliable lenders in one place with current interest rates, which helped me to choose the right lender. It made my loan process easy.</p>
+                                </div>
+                                <div class="review-author">
+                                    <span class="review-img">
+                                        <img src="./assets/images/user-2.png" alt="uesr">
+                                    </span>
+                                    <span class="review-name">James Maxi</span>
+                                    <span class="review-desig">(IT Employee)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-right">
+                        <img src="./assets/images/feedback.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+		<div id="included-home-faq-Content"></div>
+        <section class="custom-section newsletter-section">
+            <div class="custom-container">
+                <div class="sec-head">
+                    <h2>LendMesh can Help with New Loans, Refinancing and Consolidation Loans</h2>
+                    <p>Whether you need to borrow for home renovation, new or used car, mortgage or line of credit, student costs, holiday, or want to consolidate/combine your loans into one single loan, LendMesh will help you with the latest and best offers from different lending providers across the country.</p>
+                </div>
+                <div class="newsletter-inr">
+                    <ul>
+                        <li>
+                            <a href="./personal-loan.html" class="custom-btn">Personal Loan</a>
+                        </li>
+                        <li>
+                            <a href="./home-loan.html" class="custom-btn-bg">Mortgage Loan</a>
+                        </li>
+                        <li>
+                            <a href="./student-loan.html" class="custom-btn-bg">Student Loan</a>
+                        </li>
+                        <li>
+                            <a href="./auto-loan.html" class="custom-btn-bg">Auto Loan</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer ng-include="'footer.html'" class="footer"></footer>
+    <a href="javascript:void(0)" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/bootstrap-select.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+	<!--
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org/",
+		  "@type": "WebSite",
+		  "name": "lendmesh",
+		  "url": "https://lendmesh.com/",
+		  "potentialAction": {
+			"@type": "SearchAction",
+			"target": "{search_term_string}",
+			"query-input": "required name=search_term_string"
+		  }
+		}
+	</script>
+	-->
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+{
+    "title": "Common Bond",
+    "Page_Title": "Common Bond | Student Loan",
+    "Meta_Description": "CommonBond was launched in 2012 and has now dispersed over $2 billion in private student loans. It all started with a simple idea: make student loans less expensive and easier to manage for everyone.",
+    "img_url": "commonbond.png",
+    "link": "https://www.commonbond.co/",
+    "content": [
+        {
+            "tab": "About Common Bond Student Loans",
+            "format": "none",
+            "content": [
+                "CommonBond is a 2012-founded online lender that provides both student debt refinancing and private student loans. Since then, they have funded more than $3 billion in student loans and have become a popular choice for many borrowers. Its refinancing loans are best suited to borrowers with a bachelor's degree who appreciate repayment flexibility. Its private student loans are ideal for students who want to have a co-signer and value customer service."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "none",
+            "content": [
+                {
+                    "header":"",
+                    "format": "disc",
+                    "content":[
+                        "CommonBond provides loans to undergraduate and graduate students who enroll in the academic year. The school must be either Title IV or non-profit.",
+                        "The majority of candidates must cosign with a friend, parent, or family member.", 
+                        "Before applying for private student loans, CommonBond recommends that all candidates complete the Free Application for Federal Student Aid (FAFSA).",
+                        "Borrowers must be a US citizen, permanent resident, or have a valid visa. Either the applicant or the cosigner must have a credit score of at least 660."
+                    ]
+                },
+                {
+                    "header":"You will also be required to provide the following information:",
+                    "format": "disc",
+                    "content":[
+                        "Proof of address",
+                        "Proof of citizenship",
+                        "Photo ID"
+                    ]
+                }
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "disc",
+            "content": [
+                "Private loans range from $2,000 to 100% of tuition, with a lifetime limit of $500,000.",
+                "Loans for refinancing are available up to $500,000 in total.",
+                "Student loans are available through CommonBond for undergraduate, graduate, MBA, dentistry, and medical students.",
+                "There are no application costs, origination fees, or prepayment penalties with CommonBond undergraduate, graduate, and refinancing loans.",
+                "Borrowers who refinance their mortgages have the option of selecting a \"hybrid\" repayment plan. The interest rate is set for the first five years of repayment before varying monthly for the remaining five years."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "disc",
+            "content": [
+                "CommonBond provides loans to undergraduate, graduate, business, dentistry, and medical students. If you already have a student loan, you can refinance it with a CommonBond loan.",
+                "Rates are reasonable, ranging from 2.00 percent to 10.74 percent APR based on loan type and borrower credit score, and can be fixed or variable.",
+                "Plus, the lender has a charitable goal. Every time CommonBond completely covers a degree, the lender pays for one year of tuition for a student in need through the international education group Pencils of Promise."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

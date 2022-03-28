@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700&display=swap);
+@import url(./owl.carousel.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css);
+@import url(./custom.css);
+@import url(./responsive.css);
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+button {
+    text-decoration: none !important;
+    transition: 300ms all;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body button:focus,
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none !important;
+    border: 0 !important;
+}
+
+.bootstrap-select button {
+    outline: none !important;
+    border: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: 700;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+

@@ -1,0 +1,80 @@
+{
+    "title": "Chartway Federal credit Union",
+    "Page_Title": "Chartway Federal credit Union",
+    "Meta_Description": "Chartway Federal Credit Union first opened its doors in 1959. It is Virginia's eighth biggest credit union, with $2.53 billion in assets and more than 190,000 members.",
+    "img_url": "chartway.png",
+    "link": "https://www.chartway.com/",
+    "content": [
+        {
+            "tab": "About Chartway Federal credit Union",
+            "format": "none",
+            "content": [
+                "Chartway Federal Credit Union, a non-profit, member-owned financial organisation, has proudly served members for more than 50 years. Chartway is one of the country's largest credit unions, with members in every state and numerous countries. The $2 billion credit union, guided by its vision, mission, and values, is committed to making life more affordable for its nearly 180,000 members through nearly 40 branches and a full suite of online, mobile, and telephone banking services, including mobile deposit, mobile bill pay, and digital wallets."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+            "format": "none",
+            "content": [
+                {
+                    "header":"The following are the Chartway Federal Credit Union qualifying requirements:",
+                    "format": "disc",
+                    "content":[
+                        "You live, work, attend school, or worship in a community served by a Chartway FCU branch.",
+                        "Someone in your family is a Chartway member.",
+                        "You or a member of your immediate family works for one of the 750 firms that have decided to provide Chartway's credit union advantages to its workers.",
+                        "Donate $10 to Chartway's charity arm, the We Promise Foundation."
+                    ]
+                }
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Documents Required",
+            "format": "none",
+            "content": [
+                {
+                    "header":"When applying, make sure you have the necessary information on hand:",
+                    "format": "disc",
+                    "content":[
+                        "Name, email address, and phone number are required.",
+                        "Date of Birth",
+                        "Number of Social Security",
+                        "a government-issued identification number"
+                    ]
+                }
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.chartway.com/join-chartway.html"
+            },
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "disc",
+            "content": [
+                "You may establish an account and begin your membership for as low as $5, and you will stay a Chartway member for the duration of your account's validity.",
+                "Mortgage Services, Credit Cards, Auto Loans, Personal Loans, and Student Loans are just a few of their best credit card and loan services.",
+                "They have all of your business requirements covered, from checking and savings accounts to loans, credit cards, and business tools."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "disc",
+            "content": [
+                "The Veterans Benefits Banking Program is a member of Chartway Federal Credit Union (VBBP).",
+                "This initiative, developed in collaboration with the U.S. Department of Veterans Affairs (VA) and the Association of Military Banks of America (AMBA), aims to provide veterans with services that will assist them in achieving financial independence.",
+                "They provide the accounts, loans, and financial services that help our members achieve their ambitions of a new house, an education, retirement, a new car, and a variety of other objectives."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}
