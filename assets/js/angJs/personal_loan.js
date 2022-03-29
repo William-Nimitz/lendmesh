@@ -53,6 +53,7 @@ app.controller('personalLoanCtrl', function(customFunc) {
                     maxPeriod = (minPeriod !== maxPeriod) ? maxPeriod : "";
                     personalInfo.push({
                         bankName: val.bankShortName??val.bankName,
+                        bankShortName: val.bankShortName,
                         bankUrl:val.bankUrl,
                         personalLoanUrl:childVal.urlLink,
                         minPeriod:minPeriod,

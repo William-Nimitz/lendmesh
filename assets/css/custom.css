@@ -2092,6 +2092,16 @@ p.question-subject {
 .font-weight-bold {
     font-weight: var(--font-weight-bold);
 }
+.inrpage-banner-inr-link {
+    max-width: 300px;
+    max-height: 250px;
+    display: inline-block;
+}
+
+.inrpage-banner-inr-link > img{
+    width: 100%;
+    object-fit: cover;
+}
 .noneUl {
     list-style-type: none;
 }
@@ -2113,8 +2123,4 @@ p.question-subject {
 }
 .discUl > li {
     padding-left: var(--space-0);
-}
-.test {
-    border: 1px solid red;
-    color: green;
 }

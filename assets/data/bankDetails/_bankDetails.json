@@ -3,8 +3,8 @@
         {
             "highlight": false,
             "name": "AFFCU Atlantic Financial Federal Credit Union",
-            "shortName": "affcu",
-            "file": "affcu.json",
+            "shortName": "goaffcu",
+            "file": "goaffcu.json",
             "imgUrl": "goaffcu.png"
         },
         {
@@ -108,23 +108,23 @@
         {
             "highlight": false,
             "name": "Affinity Plus Federal Credit Union",
-            "shortName": "Affinity",
-            "file": "affinity.json",
-            "imgUrl": "affinity.png"
+            "shortName": "affinityplus",
+            "file": "affinityplus.json",
+            "imgUrl": "affinityplus.png"
         },
         {
             "highlight": false,
             "name": "Alliant Credit Union",
-            "shortName": "alliant",
-            "file": "alliant.json",
-            "imgUrl": "alliant.png"
+            "shortName": "alliantcreditunion",
+            "file": "alliantcreditunion.json",
+            "imgUrl": "alliantcreditunion.png"
         },
         {
             "highlight": false,
             "name": "Ascent Funding",
-            "shortName": "ascent",
-            "file": "ascent.json",
-            "imgUrl": "ascent.png"
+            "shortName": "ascentfunding",
+            "file": "ascentfunding.json",
+            "imgUrl": "ascentfunding.png"
         },
         {
             "highlight": false,
@@ -143,16 +143,16 @@
         {
             "highlight": false,
             "name": "Communitywide Federal Credit Union",
-            "shortName": "communitywide",
-            "file": "communitywide.json",
-            "imgUrl": "communitywide.png"
+            "shortName": "comwide",
+            "file": "comwide.json",
+            "imgUrl": "comwide.png"
         },
         {
             "highlight": false,
             "name": "Consumer Credit Union",
-            "shortName": "consumer",
-            "file": "consumer.json",
-            "imgUrl": "consumer.png"
+            "shortName": "myconsumers",
+            "file": "myconsumers.json",
+            "imgUrl": "myconsumers.png"
         },
         {
             "highlight": false,
@@ -171,23 +171,23 @@
         {
             "highlight": false,
             "name": "GTE Financial",
-            "shortName": "gte",
-            "file": "gte.json",
-            "imgUrl": "gte.png"
+            "shortName": "gtefinancial",
+            "file": "gtefinancial.json",
+            "imgUrl": "gtefinancial.png"
         },
         {
             "highlight": false,
             "name": "Northwest Federal Credit Union",
-            "shortName": "northwest",
-            "file": "northwest.json",
-            "imgUrl": "northwest.png"
+            "shortName": "nwfcu",
+            "file": "nwfcu.json",
+            "imgUrl": "nwfcu.png"
         },
         {
             "highlight": false,
             "name": "Nuvision credit union",
-            "shortName": "nuvision",
-            "file": "nuvision.json",
-            "imgUrl": "nuvision.png"
+            "shortName": "nuvisionfederal",
+            "file": "nuvisionfederal.json",
+            "imgUrl": "nuvisionfederal.png"
         },
         {
             "highlight": false,
