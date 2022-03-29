@@ -189,7 +189,7 @@ const app = angular.module('mainModuleApp', ['pascalprecht.translate', 'ngAnimat
         return $http({
             method: method,
             url: url,
-            params: params,
+            data: params,
             headers: headers
         });
     };

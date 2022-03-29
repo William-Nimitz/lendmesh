@@ -2,7 +2,7 @@ app.controller('contactCtrl', function(customFunc) {
     
     this.contact = {
         name: "",
-        emailid: "",
+        emailId: "",
         phone: "",
         message: "",
     }
