@@ -2063,6 +2063,9 @@ p.question-subject {
     overflow-y: auto;
     height: 550px;
 }
+.mt-2 {
+    margin-top: var(--space-1);
+}
 #tabs-content > .tab-content ul{
     padding-left: var(--space-2);
     margin-left: var(--space-2);
@@ -2104,9 +2107,14 @@ p.question-subject {
 .noneUl > li {
     padding-left: 0;
 }
-.discUl > li,
 .circleUl > li,
 .decimalUl > li {
     padding-left: var(--space-1);
 }
-
+.discUl > li {
+    padding-left: var(--space-0);
+}
+.test {
+    border: 1px solid red;
+    color: green;
+}

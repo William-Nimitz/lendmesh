@@ -32,10 +32,10 @@ app.controller('BankDetailCtrl', function (customFunc) {
         let tabHtmlContent = `<ul class="${this.ulFormat(tabContent.format)}">`;
 
         tabContent.content.forEach(con => {
-            tabHtmlContent += `<li>${this.subLi(con)}</li>`;
+            tabHtmlContent += `<li>${this.subLi(con)}`;
         })
 
-        tabHtmlContent += '</ul>';
+        tabHtmlContent += `${angular.isObject(tabContent.link) ? this.subLink(tabContent.link) : ''}</ul>`;
         this.tabContentHtml = tabHtmlContent;
     }
     this.subLi = function (con) {
@@ -43,9 +43,12 @@ app.controller('BankDetailCtrl', function (customFunc) {
             `<p>${con}</p>`
             :
             `<p class="font-weight-bold">${con.header}</p>
-                <ul class="${this.ulFormat(con.format)}">
-                    ${con.content.reduce((prev, curr, index) => (index === 1) ? `<li>${this.subLi(prev)}</li><li>${this.subLi(curr)}</li>` : `${prev}<li>${this.subLi(curr)}</li>`)}
-                </ul>`;
+            <ul class="${this.ulFormat(con.format)}">
+                ${con.content.reduce((prev, curr, index) => (index === 1) ? `<li>${this.subLi(prev)}</li><li>${this.subLi(curr)}</li>` : `${prev}<li>${this.subLi(curr)}</li>`)}
+            </ul>`;
+    }
+    this.subLink = function (link) {
+        return `<a href="${link.url}" class="btn custom-btn-bg mt-2" target="_blank">${link.label}</a>`;
     }
     this.ulFormat = function(format) {
         let listStyleType = 'noneUl';
