@@ -49,7 +49,9 @@
                 <div class="tabs">
                     <div class="tab-left">
                         <ul id="tabs-nav">
-                            <li ng-repeat="obj in Ctrl.bankContent.content track by $index">
+                            <li ng-repeat="obj in Ctrl.bankContent.content track by $index" 
+                                ng-class="{active: Ctrl.activeTab === $index}"
+                                ng-click="Ctrl.tabClick($index)">
                                 <span>{{obj.tab}}</span>
                             </li>
                         </ul>
@@ -57,10 +59,7 @@
                     <!-- END tabs-nav -->
                     <div class="tab-right">
                         <div id="tabs-content">
-                            <div ng-repeat="obj in Ctrl.bankContent.content track by $index" id="#tab{{$index}}" class="tab-content">
-                                <div class="sec-head" style="text-align:left">
-                                </div>
-                            </div>
+                            <div ng-bind-html="Ctrl.tabContentHtml" class="tab-content"></div>
                         </div>
                     </div>
                 </div>

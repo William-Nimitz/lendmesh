@@ -1,3 +1,15 @@
+:root {
+    --second-col: #6a737c;
+
+    --font-weight-bold: 600;
+    --font-weight-light: 300;
+
+    --space-0: 5px;
+    --space-1: 10px;
+    --space-2: 15px;
+    --space-3: 20px
+}
+
 .custom-container {
     max-width: 1240px;
     margin: auto;
@@ -1979,6 +1991,7 @@ th.grid-cell * {
     padding: 15px 20px;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .tab-left .active a,
@@ -2050,3 +2063,50 @@ p.question-subject {
     overflow-y: auto;
     height: 550px;
 }
+#tabs-content > .tab-content ul{
+    padding-left: var(--space-2);
+    margin-left: var(--space-2);
+    margin-top: var(--space-1);
+}
+
+#tabs-content > .tab-content > ul{
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 0;
+}
+#tabs-content > .tab-content li{
+    list-style: inherit;
+    margin-bottom: var(--space-0);
+    color: var(--second-col);
+}
+#tabs-content > .tab-content li::marker{
+    color: var(--second-col);
+    font-weight: var(--font-weight-bold);
+}
+#tabs-content > .tab-content > ul p{
+    margin-bottom: 0;
+}
+.font-weight-bold {
+    font-weight: var(--font-weight-bold);
+}
+.noneUl {
+    list-style-type: none;
+}
+.discUl {
+    list-style-type: disc;
+}
+.circleUl {
+    list-style-type: circle;
+}
+.decimalUl {
+    list-style-type: decimal;
+}
+.noneUl > li {
+    padding-left: 0;
+}
+.discUl > li,
+.circleUl > li,
+.decimalUl > li {
+    padding-left: var(--space-1);
+}
+
