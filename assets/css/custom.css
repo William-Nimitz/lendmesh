@@ -2129,5 +2129,5 @@ p.question-subject {
     position: sticky;
     top: 0;
     background-color: var(--primary-background-col);
-    z-index: 1000;
+    z-index: 10;
 }

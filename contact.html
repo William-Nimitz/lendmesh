@@ -88,22 +88,22 @@
                     </div>
                     <div class="contact-wrap-right">
                         <div class="contact-frm">
-                            <form action="https://us-east4-lendmesh.cloudfunctions.net/contact-us-send-email" method="post">
+                            <form ng-submit="Ctrl.contactUsSendEmail()" method="post">
                                 <div class="form-group">
                                     <label class="form-label">Your Name</label>
-                                    <input type="text" name="customerName" pattern="[A-Za-z\s]+" placeholder="Your Name" class="form-input" required>
+                                    <input type="text" name="customerName" ng-model="Ctrl.contact.customerName" pattern="[A-Za-z\s]+" placeholder="Your Name" class="form-input" required>
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">Your Email</label>
-                                    <input type="email" name="customerEmail" placeholder="Your Email" class="form-input" required>
+                                    <input type="email" name="customerEmail" ng-model="Ctrl.contact.customerEmail" placeholder="Your Email" class="form-input" required>
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">Phone Number</label>
-                                    <input type="text" name="customerPhone" pattern="(\+\d*)?\s?\(?\d{3}\)?\s?-?\d{3}-?\d{4}\s*" placeholder="Phone Number" class="form-input" required>
+                                    <input type="text" name="customerPhone" ng-model="Ctrl.contact.customerPhone" pattern="(\+\d*)?\s?\(?\d{3}\)?\s?-?\d{3}-?\d{4}\s*" placeholder="Phone Number" class="form-input" required>
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">Message</label>
-                                    <textarea name="customerMessage" placeholder="Your Message" class="form-textarea" required></textarea>
+                                    <textarea name="customerMessage" ng-model="Ctrl.contact.customerMessage" placeholder="Your Message" class="form-textarea" required></textarea>
                                 </div>
                                 <div class="form-btn">
                                     <button type="submit" class="btn custom-btn-bg">Submit</button>
