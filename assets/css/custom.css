@@ -1,5 +1,6 @@
 :root {
     --second-col: #6a737c;
+    --primary-background-col: rgb(249 248 250);
 
     --font-weight-bold: 600;
     --font-weight-light: 300;
@@ -2123,4 +2124,10 @@ p.question-subject {
 }
 .discUl > li {
     padding-left: var(--space-0);
+}
+.table-container > table > thead {
+    position: sticky;
+    top: 0;
+    background-color: var(--primary-background-col);
+    z-index: 1000;
 }

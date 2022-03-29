@@ -54,7 +54,7 @@
         },
         {
             "tab": "Bank Miscellaneous",
-            "format": "disc",
+            "format": "none",
             "content": [
                 {
                     "header":"",
