@@ -2265,7 +2265,9 @@ p.question-subject {
 .fade {
     transition: opacity .15s linear;
 }
-
+.custom-section.tabs-sec {
+    padding: 10px 0;
+}
 @media (min-width: 576px) {
     .modal-dialog {
         max-width: 500px;
