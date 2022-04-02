@@ -17,7 +17,7 @@
     <meta name="description" content={{Ctrl.bankContent.Meta_Description}} />
     <meta name="keywords" content={{Ctrl.bankContent.Meta_Keywords}}>
 
-    <link rel="canonical" href="https://www.lendmesh.com/bankDetails.html?name={{Ctrl.bankShortName}}">
+    <link rel="canonical" href={{Ctrl.canonical}} />
 
     <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -48,6 +48,10 @@
             <div class="custom-container">
                 <div class="tabs">
                     <div class="tab-left">
+                        <div>
+                            <a href="{{Ctrl.bankContent.link}}" target="_self"><button type="button" class="btn custom-btn-bg">Back</button></a>
+                            <a href="{{Ctrl.bankContent.link}}" target="_blank"><button type="button" class="btn custom-btn-bg">{{Ctrl.bankShortName}}</button></a>
+                        </div>
                         <ul id="tabs-nav">
                             <li ng-repeat="obj in Ctrl.bankContent.content track by $index" 
                                 ng-class="{active: Ctrl.activeTab === $index}"

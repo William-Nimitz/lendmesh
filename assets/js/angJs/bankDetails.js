@@ -5,6 +5,7 @@ app.controller('BankDetailCtrl', function (customFunc) {
 
     this.baseImg = "./assets/images/bank/";
     this.bankShortName = window.location.search.replace(/\?/, '').split('&')[0].split('=')[1];
+    this.canonical = window.location.href;
     this.bank = '';
     this.bankContent = {};
 
@@ -15,12 +16,11 @@ app.controller('BankDetailCtrl', function (customFunc) {
     this.autoLoans = [];
     this.personalLoans = [];
     this.studentLoans = [];
-
     //get all banks
     customFunc.httpRequest(`${_base}${_banks}`, "GET")
         .then(res => {
             const banklists = res.data.bankDetails;
-
+            
             thisObj.bank = banklists.find(e => e.shortName === this.bankShortName);
             const allAvailableLoansUrl = customFunc.AllAvailableLoanUrl + `realTimeFetchBankLoan?bankName=${thisObj.bank.shortName}`;
 
@@ -87,9 +87,8 @@ app.controller('BankDetailCtrl', function (customFunc) {
         customFunc.httpRequest(allAvailableLoansUrl, "GET")
             .then(res => {
                 const parse = customFunc.customParse1(res.data);
-
                 const homeLoans = parse.find(loan => loan.bankDetails.loanType === "mortgageLoan");
-                if (!angular.equals(homeLoans, {})) {
+                if (homeLoans) {
                     const purchaseObj = {}, refinanceObj = {};
                     homeLoans.bankDetails.itemType.forEach((loan) => {
                         if (loan.type === "purchase") {
@@ -160,7 +159,7 @@ app.controller('BankDetailCtrl', function (customFunc) {
                 }
 
                 const autoLoans = parse.find(loan => loan.bankDetails.loanType === "autoLoan");
-                if (!angular.equals(autoLoans, {})) {
+                if (autoLoans) {
                     this.autoLoans = autoLoans.bankDetails.itemType.map(loan => {
                         let rateBetween = (loan.rateTo !== "" && loan.rateTo !== undefined) ? " - " : "",
                             rateRange = (loan.rateFrom == loan.rateTo) ? loan.rateFrom : loan.rateFrom + rateBetween + (loan.rateTo ?? ''),
@@ -177,7 +176,7 @@ app.controller('BankDetailCtrl', function (customFunc) {
                 }
 
                 const personalLoans = parse.find(loan => loan.bankDetails.loanType === "personalLoan");
-                if (!angular.equals(personalLoans, {})) {
+                if (personalLoans) {
                     this.personalLoans = personalLoans.bankDetails.itemType.map(loan => {
                         let rateBetween = (loan.rateTo !== "" && loan.rateTo !== undefined) ? " - " : "",
                             rateRange = (loan.rateFrom == loan.rateTo) ? loan.rateFrom : loan.rateFrom + rateBetween + (loan.rateTo ?? ''),
@@ -195,7 +194,7 @@ app.controller('BankDetailCtrl', function (customFunc) {
                 }
 
                 const studentLoans = parse.find(loan => loan.bankDetails.loanType === "studentLoan");
-                if (!angular.equals(studentLoans, {})) {
+                if (studentLoans) {
                     const newLoanObj = {}, studentRefinanceObj = {};
                     studentLoans.bankDetails.itemType.forEach((loan) => {
                         if (loan.type === "newLoan") {
