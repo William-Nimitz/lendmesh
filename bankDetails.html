@@ -66,6 +66,116 @@
                 <!-- END tabs-content -->
             </div>
         </section>
+        <section class="custom-section">
+            <div class="custom-container loanIconsWrapper">
+                <div class="loanIcon" ng-if="Ctrl.homeLoans.length > 0">
+                    <img src="./assets/images/icons/001-credit.png" alt="home loan" title="home loan"/>
+                    <div><p>Mortgage / Home Loan</p></div>
+                </div>
+                <div class="loanIcon" ng-if="Ctrl.autoLoans.length > 0">
+                    <img src="./assets/images/icons/002-automobile.png" alt="auto loan" title="auto loan"/>
+                    <div><p>Car Loan</p></div>
+                </div>
+                <div class="loanIcon" ng-if="Ctrl.personalLoans.length > 0">
+                    <img src="./assets/images/icons/003-profits.png" alt="personal loan" title="personal loan"/>
+                    <div><p>Personal Loan</p></div>
+                </div>
+                <div class="loanIcon" ng-if="Ctrl.studentLoans.length > 0">
+                    <img src="./assets/images/icons/005-mortarboard.png" alt="student loan" title="student loan"/>
+                    <div><p>Education Loan</p></div>
+                </div>
+            </div>
+        </section>
+        <section class="custom-section">
+            <div class="custom-container loanTableWrapper">
+                <div class="loanTable">
+                    <p>Personal Loan Section:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>APR</th>
+                                <th>Term</th>
+                                <th>Max Loan Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="personal in Ctrl.personalLoans">
+                                <td>{{personal.type}}</td>
+                                <td>{{personal.rateRange}}<span class="numeral__accent">%</span></td>
+                                <td>{{personal.PeriodRange}}<span ng-if="personal.PeriodRange" class="numeral__accent">yr</span></td>
+                                <td>{{personal.personalLoanMaxAmount | currency}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="loanTable">
+                    <p>Auto Loan Section:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>APR</th>
+                                <th>Term</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="auto in Ctrl.autoLoans">
+                                <td>{{auto.type}}</td>
+                                <td>{{auto.rateRange}}<span class="numeral__accent">%</span></td>
+                                <td>{{auto.PeriodRange}}<span ng-if="auto.PeriodRange" class="numeral__accent">yr</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="loanTable">
+                    <p>Mortgage Loan Section:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Fixed Rate</th>
+                                <th>Fixed APR</th>
+                                <th>Variable Rate</th>
+                                <th>Variable APR</th>
+                                <th>Terms</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="auto in Ctrl.autoLoans">
+                                <td>{{auto.type}}</td>
+                                <td>{{auto.rateRange}}<span class="numeral__accent">%</span></td>
+                                <td>{{auto.PeriodRange}}<span ng-if="auto.PeriodRange" class="numeral__accent">yr</span></td>
+                                <td>{{auto.type}}</td>
+                                <td>{{auto.type}}</td>
+                                <td>{{auto.type}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="loanTable">
+                    <p>Student Loan Section:</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Fixed APR</th>
+                                <th>Variable APR</th>
+                                <th>Term</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="personal in Ctrl.personalLoans">
+                                <td>{{personal.type}}</td>
+                                <td>{{personal.rateRange}}<span class="numeral__accent">%</span></td>
+                                <td>{{personal.PeriodRange}}<span ng-if="personal.PeriodRange" class="numeral__accent">yr</span></td>
+                                <td>{{personal.personalLoanMaxAmount | currency}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
     </main>
     <footer ng-include="'footer.html'" class="footer"></footer>
     <a href="javascript:void(0)" id="return-to-top"><i class="fa fa-chevron-up"></i></a>

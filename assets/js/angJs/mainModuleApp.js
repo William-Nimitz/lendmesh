@@ -178,13 +178,17 @@ const app = angular.module('mainModuleApp', ['pascalprecht.translate', 'ngAnimat
     $translateProvider.preferredLanguage('en');
 }])
 .service('customFunc', function($http, $document) {
+
     this.UsNumberFormat = new Intl.NumberFormat('US');
     this.serverUrl = "https://us-east4-lendmesh.cloudfunctions.net/";
+    this.AllAvailableLoanUrl = "https://us-central1-lendmesh.cloudfunctions.net/";
+
     this.strToNum = function(str) {
         let formatNum = Number(str.replace(/,/g,""));
         formatNum = isNaN(formatNum)?0:formatNum;
         return formatNum;
     }
+
     this.httpRequest = function(url, method, params = {}, headers = {}) {
         return $http({
             method: method,
@@ -193,6 +197,18 @@ const app = angular.module('mainModuleApp', ['pascalprecht.translate', 'ngAnimat
             headers: headers
         });
     };
+    
+    this.checkUndefined = function(value) {
+		//console.log (value)
+		let result = value.indexOf("undefined");
+		//console.log (result)
+		if(result >= 0) {
+            return "";
+        } else {
+			return value;	
+		}
+    }
+
     this.customParse = function(str) {
         /*return JSON.parse(str.replace(/\'/g, "\"")
                 .replace(/True/g, "true")
@@ -201,12 +217,22 @@ const app = angular.module('mainModuleApp', ['pascalprecht.translate', 'ngAnimat
 			return str;		
 		//return JSON.parse(str);		
     }
+
+    this.customParse1 = function(str) {
+        return JSON.parse(str.replace(/\'/g, "\"")
+                .replace(/True/g, "true")
+                .replace(/False/g, "false")
+                .replace(/None/g, "null"));
+    }
+
     this.openLoading = function() {
         document.getElementById("loading").style.display = "flex";
     }
+
     this.closeLoading = function() {
         document.getElementById("loading").style.display = "none";
     }
+
     this.openModal = function(modalId, modalCon, modalHeader = null, callBack = null) {
 
         if(modalHeader === null) {

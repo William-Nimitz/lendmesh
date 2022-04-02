@@ -54,9 +54,9 @@ app.controller('autoLoanCtrl', function(customFunc) {
                         bankUrl:val.bankUrl,
                         personalLoanUrl:childVal.urlLink,
                         minPeriod: minPeriod,
-                        PeriodRange: checkUndefined(minPeriod + periodBetween + maxPeriod),
+                        PeriodRange: customFunc.checkUndefined(minPeriod + periodBetween + maxPeriod),
                         rateFrom:childVal.rateFrom,
-                        rateRange: checkUndefined(childVal.rateFrom + rateBetween + (childVal.rateTo??'')),
+                        rateRange: customFunc.checkUndefined(childVal.rateFrom + rateBetween + (childVal.rateTo??'')),
                         type:childVal.type,
                         bankId:val.bankID,
                         // personalLoanMaxAmount: (childVal.maxAmount !== '')?childVal.maxAmount:val.personalLoanMaxAmount,
@@ -175,18 +175,7 @@ app.controller('autoLoanCtrl', function(customFunc) {
         }
         */
     }
-	
-	 function checkUndefined(value) {
-		//console.log (value)
-		let result = value.indexOf("undefined");
-		//console.log (result)
-		if(result >= 0) {
-            return "";
-        } else {
-			return value;	
-		}
-		
-    }
+
     this.moreDetail = function(event) {
 
         const currentTr = event.currentTarget.closest("tr"),

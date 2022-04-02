@@ -46,7 +46,7 @@ app.controller('personalLoanCtrl', function(customFunc) {
                   .then(function(res) {
         const parse = customFunc.customParse(res.data),
               personalInfo = [];
-            parse.forEach((val) => {
+            parse.forEach((val, index) => {
                 let consolidatePerLoan = val.bankDetails.itemType.some((childVal) => {
                     return childVal.type === "consolidateLoan";
                 })
@@ -63,9 +63,9 @@ app.controller('personalLoanCtrl', function(customFunc) {
                         bankUrl:val.bankUrl,
                         personalLoanUrl:childVal.urlLink,
                         minPeriod:minPeriod,
-                        PeriodRange: checkUndefined(minPeriod + periodBetween + maxPeriod),
+                        PeriodRange: customFunc.checkUndefined(minPeriod + periodBetween + maxPeriod),
                         rateFrom:childVal.rateFrom,
-                        rateRange: checkUndefined(rateRange),
+                        rateRange: customFunc.checkUndefined(rateRange),
                         type:childVal.type,
                         bankId:val.bankID,
                         personalLoanMaxAmount: (childVal.maxAmount)?childVal.maxAmount:val.personalLoanMaxAmount,
@@ -220,17 +220,7 @@ app.controller('personalLoanCtrl', function(customFunc) {
         }
     }
     */
-	 function checkUndefined(value) {
-		//console.log (value)
-		let result = value.indexOf("undefined");
-		//console.log (result)
-		if(result >= 0) {
-            return "";
-        } else {
-			return value;	
-		}
-		
-    }
+
     // customer filter 
     this.customFilter = function() {
         if(this.zip && getState(this.zip) == false) {
