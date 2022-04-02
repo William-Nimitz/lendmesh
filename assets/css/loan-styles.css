@@ -216,7 +216,7 @@ select {
 .rate-table-filters {
     flex: 1 1 0%;
     background: rgb(54 37 86 / 3%);
-    padding: 25px;
+    padding: 15px;
 }
 
 .\+mg-bottom-md {
@@ -766,7 +766,8 @@ tr.grid.rate-table-header__row {
 
 .table.--spacing-md td,
 .table.--spacing-md th {
-    padding: 1.33333rem;
+    /*padding: 1.33333rem;*/
+	padding: 0.93333rem;
 }
 
 .\+pd-right-xs {

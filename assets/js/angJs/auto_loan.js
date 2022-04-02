@@ -22,7 +22,12 @@ app.controller('autoLoanCtrl', function(customFunc) {
     //this.Showed = "autoLoan"; // // show *new* type, false -> *used*
 
     this.fetchData = function(zip, creditScore){
-        let url = "https://us-central1-lendmesh.cloudfunctions.net/realTimeFetchAutoLoan?";
+		var url = "";
+		var indexLendMesh = window.location.hostname.indexOf("lendmesh");
+		if(indexLendMesh == -1)
+			url = "https://us-central1-lendmesh.cloudfunctions.net/realTimeFetchAutoLoan?";
+		else 
+			url = "https://us-central1-lendmesh.cloudfunctions.net/realTimeFetchAllLoansData?loanType=autoLoan&";
         if(zip) {
 			zip = zip.split(",").join("");
             url += "zipCode=" + zip  + '&';

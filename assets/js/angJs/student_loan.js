@@ -25,7 +25,12 @@ app.controller('studentLoanCtrl', function(customFunc) {
     
     //this.Showed = "studentLoan"; // show *newLoan* type, false -> *refinance*
     this.fetchData = function(zip, creditScore) {
-        let url = "https://us-central1-lendmesh.cloudfunctions.net/realTimeFetchStudentLoan?";
+		var url = "";
+		var indexLendMesh = window.location.hostname.indexOf("lendmesh");
+		if(indexLendMesh == -1)
+			url = "https://us-central1-lendmesh.cloudfunctions.net/realTimeFetchStudentLoan?";
+		else 
+			url = "https://us-central1-lendmesh.cloudfunctions.net/realTimeFetchAllLoansData?loanType=studentLoan&";
         if(zip) {
 			zip = zip.split(",").join("");
             url += "zipCode=" + zip + '&';

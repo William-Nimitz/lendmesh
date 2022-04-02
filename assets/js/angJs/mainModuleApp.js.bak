@@ -179,7 +179,6 @@ const app = angular.module('mainModuleApp', ['pascalprecht.translate', 'ngAnimat
 }])
 .service('customFunc', function($http, $document) {
     this.UsNumberFormat = new Intl.NumberFormat('US');
-    this.serverUrl = "https://us-east4-lendmesh.cloudfunctions.net/";
     this.strToNum = function(str) {
         let formatNum = Number(str.replace(/,/g,""));
         formatNum = isNaN(formatNum)?0:formatNum;
@@ -189,7 +188,7 @@ const app = angular.module('mainModuleApp', ['pascalprecht.translate', 'ngAnimat
         return $http({
             method: method,
             url: url,
-            data: params,
+            params: params,
             headers: headers
         });
     };
@@ -200,26 +199,6 @@ const app = angular.module('mainModuleApp', ['pascalprecht.translate', 'ngAnimat
 			//console.log(str);	
 			return str;		
 		//return JSON.parse(str);		
-    }
-    this.openLoading = function() {
-        document.getElementById("loading").style.display = "flex";
-    }
-    this.closeLoading = function() {
-        document.getElementById("loading").style.display = "none";
-    }
-    this.openModal = function(modalId, modalCon, modalHeader = null, callBack = null) {
-
-        if(modalHeader === null) {
-            $(`#${modalId} .modal-header`).css("display", "none");
-        } else {
-            $(`#${modalId} .modal-header`).css("display", "block")
-                                          .html(modalHeader);
-        }
-
-        $(`#${modalId} .modal-body`).html(modalCon);
-        $(`#${modalId}`).modal({backdrop: "static"});
-
-        callBack();
     }
 })
 
@@ -237,6 +216,7 @@ const app = angular.module('mainModuleApp', ['pascalprecht.translate', 'ngAnimat
     this.mobileNav = function(fromPos = '') {
         if(fromPos === 'overlay') { this.open = false } else {this.open = !this.open;}
     }
+
     this.changeLanguage = function(lang) {
         $translate.use(lang);
         this.langImg = lang;
