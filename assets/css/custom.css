@@ -2006,7 +2006,14 @@ th.grid-cell * {
     font-weight: 600;
     cursor: pointer;
 }
-
+.tabs > .tab-left > .buttonLink {
+    display: flex;
+    justify-content: center;
+}
+.tabs > .tab-left > .buttonLink > a{
+    display: inline-block;
+    border-bottom: none;
+}
 .tab-left .active a,
 .tab-left .active span {
     background: #16234e;

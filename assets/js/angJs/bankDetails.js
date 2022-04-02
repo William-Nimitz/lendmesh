@@ -6,6 +6,7 @@ app.controller('BankDetailCtrl', function (customFunc) {
     this.baseImg = "./assets/images/bank/";
     this.bankShortName = window.location.search.replace(/\?/, '').split('&')[0].split('=')[1];
     this.canonical = window.location.href;
+    this.backUrl = "";
     this.bank = '';
     this.bankContent = {};
 
@@ -16,6 +17,14 @@ app.controller('BankDetailCtrl', function (customFunc) {
     this.autoLoans = [];
     this.personalLoans = [];
     this.studentLoans = [];
+
+    // this.backUrl = 
+    if(document.referrer) {
+        this.backUrl = document.referrer;
+        sessionStorage.setItem(this.bankShortName, document.referrer);
+    } else {
+        this.backUrl = sessionStorage.getItem(this.bankShortName);
+    }
     //get all banks
     customFunc.httpRequest(`${_base}${_banks}`, "GET")
         .then(res => {

@@ -48,8 +48,8 @@
             <div class="custom-container">
                 <div class="tabs">
                     <div class="tab-left">
-                        <div>
-                            <a href="{{Ctrl.bankContent.link}}" target="_self"><button type="button" class="btn custom-btn-bg">Back</button></a>
+                        <div class="buttonLink">
+                            <a href="{{Ctrl.backUrl}}" target="_self" ng-if="Ctrl.backUrl"><button type="button" class="btn custom-btn-bg">Back</button></a>
                             <a href="{{Ctrl.bankContent.link}}" target="_blank"><button type="button" class="btn custom-btn-bg">{{Ctrl.bankShortName}}</button></a>
                         </div>
                         <ul id="tabs-nav">
