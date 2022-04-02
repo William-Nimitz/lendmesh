@@ -101,17 +101,17 @@ app.controller('homeLoanCtrl', function(customFunc) {
 
                         personalLoanUrl:purchaseObj.urlLink,
                         fixedRateFrom: purchaseObj.fixedRateFrom ?? 0,
-                        fixedRateRange: checkUndefined(purchaseObj.fixedRateFrom + fixedRateBetween + purchaseObj.fixedRateTo),
+                        fixedRateRange: customFunc.checkUndefined(purchaseObj.fixedRateFrom + fixedRateBetween + purchaseObj.fixedRateTo),
                         fixedAprFrom: purchaseObj.fixedAprFrom ?? 0,
-                        fixedAprRange: checkUndefined((purchaseObj.fixedAprFrom ?? "") + fixedAprBetween + (purchaseObj.fixedAprTo ?? "")),
+                        fixedAprRange: customFunc.checkUndefined((purchaseObj.fixedAprFrom ?? "") + fixedAprBetween + (purchaseObj.fixedAprTo ?? "")),
 
                         variableRateFrom: purchaseObj.variableRateFrom ?? 0,
-                        variableRateRange: checkUndefined((purchaseObj.variableRateFrom ?? '') + variableRateBetween + (purchaseObj.variableRateTo ?? '')),
+                        variableRateRange: customFunc.checkUndefined((purchaseObj.variableRateFrom ?? '') + variableRateBetween + (purchaseObj.variableRateTo ?? '')),
                         variableAprFrom: purchaseObj.variableAprFrom ?? 0,
-                        variableAprRange: checkUndefined((purchaseObj.variableAprFrom ?? '') + variableAprBetween + (purchaseObj.variableAprTo ?? '')),
+                        variableAprRange: customFunc.checkUndefined((purchaseObj.variableAprFrom ?? '') + variableAprBetween + (purchaseObj.variableAprTo ?? '')),
 
                         minPeriod: purchaseObj.minPeriod,
-                        PeriodRange: checkUndefined(purchaseObj.minPeriod + periodBetween + purchaseObj.maxPeriod),
+                        PeriodRange: customFunc.checkUndefined(purchaseObj.minPeriod + periodBetween + purchaseObj.maxPeriod),
                         type: purchaseObj.type,
                         bankId:val.bankID,
 						version:version,
@@ -138,17 +138,17 @@ app.controller('homeLoanCtrl', function(customFunc) {
                         
                         personalLoanUrl:refinanceObj.urlLink,
                         fixedRateFrom: refinanceObj.fixedRateFrom ?? 0,
-                        fixedRateRange: checkUndefined(refinanceObj.fixedRateFrom + fixedRateBetween + refinanceObj.fixedRateTo),
+                        fixedRateRange: customFunc.checkUndefined(refinanceObj.fixedRateFrom + fixedRateBetween + refinanceObj.fixedRateTo),
                         fixedAprFrom: refinanceObj.fixedAprFrom ?? 0,
-                        fixedAprRange: checkUndefined((refinanceObj.fixedAprFrom ?? "") + fixedAprBetween + (refinanceObj.fixedAprTo ?? "")),
+                        fixedAprRange: customFunc.checkUndefined((refinanceObj.fixedAprFrom ?? "") + fixedAprBetween + (refinanceObj.fixedAprTo ?? "")),
                         
                         variableRateFrom: refinanceObj.variableRateFrom ?? 0,
-                        variableRateRange: checkUndefined((refinanceObj.variableRateFrom ?? '') + variableRateBetween + (refinanceObj.variableRateTo ?? '')),
+                        variableRateRange: customFunc.checkUndefined((refinanceObj.variableRateFrom ?? '') + variableRateBetween + (refinanceObj.variableRateTo ?? '')),
                         variableAprFrom: refinanceObj.variableAprFrom ?? 0,
-                        variableAprRange: checkUndefined((refinanceObj.variableAprFrom ?? '') + variableAprBetween + (refinanceObj.variableAprTo ?? '')),
+                        variableAprRange: customFunc.checkUndefined((refinanceObj.variableAprFrom ?? '') + variableAprBetween + (refinanceObj.variableAprTo ?? '')),
                         
                         minPeriod: refinanceObj.minPeriod,
-                        PeriodRange: checkUndefined(refinanceObj.minPeriod + periodBetween + refinanceObj.maxPeriod),
+                        PeriodRange: customFunc.checkUndefined(refinanceObj.minPeriod + periodBetween + refinanceObj.maxPeriod),
                         type: refinanceObj.type,
                         bankId:val.bankID,
 						version:version,
@@ -278,17 +278,6 @@ app.controller('homeLoanCtrl', function(customFunc) {
     }
     */
     // 
-    function checkUndefined(value) {
-		//console.log (value)
-		let result = value.indexOf("undefined");
-		//console.log (result)
-		if(result >= 0) {
-            return "";
-        } else {
-			return value;	
-		}
-		
-    }
 	
 	this.customFilter = function() {
         if(this.zip && getState(this.zip) == false) {

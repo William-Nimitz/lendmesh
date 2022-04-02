@@ -89,28 +89,81 @@ app.controller('BankDetailCtrl', function (customFunc) {
                 const parse = customFunc.customParse1(res.data);
 
                 const homeLoans = parse.find(loan => loan.bankDetails.loanType === "mortgageLoan");
-                this.homeLoans = homeLoans.bankDetails.itemType.map(loan => {
-                    let rateBetween = (loan.rateTo !== "" && loan.rateTo !== undefined)?" - ":"",
-                          rateRange = (loan.rateFrom == loan.rateTo) ? loan.rateFrom : loan.rateFrom + rateBetween + (loan.rateTo??''),
-                          minPeriod = (loan.minPeriod === "" || loan.minPeriod === undefined) ? (personalLoans.personalMinTerm ?? "") : loan.minPeriod,
-                          maxPeriod = (loan.maxPeriod === "" || loan.maxPeriod === undefined) ? (personalLoans.personalMaxTerm ?? "") : loan.maxPeriod,
-                          periodBetween = (maxPeriod !== "" && minPeriod !== maxPeriod)?" - ":"";
-                    maxPeriod = (minPeriod !== maxPeriod) ? maxPeriod : "";
-                    return {
-                        type: loan.type,
-                        rateRange: customFunc.checkUndefined(rateRange),
-                        PeriodRange: customFunc.checkUndefined(minPeriod + periodBetween + maxPeriod),
-                        personalLoanMaxAmount: (loan.maxAmount)?loan.maxAmount:personalLoans.personalLoanMaxAmount,
+                const purchaseObj = {}, refinanceObj = {};
+                homeLoans.bankDetails.itemType.forEach((loan) => {
+                    if (loan.type === "purchase") {
+                        if (loan.fixedAPR === true) {
+                            purchaseObj.fixedRateFrom = loan.rateFrom;
+                            purchaseObj.fixedRateTo = loan.rateTo;
+                            purchaseObj.fixedAprFrom = loan.aprFrom;
+                            purchaseObj.fixedAprTo = loan.aprTo;
+                        } else {
+                            purchaseObj.variableRateFrom = loan.rateFrom;
+                            purchaseObj.variableRateTo = loan.rateTo;
+                            purchaseObj.variableAprFrom = loan.aprFrom;
+                            purchaseObj.variableAprTo = loan.aprTo;
+                        }
+                        purchaseObj.minPeriod = purchaseObj.minPeriod ?? loan.minPeriod;
+                        purchaseObj.maxPeriod = purchaseObj.maxPeriod ?? loan.maxPeriod;
+                        purchaseObj.type = loan.type;
+                    } else {
+                        if (loan.fixedAPR === true) {
+                            refinanceObj.fixedRateFrom = loan.rateFrom;
+                            refinanceObj.fixedRateTo = loan.rateTo;
+                            refinanceObj.fixedAprFrom = loan.aprFrom;
+                            refinanceObj.fixedAprTo = loan.aprTo;
+                        } else {
+                            refinanceObj.variableRateFrom = loan.rateFrom;
+                            refinanceObj.variableRateTo = loan.rateTo;
+                            refinanceObj.variableAprFrom = loan.aprFrom;
+                            refinanceObj.variableAprTo = loan.aprTo;
+                        }
+                        refinanceObj.minPeriod = refinanceObj.minPeriod ?? loan.minPeriod;
+                        refinanceObj.maxPeriod = refinanceObj.maxPeriod ?? loan.maxPeriod;
+                        refinanceObj.type = loan.type;
                     }
-                });
+                })
+
+                if (!angular.equals(purchaseObj, {})) {
+
+                    let fixedRateBetween = (purchaseObj.fixedRateTo !== "" && purchaseObj.fixedRateTo !== undefined) ? " - " : "",
+                        fixedAprBetween = (purchaseObj.fixedAprTo !== "" && purchaseObj.fixedAprTo !== undefined) ? " - " : "",
+                        variableRateBetween = (purchaseObj.variableRateTo !== "" && purchaseObj.variableRateTo !== undefined) ? " - " : "",
+                        variableAprBetween = (purchaseObj.variableAprTo !== "" && purchaseObj.variableAprTo !== undefined) ? " - " : "",
+                        periodBetween = (purchaseObj.minPeriod !== "" && purchaseObj.maxPeriod !== "" && purchaseObj.maxPeriod !== undefined) ? " - " : "";
+                    this.homeLoans.push({
+                        fixedRateRange: customFunc.checkUndefined(purchaseObj.fixedRateFrom + fixedRateBetween + purchaseObj.fixedRateTo),
+                        fixedAprRange: customFunc.checkUndefined((purchaseObj.fixedAprFrom ?? "") + fixedAprBetween + (purchaseObj.fixedAprTo ?? "")),
+                        variableRateRange: customFunc.checkUndefined((purchaseObj.variableRateFrom ?? '') + variableRateBetween + (purchaseObj.variableRateTo ?? '')),
+                        variableAprRange: customFunc.checkUndefined((purchaseObj.variableAprFrom ?? '') + variableAprBetween + (purchaseObj.variableAprTo ?? '')),
+                        PeriodRange: customFunc.checkUndefined(purchaseObj.minPeriod + periodBetween + purchaseObj.maxPeriod),
+                        type: purchaseObj.type,
+                    });
+                }
+                if (!angular.equals(refinanceObj, {})) {
+
+                    let fixedRateBetween = (refinanceObj.fixedRateTo !== "" && refinanceObj.fixedRateTo !== undefined) ? " - " : "",
+                        fixedAprBetween = (refinanceObj.fixedAprTo !== "" && refinanceObj.fixedAprTo !== undefined) ? " - " : "",
+                        variableRateBetween = (refinanceObj.variableRateTo !== "" && refinanceObj.variableRateTo !== undefined) ? " - " : "",
+                        variableAprBetween = (refinanceObj.variableAprTo !== "" && refinanceObj.variableAprTo !== undefined) ? " - " : "",
+                        periodBetween = (refinanceObj.minPeriod !== "" && refinanceObj.maxPeriod !== "" && refinanceObj.maxPeriod !== undefined) ? " - " : "";
+                    this.homeLoans.push({
+                        fixedRateRange: customFunc.checkUndefined(refinanceObj.fixedRateFrom + fixedRateBetween + refinanceObj.fixedRateTo),
+                        fixedAprRange: customFunc.checkUndefined((refinanceObj.fixedAprFrom ?? "") + fixedAprBetween + (refinanceObj.fixedAprTo ?? "")),
+                        variableRateRange: customFunc.checkUndefined((refinanceObj.variableRateFrom ?? '') + variableRateBetween + (refinanceObj.variableRateTo ?? '')),
+                        variableAprRange: customFunc.checkUndefined((refinanceObj.variableAprFrom ?? '') + variableAprBetween + (refinanceObj.variableAprTo ?? '')),
+                        PeriodRange: customFunc.checkUndefined(refinanceObj.minPeriod + periodBetween + refinanceObj.maxPeriod),
+                        type: refinanceObj.type,
+                    });
+                }
 
                 const autoLoans = parse.find(loan => loan.bankDetails.loanType === "autoLoan");
                 this.autoLoans = autoLoans.bankDetails.itemType.map(loan => {
-                    let rateBetween = (loan.rateTo !== "" && loan.rateTo !== undefined)?" - ":"",
-                          rateRange = (loan.rateFrom == loan.rateTo) ? loan.rateFrom : loan.rateFrom + rateBetween + (loan.rateTo??''),
-                          minPeriod = (loan.minPeriod === "" || loan.minPeriod === undefined) ? (personalLoans.autoMinTerm ?? "") : loan.minPeriod,
-                          maxPeriod = (loan.maxPeriod === "" || loan.maxPeriod === undefined) ? (personalLoans.autoMaxTerm ?? "") : loan.maxPeriod,
-                          periodBetween = (maxPeriod !== "" && minPeriod !== maxPeriod)?" - ":"";
+                    let rateBetween = (loan.rateTo !== "" && loan.rateTo !== undefined) ? " - " : "",
+                        rateRange = (loan.rateFrom == loan.rateTo) ? loan.rateFrom : loan.rateFrom + rateBetween + (loan.rateTo ?? ''),
+                        minPeriod = (loan.minPeriod === "" || loan.minPeriod === undefined) ? (personalLoans.autoMinTerm ?? "") : loan.minPeriod,
+                        maxPeriod = (loan.maxPeriod === "" || loan.maxPeriod === undefined) ? (personalLoans.autoMaxTerm ?? "") : loan.maxPeriod,
+                        periodBetween = (maxPeriod !== "" && minPeriod !== maxPeriod) ? " - " : "";
                     maxPeriod = (minPeriod !== maxPeriod) ? maxPeriod : "";
                     return {
                         type: loan.type,
@@ -121,17 +174,17 @@ app.controller('BankDetailCtrl', function (customFunc) {
 
                 const personalLoans = parse.find(loan => loan.bankDetails.loanType === "personalLoan");
                 this.personalLoans = personalLoans.bankDetails.itemType.map(loan => {
-                    let rateBetween = (loan.rateTo !== "" && loan.rateTo !== undefined)?" - ":"",
-                          rateRange = (loan.rateFrom == loan.rateTo) ? loan.rateFrom : loan.rateFrom + rateBetween + (loan.rateTo??''),
-                          minPeriod = (loan.minPeriod === "" || loan.minPeriod === undefined) ? (personalLoans.personalMinTerm ?? "") : loan.minPeriod,
-                          maxPeriod = (loan.maxPeriod === "" || loan.maxPeriod === undefined) ? (personalLoans.personalMaxTerm ?? "") : loan.maxPeriod,
-                          periodBetween = (maxPeriod !== "" && minPeriod !== maxPeriod)?" - ":"";
+                    let rateBetween = (loan.rateTo !== "" && loan.rateTo !== undefined) ? " - " : "",
+                        rateRange = (loan.rateFrom == loan.rateTo) ? loan.rateFrom : loan.rateFrom + rateBetween + (loan.rateTo ?? ''),
+                        minPeriod = (loan.minPeriod === "" || loan.minPeriod === undefined) ? (personalLoans.personalMinTerm ?? "") : loan.minPeriod,
+                        maxPeriod = (loan.maxPeriod === "" || loan.maxPeriod === undefined) ? (personalLoans.personalMaxTerm ?? "") : loan.maxPeriod,
+                        periodBetween = (maxPeriod !== "" && minPeriod !== maxPeriod) ? " - " : "";
                     maxPeriod = (minPeriod !== maxPeriod) ? maxPeriod : "";
                     return {
                         type: loan.type,
                         rateRange: customFunc.checkUndefined(rateRange),
                         PeriodRange: customFunc.checkUndefined(minPeriod + periodBetween + maxPeriod),
-                        personalLoanMaxAmount: (loan.maxAmount)?loan.maxAmount:personalLoans.personalLoanMaxAmount,
+                        personalLoanMaxAmount: (loan.maxAmount) ? loan.maxAmount : personalLoans.personalLoanMaxAmount,
                     }
                 });
 

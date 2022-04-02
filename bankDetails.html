@@ -142,13 +142,13 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="auto in Ctrl.autoLoans">
-                                <td>{{auto.type}}</td>
-                                <td>{{auto.rateRange}}<span class="numeral__accent">%</span></td>
-                                <td>{{auto.PeriodRange}}<span ng-if="auto.PeriodRange" class="numeral__accent">yr</span></td>
-                                <td>{{auto.type}}</td>
-                                <td>{{auto.type}}</td>
-                                <td>{{auto.type}}</td>
+                            <tr ng-repeat="home in Ctrl.homeLoans">
+                                <td>{{home.type}}</td>
+                                <td>{{home.fixedRateRange}}<span ng-if="home.fixedRateRange" class="numeral__accent">%</span></td>
+                                <td>{{home.fixedAprRange}}<span ng-if="home.fixedAprRange" class="numeral__accent">%</span></td>
+                                <td>{{home.variableRateRange}}<span ng-if="home.variableRateRange" class="numeral__accent">%</span></td>
+                                <td>{{home.variableAprRange}}<span ng-if="home.variableRateRange" class="numeral__accent">%</span></td>
+                                <td>{{home.PeriodRange}}<span ng-if="home.PeriodRange" class="numeral__accent">yr</span></td>
                             </tr>
                         </tbody>
                     </table>
