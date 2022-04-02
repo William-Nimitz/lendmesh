@@ -91,9 +91,9 @@ app.controller('studentLoanCtrl', function(customFunc) {
                         fixedrateFrom: newLoanObj.fixedRateFrom ? newLoanObj.fixedRateFrom: 0,
                         fixedrateRange: newLoanObj.fixedRateFrom + fixedRateBetween + newLoanObj.fixedRateTo,
                         variablerateFrom: newLoanObj.variablerateFrom ? newLoanObj.variablerateFrom: 0,
-                        variablerateRange: checkUndefined((newLoanObj.variablerateFrom ?? '') + variableRateBetween + (newLoanObj.variablerateTo ?? '')),
+                        variablerateRange: customFunc.checkUndefined((newLoanObj.variablerateFrom ?? '') + variableRateBetween + (newLoanObj.variablerateTo ?? '')),
                         minPeriod: newLoanObj.minPeriod,
-                        PeriodRange: checkUndefined(newLoanObj.minPeriod + periodBetween + newLoanObj.maxPeriod),
+                        PeriodRange: customFunc.checkUndefined(newLoanObj.minPeriod + periodBetween + newLoanObj.maxPeriod),
                         type: newLoanObj.type,
                         bankId:val.bankID,
                         displayPriority:val.displayPriority,
@@ -120,9 +120,9 @@ app.controller('studentLoanCtrl', function(customFunc) {
                         fixedrateFrom: refinanceObj.fixedRateFrom ? refinanceObj.fixedRateFrom: 0,
                         fixedrateRange: refinanceObj.fixedRateFrom + fixedRateBetween + refinanceObj.fixedRateTo,
                         variablerateFrom: refinanceObj.variablerateFrom ? refinanceObj.variablerateFrom: 0,
-                        variablerateRange: checkUndefined(refinanceObj.variablerateFrom + variableRateBetween + refinanceObj.variablerateTo),
+                        variablerateRange: customFunc.checkUndefined(refinanceObj.variablerateFrom + variableRateBetween + refinanceObj.variablerateTo),
                         minPeriod: refinanceObj.minPeriod,
-                        PeriodRange: checkUndefined(refinanceObj.minPeriod + periodBetween + refinanceObj.maxPeriod),
+                        PeriodRange: customFunc.checkUndefined(refinanceObj.minPeriod + periodBetween + refinanceObj.maxPeriod),
                         type: refinanceObj.type,
                         bankId:val.bankID,
                         displayPriority:val.displayPriority,
@@ -216,17 +216,6 @@ app.controller('studentLoanCtrl', function(customFunc) {
         this.fetchData(this.zip, this.creditScore);
     }
 	
-	function checkUndefined(value) {
-		//console.log (value)
-		let result = value.indexOf("undefined");
-		//console.log (result)
-		if(result >= 0) {
-            return "";
-        } else {
-			return value;	
-		}
-		
-    }
     /*
     // customer filter 
     this.customFilter = function() {

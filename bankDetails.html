@@ -15,9 +15,9 @@
 
     <meta name="author" content="Lendmesh">
     <meta name="description" content={{Ctrl.bankContent.Meta_Description}} />
-    <meta name="keywords" content="Best Personal Loan, Cheap Rate Loans, Low rate loans, Low Interest rate loans, Low APR Loans, Best Mortgage Loans, Best Student Loans, Best Auto Loans, Best Credit cards">
+    <meta name="keywords" content={{Ctrl.bankContent.Meta_Description}}>
 
-    <link rel="canonical" href="https://lendmesh.com/bankDetails.html" />
+    <link rel="canonical" href="https://www.lendmesh.com/bankDetails.html?name={{Ctrl.bankShortName}}">
 
     <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -88,7 +88,7 @@
         </section>
         <section class="custom-section">
             <div class="custom-container loanTableWrapper">
-                <div class="loanTable">
+                <div class="loanTable" ng-if="Ctrl.personalLoans.length > 0">
                     <p>Personal Loan Section:</p>
                     <table>
                         <thead>
@@ -109,7 +109,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="loanTable">
+                <div class="loanTable" ng-if="Ctrl.autoLoans.length > 0">
                     <p>Auto Loan Section:</p>
                     <table>
                         <thead>
@@ -128,7 +128,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="loanTable">
+                <div class="loanTable" ng-if="Ctrl.homeLoans.length > 0">
                     <p>Mortgage Loan Section:</p>
                     <table>
                         <thead>
@@ -153,7 +153,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="loanTable">
+                <div class="loanTable" ng-if="Ctrl.studentLoans.length > 0">
                     <p>Student Loan Section:</p>
                     <table>
                         <thead>
@@ -165,11 +165,11 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="personal in Ctrl.personalLoans">
-                                <td>{{personal.type}}</td>
-                                <td>{{personal.rateRange}}<span class="numeral__accent">%</span></td>
-                                <td>{{personal.PeriodRange}}<span ng-if="personal.PeriodRange" class="numeral__accent">yr</span></td>
-                                <td>{{personal.personalLoanMaxAmount | currency}}</td>
+                            <tr ng-repeat="student in Ctrl.studentLoans">
+                                <td>{{student.type}}</td>
+                                <td>{{student.fixedrateRange}}<span ng-if="student.fixedrateRange" class="numeral__accent">%</span></td>
+                                <td>{{student.variablerateRange}}<span ng-if="student.variableRateRange" class="numeral__accent">%</span></td>
+                                <td>{{student.PeriodRange}}<span ng-if="student.PeriodRange" class="numeral__accent">yr</span></td>
                             </tr>
                         </tbody>
                     </table>
