@@ -959,7 +959,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 250px;
+    height: 125px;
     position: relative;
     z-index: 2;
 }
@@ -2006,7 +2006,14 @@ th.grid-cell * {
     font-weight: 600;
     cursor: pointer;
 }
-
+.tabs > .tab-left > .buttonLink {
+    display: flex;
+    justify-content: center;
+}
+.tabs > .tab-left > .buttonLink > a{
+    display: inline-block;
+    border-bottom: none;
+}
 .tab-left .active a,
 .tab-left .active span {
     background: #16234e;
@@ -2258,7 +2265,9 @@ p.question-subject {
 .fade {
     transition: opacity .15s linear;
 }
-
+.custom-section.tabs-sec {
+    padding: 10px 0;
+}
 @media (min-width: 576px) {
     .modal-dialog {
         max-width: 500px;
