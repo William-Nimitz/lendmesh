@@ -93,7 +93,7 @@
         <section class="custom-section">
             <div class="custom-container loanTableWrapper">
                 <div class="loanTable" ng-if="Ctrl.personalLoans.length > 0">
-                    <p>Personal Loan Section:</p>
+                    <p>Personal Loan Section</p>
                     <table>
                         <thead>
                             <tr>
@@ -114,7 +114,7 @@
                     </table>
                 </div>
                 <div class="loanTable" ng-if="Ctrl.autoLoans.length > 0">
-                    <p>Auto Loan Section:</p>
+                    <p>Auto Loan Section</p>
                     <table>
                         <thead>
                             <tr>
@@ -132,8 +132,29 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="loanTable" ng-if="Ctrl.homeLoans.length > 0">
-                    <p>Mortgage Loan Section:</p>
+                <div class="loanTable" ng-if="Ctrl.studentLoans.length > 0">
+                    <p>Student Loan Section</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Fixed APR</th>
+                                <th>Variable APR</th>
+                                <th>Term</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="student in Ctrl.studentLoans">
+                                <td>{{student.type}}</td>
+                                <td>{{student.fixedrateRange}}<span ng-if="student.fixedrateRange" class="numeral__accent">%</span></td>
+                                <td>{{student.variablerateRange}}<span ng-if="student.variableRateRange" class="numeral__accent">%</span></td>
+                                <td>{{student.PeriodRange}}<span ng-if="student.PeriodRange" class="numeral__accent">yr</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="loanTable homeLoanTable" ng-if="Ctrl.homeLoans.length > 0">
+                    <p>Mortgage Loan Section</p>
                     <table>
                         <thead>
                             <tr>
@@ -153,27 +174,6 @@
                                 <td>{{home.variableRateRange}}<span ng-if="home.variableRateRange" class="numeral__accent">%</span></td>
                                 <td>{{home.variableAprRange}}<span ng-if="home.variableRateRange" class="numeral__accent">%</span></td>
                                 <td>{{home.PeriodRange}}<span ng-if="home.PeriodRange" class="numeral__accent">yr</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="loanTable" ng-if="Ctrl.studentLoans.length > 0">
-                    <p>Student Loan Section:</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Type</th>
-                                <th>Fixed APR</th>
-                                <th>Variable APR</th>
-                                <th>Term</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr ng-repeat="student in Ctrl.studentLoans">
-                                <td>{{student.type}}</td>
-                                <td>{{student.fixedrateRange}}<span ng-if="student.fixedrateRange" class="numeral__accent">%</span></td>
-                                <td>{{student.variablerateRange}}<span ng-if="student.variableRateRange" class="numeral__accent">%</span></td>
-                                <td>{{student.PeriodRange}}<span ng-if="student.PeriodRange" class="numeral__accent">yr</span></td>
                             </tr>
                         </tbody>
                     </table>

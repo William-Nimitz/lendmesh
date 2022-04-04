@@ -1,9 +1,10 @@
-.loanIconsWrapper{
+.loanIconsWrapper {
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .loanIcon {
     display: flex;
     flex-direction: column;
@@ -11,8 +12,49 @@
     justify-content: center;
     width: 200px;
 }
-.loanIcon > img {
+
+.loanIcon>img {
     width: 44px;
     height: 44px;
     object-fit: cover;
 }
+
+table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+.loanTable {
+    margin-bottom: var(--space-3);
+    text-align: center;
+    overflow-x: auto;
+}
+.loanTable:not(.homeLoanTable) > table {
+    width: 600px;
+    max-width: 600px;
+    min-width: 600px;
+    margin: auto;
+}
+.loanTable.homeLoanTable > table {
+    width: 1000px;
+    max-width: 1000px;
+    min-width: 1000px;
+    margin: auto;
+}
+.loanTable:not(.homeLoanTable) > table tr > td {
+    width: 25%;
+}
+.loanTable > p{
+    font-weight: var(--font-weight-bold);
+    font-size: 17px;
+    margin-bottom: var(--space-0);
+}
+
+/* .loanTable > table > thead > tr th:first-child,
+.loanTable > table > thead > tr td:first-child {
+    text-align: left;
+}
+.loanTable > table > thead > tr th:nth-child(2),
+.loanTable > table > thead > tr td:nth-child(2) {
+    text-align: left;
+} */
