@@ -8,7 +8,7 @@
     --space-0: 5px;
     --space-1: 10px;
     --space-2: 15px;
-    --space-3: 20px
+    --space-3: 20px;
 }
 
 .custom-container {
@@ -587,7 +587,7 @@ main {
     display: none !important;
 }
 
- /* #bank-list-2 .disabled {
+/* #bank-list-2 .disabled {
     display: none !important;
  } */
 
@@ -716,10 +716,10 @@ main {
 .custom-btn-bg {
     border: 1px solid #16234e !important;
     border-radius: 25px !important;
-    border-radius: 4px;
-    padding: 10px 25px;
-    color: #fff;
-    background: #16234e;
+    border-radius: 4px !important;
+    padding: 10px 25px !important;
+    color: #fff !important;
+    background: #16234e !important;
 }
 
 .custom-btn-bg:hover {
@@ -2010,7 +2010,7 @@ th.grid-cell * {
     display: flex;
     justify-content: center;
 }
-.tabs > .tab-left > .buttonLink > a{
+.tabs > .tab-left > .buttonLink > a {
     display: inline-block;
     border-bottom: none;
 }
@@ -2086,27 +2086,27 @@ p.question-subject {
 .mt-2 {
     margin-top: var(--space-1);
 }
-#tabs-content > .tab-content ul{
+#tabs-content > .tab-content ul {
     padding-left: var(--space-2);
     margin-left: var(--space-2);
     margin-top: var(--space-1);
 }
 
-#tabs-content > .tab-content > ul{
+#tabs-content > .tab-content > ul {
     padding-left: 0;
     margin-left: 0;
     margin-top: 0;
 }
-#tabs-content > .tab-content li{
+#tabs-content > .tab-content li {
     list-style: inherit;
     margin-bottom: var(--space-0);
     color: var(--second-col);
 }
-#tabs-content > .tab-content li::marker{
+#tabs-content > .tab-content li::marker {
     color: var(--second-col);
     font-weight: var(--font-weight-bold);
 }
-#tabs-content > .tab-content > ul p{
+#tabs-content > .tab-content > ul p {
     margin-bottom: 0;
 }
 .font-weight-bold {
@@ -2118,7 +2118,7 @@ p.question-subject {
     display: inline-block;
 }
 
-.inrpage-banner-inr-link > img{
+.inrpage-banner-inr-link > img {
     width: 100%;
     object-fit: cover;
 }
@@ -2178,11 +2178,11 @@ p.question-subject {
     transform: none;
 }
 .modal.fade .modal-dialog {
-    transition: -webkit-transform .3s ease-out;
-    transition: transform .3s ease-out;
-    transition: transform .3s ease-out,-webkit-transform .3s ease-out;
-    -webkit-transform: translate(0,-50px);
-    transform: translate(0,-50px);
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    -webkit-transform: translate(0, -50px);
+    transform: translate(0, -50px);
 }
 .modal-dialog {
     position: relative;
@@ -2201,7 +2201,7 @@ p.question-subject {
     pointer-events: auto;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 0.3rem;
     outline: 0;
 }
@@ -2225,12 +2225,14 @@ p.question-subject {
     position: relative;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    padding: 1rem;
+    padding: 25px;
+    background: rgb(54 37 86 / 3%);
 }
-.modal-body p{
+.modal-body p {
     margin-bottom: 0;
     text-align: center;
     color: var(--second-col);
+    font-size: 20px;
 }
 .modal-footer {
     display: -ms-flexbox;
@@ -2240,17 +2242,28 @@ p.question-subject {
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-pack: end;
-    justify-content: flex-end;
-    padding: 0.75rem;
+    justify-content: center;
+    padding: 15px;
     border-top: 1px solid #dee2e6;
     border-bottom-right-radius: calc(0.3rem - 1px);
     border-bottom-left-radius: calc(0.3rem - 1px);
+}
+.modal-footer .btn.btn-danger {
+    border: 1px solid #16234e !important;
+    border-radius: 25px !important;
+    border-radius: 4px;
+    padding: 10px 25px;
+    color: #fff;
+    background: #16234e;
+}
+.error-modal .modal-body p {
+    color: #dc3545;
 }
 .modal-backdrop.fade {
     opacity: 0;
 }
 .modal-backdrop.show {
-    opacity: .5;
+    opacity: 0.5;
 }
 .modal-backdrop {
     position: fixed;
@@ -2263,10 +2276,53 @@ p.question-subject {
 }
 
 .fade {
-    transition: opacity .15s linear;
+    transition: opacity 0.15s linear;
 }
 .custom-section.tabs-sec {
     padding: 10px 0;
+}
+.loanTable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.loanTable.table-container.ng-scope {
+    margin-bottom: 20px;
+}
+.loanTable th,
+.loanTable td {
+    padding: 0.93333rem;
+    border-bottom: 1px solid rgb(243, 244, 248);
+}
+.loanTable th {
+    text-align: left;
+    min-width: 120px;
+    white-space: normal;
+}
+.loanTable > p {
+    font-weight: 700;
+    font-size: 25px;
+    color: #16234e;
+    line-height: 28px;
+}
+.loanTable td p {
+    font-weight: 700;
+    font-size: 16px;
+    color: #16234e;
+    line-height: 24px;
+    margin: 0;
+}
+.buttonLink {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 25px;
+}
+.loanIcon {
+    padding: 20px;
+}
+@media (max-width: 767px) {
+    .loanTable > p {
+        font-size: 20px;
+    }
 }
 @media (min-width: 576px) {
     .modal-dialog {

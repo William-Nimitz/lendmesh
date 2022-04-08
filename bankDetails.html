@@ -39,23 +39,28 @@
             <div class="custom-container">
                 <div class="inrpage-banner-inr">
                     <a href="{{Ctrl.bankContent.link}}" target="_blank" class="inrpage-banner-inr-link">
-                        <img src="{{Ctrl.baseImg}}{{Ctrl.bankContent.img_url}}" alt="{{Ctrl.bankContent.link}}" title="{{Ctrl.bankContent.link}}" loading="lazy">
+                        <img src="{{Ctrl.baseImg}}{{Ctrl.bankContent.img_url}}" alt="{{Ctrl.bankContent.link}}"
+                            title="{{Ctrl.bankContent.link}}" loading="lazy">
                     </a>
                 </div>
             </div>
         </section>
         <section class="custom-section tabs-sec">
             <div class="custom-container">
+                <div class="buttonLink">
+                    <a href="{{Ctrl.backUrl}}" target="_self" ng-if="Ctrl.backUrl"><button type="button"
+                            class="btn custom-btn-bg">Back</button></a>
+                    <a href="{{Ctrl.bankContent.link}}" target="_blank"><button type="button"
+                            class="btn custom-btn-bg">{{Ctrl.bankShortName}}</button></a>
+                </div>
+            </div>
+            <div class="custom-container">
                 <div class="tabs">
                     <div class="tab-left">
-                        <div class="buttonLink">
-                            <a href="{{Ctrl.backUrl}}" target="_self" ng-if="Ctrl.backUrl"><button type="button" class="btn custom-btn-bg">Back</button></a>
-                            <a href="{{Ctrl.bankContent.link}}" target="_blank"><button type="button" class="btn custom-btn-bg">{{Ctrl.bankShortName}}</button></a>
-                        </div>
+
                         <ul id="tabs-nav">
                             <li ng-repeat="obj in Ctrl.bankContent.content track by $index" 
-                                ng-class="{active: Ctrl.activeTab === $index}"
-                                ng-click="Ctrl.tabClick($index)">
+                                ng-class="{active: Ctrl.activeTab === $index}" ng-click="Ctrl.tabClick($index)">
                                 <span>{{obj.tab}}</span>
                             </li>
                         </ul>
@@ -73,26 +78,34 @@
         <section class="custom-section">
             <div class="custom-container loanIconsWrapper">
                 <div class="loanIcon" ng-if="Ctrl.homeLoans.length > 0">
-                    <img src="./assets/images/icons/001-credit.png" alt="home loan" title="home loan"/>
-                    <div><p>Mortgage / Home Loan</p></div>
+                    <img src="./assets/images/icons/001-credit.png" alt="home loan" title="home loan" />
+                    <div>
+                        <p>Mortgage / Home Loan</p>
+                    </div>
                 </div>
                 <div class="loanIcon" ng-if="Ctrl.autoLoans.length > 0">
-                    <img src="./assets/images/icons/002-automobile.png" alt="auto loan" title="auto loan"/>
-                    <div><p>Car Loan</p></div>
+                    <img src="./assets/images/icons/002-automobile.png" alt="auto loan" title="auto loan" />
+                    <div>
+                        <p>Car Loan</p>
+                    </div>
                 </div>
                 <div class="loanIcon" ng-if="Ctrl.personalLoans.length > 0">
-                    <img src="./assets/images/icons/003-profits.png" alt="personal loan" title="personal loan"/>
-                    <div><p>Personal Loan</p></div>
+                    <img src="./assets/images/icons/003-profits.png" alt="personal loan" title="personal loan" />
+                    <div>
+                        <p>Personal Loan</p>
+                    </div>
                 </div>
                 <div class="loanIcon" ng-if="Ctrl.studentLoans.length > 0">
-                    <img src="./assets/images/icons/005-mortarboard.png" alt="student loan" title="student loan"/>
-                    <div><p>Education Loan</p></div>
+                    <img src="./assets/images/icons/005-mortarboard.png" alt="student loan" title="student loan" />
+                    <div>
+                        <p>Education Loan</p>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="custom-section">
             <div class="custom-container loanTableWrapper">
-                <div class="loanTable" ng-if="Ctrl.personalLoans.length > 0">
+                <div class="loanTable table-container" ng-if="Ctrl.personalLoans.length > 0">
                     <p>Personal Loan Section:</p>
                     <table>
                         <thead>
@@ -106,14 +119,24 @@
                         <tbody>
                             <tr ng-repeat="personal in Ctrl.personalLoans">
                                 <td>{{personal.type}}</td>
-                                <td>{{personal.rateRange}}<span class="numeral__accent">%</span></td>
-                                <td>{{personal.PeriodRange}}<span ng-if="personal.PeriodRange" class="numeral__accent">yr</span></td>
-                                <td>{{personal.personalLoanMaxAmount | currency}}</td>
+                                <td>
+                                    <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap ng-binding">
+                                        {{personal.rateRange}}<span class="numeral__accent">%</span></p>
+                                </td>
+                                <td>
+                                    <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap ng-binding">
+                                        {{personal.PeriodRange}}<span class="numeral__accent"
+                                            ng-if="personal.PeriodRange">yr</span></p>
+                                </td>
+                                <td>
+                                    <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap ng-binding">
+                                        {{personal.personalLoanMaxAmount | currency}}</p>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="loanTable" ng-if="Ctrl.autoLoans.length > 0">
+                <div class="loanTable table-container" ng-if="Ctrl.autoLoans.length > 0">
                     <p>Auto Loan Section:</p>
                     <table>
                         <thead>
@@ -126,13 +149,20 @@
                         <tbody>
                             <tr ng-repeat="auto in Ctrl.autoLoans">
                                 <td>{{auto.type}}</td>
-                                <td>{{auto.rateRange}}<span class="numeral__accent">%</span></td>
-                                <td>{{auto.PeriodRange}}<span ng-if="auto.PeriodRange" class="numeral__accent">yr</span></td>
+                                <td>
+                                    <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap ng-binding">
+                                        {{auto.rateRange}}<span class="numeral__accent">%</span></p>
+                                </td>
+                                <td>
+                                    <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap ng-binding">
+                                        {{auto.PeriodRange}}<span class="numeral__accent"
+                                            ng-if="auto.PeriodRange">yr</span></p>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="loanTable" ng-if="Ctrl.homeLoans.length > 0">
+                <div class="loanTable table-container" ng-if="Ctrl.homeLoans.length > 0">
                     <p>Mortgage Loan Section:</p>
                     <table>
                         <thead>
@@ -148,16 +178,36 @@
                         <tbody>
                             <tr ng-repeat="home in Ctrl.homeLoans">
                                 <td>{{home.type}}</td>
-                                <td>{{home.fixedRateRange}}<span ng-if="home.fixedRateRange" class="numeral__accent">%</span></td>
-                                <td>{{home.fixedAprRange}}<span ng-if="home.fixedAprRange" class="numeral__accent">%</span></td>
-                                <td>{{home.variableRateRange}}<span ng-if="home.variableRateRange" class="numeral__accent">%</span></td>
-                                <td>{{home.variableAprRange}}<span ng-if="home.variableRateRange" class="numeral__accent">%</span></td>
-                                <td>{{home.PeriodRange}}<span ng-if="home.PeriodRange" class="numeral__accent">yr</span></td>
+                                <td>
+                                    <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap ng-binding">
+                                        {{home.fixedRateRange}}<span class="numeral__accent"
+                                            ng-if="home.fixedRateRange">%</span></p>
+                                </td>
+                                <td>
+                                    <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap ng-binding">
+                                        {{home.fixedAprRange}}<span class="numeral__accent"
+                                            ng-if="home.fixedAprRange">%</span></p>
+                                </td>
+                                <td>
+                                    <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap ng-binding">
+                                        {{home.variableRateRange}}<span class="numeral__accent"
+                                            ng-if="home.variableRateRange">%</span></p>
+                                </td>
+                                <td>
+                                    <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap ng-binding">
+                                        {{home.variableRateRange}}<span class="numeral__accent"
+                                            ng-if="home.variableRateRange">%</span></p>
+                                </td>
+                                <td>
+                                    <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap ng-binding">
+                                        {{home.PeriodRange}}<span class="numeral__accent"
+                                            ng-if="home.PeriodRange">yr</span></p>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="loanTable" ng-if="Ctrl.studentLoans.length > 0">
+                <div class="loanTable table-container" ng-if="Ctrl.studentLoans.length > 0">
                     <p>Student Loan Section:</p>
                     <table>
                         <thead>
@@ -171,9 +221,21 @@
                         <tbody>
                             <tr ng-repeat="student in Ctrl.studentLoans">
                                 <td>{{student.type}}</td>
-                                <td>{{student.fixedrateRange}}<span ng-if="student.fixedrateRange" class="numeral__accent">%</span></td>
-                                <td>{{student.variablerateRange}}<span ng-if="student.variableRateRange" class="numeral__accent">%</span></td>
-                                <td>{{student.PeriodRange}}<span ng-if="student.PeriodRange" class="numeral__accent">yr</span></td>
+                                <td>
+                                    <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap ng-binding">
+                                        {{student.fixedrateRange}}<span class="numeral__accent"
+                                            ng-if="student.fixedrateRange">%</span></p>
+                                </td>
+                                <td>
+                                    <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap ng-binding">
+                                        {{student.fixedrateRange}}<span class="numeral__accent"
+                                            ng-if="student.variableRateRange">%</span></p>
+                                </td>
+                                <td>
+                                    <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap ng-binding">
+                                        {{student.PeriodRange}}<span ng-if="student.PeriodRange"
+                                            class="numeral__accent">yr</span></p>
+                                </td>
                             </tr>
                         </tbody>
                     </table>

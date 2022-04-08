@@ -179,6 +179,7 @@ const app = angular.module('mainModuleApp', ['pascalprecht.translate', 'ngAnimat
 }])
 .service('customFunc', function($http, $document) {
     this.UsNumberFormat = new Intl.NumberFormat('US');
+    this.serverUrl = "https://us-east4-lendmesh.cloudfunctions.net/";
     this.strToNum = function(str) {
         let formatNum = Number(str.replace(/,/g,""));
         formatNum = isNaN(formatNum)?0:formatNum;
@@ -188,7 +189,7 @@ const app = angular.module('mainModuleApp', ['pascalprecht.translate', 'ngAnimat
         return $http({
             method: method,
             url: url,
-            params: params,
+            data: params,
             headers: headers
         });
     };

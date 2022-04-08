@@ -8,7 +8,7 @@
     --space-0: 5px;
     --space-1: 10px;
     --space-2: 15px;
-    --space-3: 20px
+    --space-3: 20px;
 }
 
 .custom-container {
@@ -20,7 +20,19 @@
 .custom-section {
     padding: 10px 0;
 }
-
+#loading {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#loading > img {
+    width: 100px;
+    height: auto;
+}
 .btn {
     font-size: 14px;
 }
@@ -575,7 +587,7 @@ main {
     display: none !important;
 }
 
- /* #bank-list-2 .disabled {
+/* #bank-list-2 .disabled {
     display: none !important;
  } */
 
@@ -704,10 +716,10 @@ main {
 .custom-btn-bg {
     border: 1px solid #16234e !important;
     border-radius: 25px !important;
-    border-radius: 4px;
-    padding: 10px 25px;
-    color: #fff;
-    background: #16234e;
+    border-radius: 4px !important;
+    padding: 10px 25px !important;
+    color: #fff !important;
+    background: #16234e !important;
 }
 
 .custom-btn-bg:hover {
@@ -947,7 +959,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 250px;
+    height: 125px;
     position: relative;
     z-index: 2;
 }
@@ -1984,16 +1996,26 @@ th.grid-cell * {
     padding: 25px;
 }
 
-.tab-left a {
+.tab-left a,
+.tab-left span {
     display: block;
     color: #000;
     border-bottom: 1px solid #ddd;
     padding: 15px 20px;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
 }
-
-.tab-left .active a {
+.tabs > .tab-left > .buttonLink {
+    display: flex;
+    justify-content: center;
+}
+.tabs > .tab-left > .buttonLink > a {
+    display: inline-block;
+    border-bottom: none;
+}
+.tab-left .active a,
+.tab-left .active span {
     background: #16234e;
     color: #fff;
 }

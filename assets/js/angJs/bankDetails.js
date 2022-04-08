@@ -1,7 +1,7 @@
 app.controller('BankDetailCtrl', function (customFunc) {
     const thisObj = this,
-        _base = "./assets/data/bankDetails/",
-        _banks = "_bankDetails.json";
+            _base = "./assets/data/bankDetails/",
+            _banks = "_bankDetails.json";
 
     this.baseImg = "./assets/images/bank/";
     this.bankShortName = window.location.search.replace(/\?/, '').split('&')[0].split('=')[1];
@@ -29,7 +29,7 @@ app.controller('BankDetailCtrl', function (customFunc) {
     customFunc.httpRequest(`${_base}${_banks}`, "GET")
         .then(res => {
             const banklists = res.data.bankDetails;
-            
+
             thisObj.bank = banklists.find(e => e.shortName === this.bankShortName);
             const allAvailableLoansUrl = customFunc.AllAvailableLoanUrl + `realTimeFetchBankLoan?bankName=${thisObj.bank.shortName}`;
 
@@ -38,11 +38,10 @@ app.controller('BankDetailCtrl', function (customFunc) {
                     thisObj.bankContent = bank.data;
                 })
                 .then(() => { thisObj.tabClick(0) })
-
+        
             // get available all loan 
             this.allAvailableLoans(allAvailableLoansUrl);
         })
-
     // functions 
     this.tabClick = function (index) {
         this.activeTab = index;
@@ -259,5 +258,5 @@ app.controller('BankDetailCtrl', function (customFunc) {
                 }
             })
     }
-
+    
 }); 

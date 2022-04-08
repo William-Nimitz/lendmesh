@@ -175,7 +175,7 @@ app.controller('autoLoanCtrl', function(customFunc) {
         }
         */
     }
-
+	
     this.moreDetail = function(event) {
 
         const currentTr = event.currentTarget.closest("tr"),

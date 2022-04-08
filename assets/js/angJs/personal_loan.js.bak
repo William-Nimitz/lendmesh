@@ -23,7 +23,13 @@ app.controller('personalLoanCtrl', function(customFunc) {
     this.Showed = "personalLoan"; // show *personalLoan* type, false -> *consolidateLoan*
     this.fetchData = function(zip, creditScore, neededAmount) {
         //customFunc.httpRequest("https://us-east4-lendmesh.cloudfunctions.net/fetchPersonalLoanRates", "GET")
-		let url = "https://us-central1-lendmesh.cloudfunctions.net/realTimeFetchAllLoansData?loanType=personalLoan&";
+		console.log("hostname" + window.location.hostname);
+		var url = "";
+		var indexLendMesh = window.location.hostname.indexOf("lendmesh");
+		if(indexLendMesh == -1)
+			url = "https://us-central1-lendmesh.cloudfunctions.net/realTimeFetchPersonalLoan?";
+		else 
+			url = "https://us-central1-lendmesh.cloudfunctions.net/realTimeFetchAllLoansData?loanType=personalLoan&";
         if (zip) {
 			zip = zip.split(",").join("");
             url += "zipCode=" + zip  + '&';
@@ -53,6 +59,7 @@ app.controller('personalLoanCtrl', function(customFunc) {
                     maxPeriod = (minPeriod !== maxPeriod) ? maxPeriod : "";
                     personalInfo.push({
                         bankName: val.bankShortName??val.bankName,
+                        bankShortName: val.bankShortName,
                         bankUrl:val.bankUrl,
                         personalLoanUrl:childVal.urlLink,
                         minPeriod:minPeriod,

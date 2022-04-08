@@ -23,9 +23,25 @@ app.controller('homeLoanCtrl', function(customFunc) {
     this.maindataLoan = [];    // display information
 
     this.Showed = 1; // show *purchase* type, false -> *refinance*
-    (function() {
+
+    this.fetchData = function(zip, creditScore) {
+		var url = "";
+		var indexLendMesh = window.location.hostname.indexOf("lendmesh");
+		
+		if(indexLendMesh == -1)
+			url = "https://us-central1-lendmesh.cloudfunctions.net/realTimeFetchMortgageLoan?";
+		else 
+			url = "https://us-central1-lendmesh.cloudfunctions.net/realTimeFetchAllLoansData?loanType=mortgageLoan&";
+        if(zip) {
+            zip = zip.split(",").join("");
+            url += "zipCode=" + zip  + '&';
+        }
+        if(creditScore) {
+            creditScore = creditScore.split(",").join("");
+            url += "creditScore=" + creditScore  + '&';
+        }
         //customFunc.httpRequest("https://us-east4-lendmesh.cloudfunctions.net/fetchHomeLoanRates", "GET")
-        customFunc.httpRequest("https://us-central1-lendmesh.cloudfunctions.net/realTimeFetchMortgageLoan", "GET")
+        customFunc.httpRequest(url, "GET")
                   .then(function(res) {
         const parse = customFunc.customParse(res.data),
               personalInfo = [];
@@ -85,17 +101,17 @@ app.controller('homeLoanCtrl', function(customFunc) {
 
                         personalLoanUrl:purchaseObj.urlLink,
                         fixedRateFrom: purchaseObj.fixedRateFrom ?? 0,
-                        fixedRateRange: purchaseObj.fixedRateFrom + fixedRateBetween + purchaseObj.fixedRateTo,
+                        fixedRateRange: checkUndefined(purchaseObj.fixedRateFrom + fixedRateBetween + purchaseObj.fixedRateTo),
                         fixedAprFrom: purchaseObj.fixedAprFrom ?? 0,
-                        fixedAprRange: (purchaseObj.fixedAprFrom ?? "") + fixedAprBetween + (purchaseObj.fixedAprTo ?? ""),
+                        fixedAprRange: checkUndefined((purchaseObj.fixedAprFrom ?? "") + fixedAprBetween + (purchaseObj.fixedAprTo ?? "")),
 
                         variableRateFrom: purchaseObj.variableRateFrom ?? 0,
-                        variableRateRange: (purchaseObj.variableRateFrom ?? '') + variableRateBetween + (purchaseObj.variableRateTo ?? ''),
+                        variableRateRange: checkUndefined((purchaseObj.variableRateFrom ?? '') + variableRateBetween + (purchaseObj.variableRateTo ?? '')),
                         variableAprFrom: purchaseObj.variableAprFrom ?? 0,
-                        variableAprRange: (purchaseObj.variableAprFrom ?? '') + variableAprBetween + (purchaseObj.variableAprTo ?? ''),
+                        variableAprRange: checkUndefined((purchaseObj.variableAprFrom ?? '') + variableAprBetween + (purchaseObj.variableAprTo ?? '')),
 
                         minPeriod: purchaseObj.minPeriod,
-                        PeriodRange: purchaseObj.minPeriod + periodBetween + purchaseObj.maxPeriod,
+                        PeriodRange: checkUndefined(purchaseObj.minPeriod + periodBetween + purchaseObj.maxPeriod),
                         type: purchaseObj.type,
                         bankId:val.bankID,
 						version:version,
@@ -122,17 +138,17 @@ app.controller('homeLoanCtrl', function(customFunc) {
                         
                         personalLoanUrl:refinanceObj.urlLink,
                         fixedRateFrom: refinanceObj.fixedRateFrom ?? 0,
-                        fixedRateRange: refinanceObj.fixedRateFrom + fixedRateBetween + refinanceObj.fixedRateTo,
+                        fixedRateRange: checkUndefined(refinanceObj.fixedRateFrom + fixedRateBetween + refinanceObj.fixedRateTo),
                         fixedAprFrom: refinanceObj.fixedAprFrom ?? 0,
-                        fixedAprRange: (refinanceObj.fixedAprFrom ?? "") + fixedAprBetween + (refinanceObj.fixedAprTo ?? ""),
+                        fixedAprRange: checkUndefined((refinanceObj.fixedAprFrom ?? "") + fixedAprBetween + (refinanceObj.fixedAprTo ?? "")),
                         
                         variableRateFrom: refinanceObj.variableRateFrom ?? 0,
-                        variableRateRange: (refinanceObj.variableRateFrom ?? '') + variableRateBetween + (refinanceObj.variableRateTo ?? ''),
+                        variableRateRange: checkUndefined((refinanceObj.variableRateFrom ?? '') + variableRateBetween + (refinanceObj.variableRateTo ?? '')),
                         variableAprFrom: refinanceObj.variableAprFrom ?? 0,
-                        variableAprRange: (refinanceObj.variableAprFrom ?? '') + variableAprBetween + (refinanceObj.variableAprTo ?? ''),
+                        variableAprRange: checkUndefined((refinanceObj.variableAprFrom ?? '') + variableAprBetween + (refinanceObj.variableAprTo ?? '')),
                         
                         minPeriod: refinanceObj.minPeriod,
-                        PeriodRange: refinanceObj.minPeriod + periodBetween + refinanceObj.maxPeriod,
+                        PeriodRange: checkUndefined(refinanceObj.minPeriod + periodBetween + refinanceObj.maxPeriod),
                         type: refinanceObj.type,
                         bankId:val.bankID,
 						version:version,
@@ -161,7 +177,8 @@ app.controller('homeLoanCtrl', function(customFunc) {
             thisObj.maindataLoan = personalInfo;
             thisObj.Showed = 1;
         })
-    })();
+    };
+    this.fetchData();
     // function section 
     this.make_loan_tab_active = function(type) {
         if(type == 'p-l-r'){
@@ -225,6 +242,7 @@ app.controller('homeLoanCtrl', function(customFunc) {
         this.sortObj[sortType] = mid;
         this.selectedSort = sortType;
     }
+    /*
     // customer filter 
     this.customFilter = function() {
         this.maindataLoan = this.maindata_source;
@@ -257,6 +275,26 @@ app.controller('homeLoanCtrl', function(customFunc) {
             default:
                 break;
         }
+    }
+    */
+    // 
+    function checkUndefined(value) {
+		//console.log (value)
+		let result = value.indexOf("undefined");
+		//console.log (result)
+		if(result >= 0) {
+            return "";
+        } else {
+			return value;	
+		}
+		
+    }
+	
+	this.customFilter = function() {
+        if(this.zip && getState(this.zip) == false) {
+            return;
+        }
+        this.fetchData(this.zip, this.creditScore, this.loanAmountVal);
     }
     this.moreDetail = function(event) {
 
