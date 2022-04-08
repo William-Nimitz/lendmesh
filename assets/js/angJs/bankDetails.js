@@ -26,6 +26,7 @@ app.controller('BankDetailCtrl', function (customFunc) {
         this.backUrl = sessionStorage.getItem(this.bankShortName);
     }
     //get all banks
+    console.log(`${_base}${_banks}`);
     customFunc.httpRequest(`${_base}${_banks}`, "GET")
         .then(res => {
             const banklists = res.data.bankDetails;
@@ -94,6 +95,7 @@ app.controller('BankDetailCtrl', function (customFunc) {
         //get all the available loans 
         customFunc.httpRequest(allAvailableLoansUrl, "GET")
             .then(res => {
+                console.log(res.data)
                 const parse = customFunc.customParse1(res.data);
                 const homeLoans = parse.find(loan => loan.bankDetails.loanType === "mortgageLoan");
                 if (homeLoans) {
@@ -171,8 +173,8 @@ app.controller('BankDetailCtrl', function (customFunc) {
                     this.autoLoans = autoLoans.bankDetails.itemType.map(loan => {
                         let rateBetween = (loan.rateTo !== "" && loan.rateTo !== undefined) ? " - " : "",
                             rateRange = (loan.rateFrom == loan.rateTo) ? loan.rateFrom : loan.rateFrom + rateBetween + (loan.rateTo ?? ''),
-                            minPeriod = (loan.minPeriod === "" || loan.minPeriod === undefined) ? (personalLoans.autoMinTerm ?? "") : loan.minPeriod,
-                            maxPeriod = (loan.maxPeriod === "" || loan.maxPeriod === undefined) ? (personalLoans.autoMaxTerm ?? "") : loan.maxPeriod,
+                            minPeriod = (loan.minPeriod === "" || loan.minPeriod === undefined) ? (autoLoans.autoMinTerm ?? "") : loan.minPeriod,
+                            maxPeriod = (loan.maxPeriod === "" || loan.maxPeriod === undefined) ? (autoLoans.autoMaxTerm ?? "") : loan.maxPeriod,
                             periodBetween = (maxPeriod !== "" && minPeriod !== maxPeriod) ? " - " : "";
                         maxPeriod = (minPeriod !== maxPeriod) ? maxPeriod : "";
                         return {

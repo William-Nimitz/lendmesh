@@ -220,7 +220,8 @@ const app = angular.module('mainModuleApp', ['pascalprecht.translate', 'ngAnimat
         return JSON.parse(str.replace(/\'/g, "\"")
                 .replace(/True/g, "true")
                 .replace(/False/g, "false")
-                .replace(/None/g, "null"));
+                .replace(/None/g, "null")
+                .replace(/can"t/g, "can't"));
     }
 
     this.openLoading = function() {
