@@ -26,7 +26,7 @@ app.controller('BankDetailCtrl', function (customFunc) {
         this.backUrl = sessionStorage.getItem(this.bankShortName);
     }
     //get all banks
-    console.log(`${_base}${_banks}`);
+    //console.log(`${_base}${_banks}`);
     customFunc.httpRequest(`${_base}${_banks}`, "GET")
         .then(res => {
             const banklists = res.data.bankDetails;
@@ -95,7 +95,7 @@ app.controller('BankDetailCtrl', function (customFunc) {
         //get all the available loans 
         customFunc.httpRequest(allAvailableLoansUrl, "GET")
             .then(res => {
-                console.log(res.data)
+                //console.log(res.data)
                 const parse = customFunc.customParse1(res.data);
                 const homeLoans = parse.find(loan => loan.bankDetails.loanType === "mortgageLoan");
                 if (homeLoans) {
