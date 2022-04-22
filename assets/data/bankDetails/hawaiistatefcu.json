@@ -1,0 +1,83 @@
+{
+    "title": "Hawaii State Federal Credit Union",
+    "Page_Title": "Hawaii State Federal Credit Union | Personal and Business Banking",
+    "Meta_Description": "Hawaii State Federal Credit Union is a medium-sized financial organisation that yet functions as a small, friendly credit union. It has remained true to its founding values of service and commitment to its members.",
+	"Meta_Keywords": "Best Personal Loan, Cheap Rate Loans, Low rate loans, Low Interest rate loans, Low APR Loans, Best Mortgage Loans, Best Student Loans, Best Auto Loans, Best Credit cards",
+    "img_url": "hawaiistatefcu.png",
+    "link": "https://www.hawaiistatefcu.com/",
+    "content": [
+        {
+            "tab": "About State Department Federal Credit Union",
+            "format": "none",
+            "content": [
+                "In 1936, Hawaii State Federal Credit Union (Hawaii State FCU) was established. Hawaii State FCU has over 120,000 members and $2 billion in assets, serving state, city, and county workers, as well as non-profits and select companies and their families around the state. On Oahu and in Kahului, Maui, Hawaii State FCU offers financial counselling, checking, savings, and loan services. It is Hawaii's second largest credit union. It is also the nation's 181st largest credit union. It was founded in 1936 and has expanded to 370 people in 11 locations by December 2021. Hawaii State FCU got an A rating for its health."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+			"header":"You are eligible to join Hawaii State FCU if you are:",
+            "format": "disc",
+            "content": [
+                "Employees of the State of Hawaii, both active and retired",
+                "Honolulu City and County Employees, Active and Retired",
+				"Maui County Employees, Both Active and Retired",
+				"Employees of Hawaii State FCU, both active and retired",
+				"All eligible people' immediate relatives and household members",
+				"Spouses of people who died while serving in the military",
+				"Any employee or member of a Select Employee Group (SEG), which comprises enterprises, associations, and non-profit organisations based in Hawaii and registered in Hawaii State FCU."
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.hawaiistatefcu.com/join/"
+            },			
+            "img":""
+        },
+        {
+            "tab": "Documents Required",
+            "format": "none",
+            "content": [
+                {
+                    "header":"Following are the information required to complete the application:",
+                    "format": "disc",
+                    "content":[
+                        "Personal information",
+                        "SSN, address",
+                        "phone number",
+						"Email address",
+						"Identification issued by the government - a driver's license, a state ID, a passport, or a military ID"
+                    ]
+                }
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "disc",
+            "content": [
+                "Hawaii State Federal Credit Union Savings account must be opened with a minimum deposit of $20 with the $5 of Monthly service fees.",
+                "With a minimum average daily balance of $1,000 or at least 20 debit card purchases per month, you can avoid the $5 monthly service fee.",
+                "Hawaii State Federal Credit Union offers Mortgage Services, Credit Cards, Auto Loans, Personal Loans, and Student Loans are just a few of their best credit card and loan services.",
+				"Hawaii State Federal Credit Union has all of your business requirements covered, from checking and savings accounts to loans, credit cards, and business tools."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "disc",
+            "content": [
+                "With unlimited surcharge-free ATM transactions at all Hawaii State FCU and Bank of Hawaii ATMs, you can access your money quickly and easily.",
+                "Get more out of your checking account, such as the opportunity to earn interest and reward points.",
+                "There are no loan or application costs, and loan periods of up to 84 months are available.",
+				"All of our gains are returned to you in the form of lower rates, cheaper fees, and new services.",
+				"Because we are a member of the Shared Branching Network, you may access your funds at other Hawaii credit unions. Alternatively, there are over 5,000 locations in the United States."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

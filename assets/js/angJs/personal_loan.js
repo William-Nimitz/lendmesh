@@ -220,7 +220,7 @@ app.controller('personalLoanCtrl', function(customFunc) {
         }
     }
     */
-
+		
     // customer filter 
     this.customFilter = function() {
         if(this.zip && getState(this.zip) == false) {

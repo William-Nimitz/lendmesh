@@ -1,0 +1,83 @@
+{
+    "title": "State Department Federal Credit Union",
+    "Page_Title": "State Department Federal Credit Union | Personal and Business Banking",
+    "Meta_Description": "Since 1935, the State Department Federal Credit Union has been in operation. It is Virginia's seventh biggest credit union, with $2.63 billion in assets and more than 91,000 members.",
+	"Meta_Keywords": "Best Personal Loan, Cheap Rate Loans, Low rate loans, Low Interest rate loans, Low APR Loans, Best Mortgage Loans, Best Student Loans, Best Auto Loans, Best Credit cards",
+    "img_url": "sdfcu.png",
+    "link": "https://www.sdfcu.org/",
+    "content": [
+        {
+            "tab": "About State Department Federal Credit Union",
+            "format": "none",
+            "content": [
+                "The Department of State Federal Credit Union is situated in Alexandria and is Virginia's seventh biggest credit union. It is also the nation's 145th largest credit union. It was founded in 1935 and had expanded to 188 staff and 91,087 members at 6 sites by December 2021. The money market rates of State Department Federal Credit Union are 25% higher than the national average, and it has an A health rating.",
+				"SDFCU has a varied and global membership, including members from the Department of State and our partner Select Employee Groups. Savings accounts, mortgages, credit cards, vehicle loans, share certificates, interest checking options, IRAs, and other financial products are available via them. They also provide a variety of services to assist our members in achieving their financial objectives, including home-buying and auto-buying information, investment services, scholarship possibilities, debt counselling, and more."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+			"header":"",
+            "format": "disc",
+            "content": [
+                "Department of State: The Department of State's employees and on-site contractors.",
+                "Spouses, parents, children, siblings, grandkids, stepparents, stepchildren, step-siblings, and adoptive partnerships are all eligible, as are those who live in the same house and maintain a single economic unit.",
+				"Organizational Affiliates: You may be eligible if you are a member of one of SDFCU's associations, organisations, or business partners.",
+				"American Consumer Council: Members of the American Consumer Council may be able to join SDFCU. When creating an account, applicants must choose ACC on their application."
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.sdfcu.org/membership"
+            },			
+            "img":""
+        },
+        {
+            "tab": "Documents Required",
+            "format": "none",
+            "content": [
+                {
+                    "header":"Following are the information required to complete the application:",
+                    "format": "disc",
+                    "content":[
+                        "Personal information",
+                        "SSN, address",
+                        "phone number",
+						"Email address",
+						"Identification issued by the government",
+						"A driver's license, a state ID, a passport, or a military ID"
+                    ]
+                }
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "disc",
+            "content": [
+                "The State Department Federal Credit Union Savings account must be opened with a minimum deposit of $1 and there are no minimum increments or transfer fees.",
+                "Savings accounts, mortgages, credit cards, vehicle loans, share certificates, interest checking options, IRAs, and other financial products are available at State Department Federal Credit Union",
+                "State Department Federal Credit Union has all of your business requirements covered, from checking and savings accounts to loans, credit cards, and business tools."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "disc",
+            "content": [
+                "Low-interest loans and high-yield savings accounts",
+                "The CO-OP Network provides access to approximately 30,000 free ATMs around the country.",
+                "Eligibility for undergraduate scholarship competitions",
+				"Credit card benefits",
+				"SDFCU members have free checking, low loan rates, high-yield savings accounts, special services, and a convenient mobile app to help them grow and manage their money.",
+				"Members may easily access their money via Online Banking, our mobile app, and our contact centre.",
+				"With our credit card choices, you may earn cash back or Flexpoints, and with our debit card, you can earn purchase rewards."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

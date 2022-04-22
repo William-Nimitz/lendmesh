@@ -1,16 +1,20 @@
 {
     "title": "Consumer Credit Union",
-    "Page_Title": "Consumer Credit Union I Personal and Business Banking",
+    "Page_Title": "Consumer Credit Union | Personal and Business Banking",
     "Meta_Description": "Consumer Credit Unions' nonprofit structure allows them to operate at a lesser cost than for-profit banks, allowing them to provide competitive lending and savings rates.",
 	"Meta_Keywords": "Best Personal Loan, Cheap Rate Loans, Low rate loans, Low Interest rate loans, Low APR Loans, Best Mortgage Loans, Best Student Loans, Best Auto Loans, Best Credit cards",
     "img_url": "myconsumers.png",
+<<<<<<< HEAD
     "link": "https://www.myconsumers.org/home",
+=======
+    "link": "https://www.myconsumers.org/",
+>>>>>>> origin/development
     "content": [
         {
             "tab": "About Consumer Credit Union",
             "format": "none",
             "content": [
-                "The Consumer Credit Union has been in operation since 1953. It is Tennessee's 13th biggest credit union, with $557.16 million in assets and more than 36,000 members. The credit union provides its members with a comprehensive range of goods and services, including checking, savings, debit and credit cards, automotive and consumer loans, money market accounts and certificates of deposit, and a number of mortgage options. Consumers Credit Union is a federally insured state-chartered credit union located in Waukegan, Illinois, with 10 branches and assets of $610,696,905."
+                "Consumers Credit Union, headquartered in Gurnee, Illinois, has 11 branches around the Chicago suburbs. The credit union, which was formed in 1930, provides a variety of consumer products such as checking accounts, savings accounts, certificates of deposit (CDs), house loans, auto loans, credit cards, IRAs, and business banking services. CCU had $2.46 billion in assets and 173,354 members as of September 2020. In December 2019, the credit union had 124,499 members and $1.33 billion in assets. That means its membership increased by 39% in just nine months, while its assets increased by more than 80%."
             ],
             "link":"",
             "img":""
@@ -19,8 +23,11 @@
             "tab": "Membership Eligibility",
             "format": "disc",
             "content": [
-                "If you live, worship, volunteer, attend school, or work for a business and/or other legal entity in Anderson County, Blount County, Claiborne County, Cocke County, Greene County, Hancock County, Hamblen County, Jefferson County, Knox County, Loudon County, Sullivan County, Union County, or Johnson City, Tennessee, you are eligible for membership in Consumer Credit Union.",
-                "If you and your family members join the credit union and maintain a regular share account, your membership is permanent."
+                "Prospective and tenant-stockholders, as well as Kings Bay Houses, Section Two, Inc. workers",
+                "Warbasse Consumers Cooperative Society, Inc. members",
+				"Grenadier Realty Corporation employees",
+				"Members of the Knights of Pythias and Lodges, as stated further in our Charter",
+				"Employees of Consumers Federal Credit Union, members of their immediate family or household, and members of such people' organisations"
             ],
             "link":"",
             "img":""
@@ -44,7 +51,11 @@
             "link":{
                 "label": "Refer to the link for more details",
                 "type": "button",
+<<<<<<< HEAD
                 "url": "https://www.myconsumers.org/about/what-we-do/membership"
+=======
+                "url": "https://www.consumersfcu.org/eligibility/"
+>>>>>>> origin/development
             },
             "img":""
         },
@@ -63,9 +74,9 @@
             "tab": "Bank Miscellaneous",
             "format": "disc",
             "content": [
-                "Over 30,000 free ATMs are accessible. In addition, if you complete the monthly rewards requirements, the credit union will reimburse you for non-network ATM fees.",
-                "Consumers Credit Union is part of a nationwide shared branch network with over 5,000 locations (along with the 30,000 surcharge-free ATMs).",
-                "Credit unions operate exclusively to assist its member-owners. Members of credit unions are consistently more happy with their service than clients of banks or savings and loans, according to consumer studies."
+                "The APYs (annual percentage yields) for Consumers Credit Union's rewards checking accounts are perhaps the most prominent feature of its offerings.",
+                "CCU's expansion has been aided by two recent acquisitions. CCU amalgamated with Andigo Credit Union, previously Motorola Employees Credit Union, situated in Schaumburg, Illinois, in June 2020. CCU amalgamated with Waukegan Municipal Employees Credit Union in Waukegan, Illinois, in 2019.",
+                "They provide some of the best interest rates available for checking accounts in the United States"
             ],
             "button":"",
             "img":""

@@ -1,7 +1,7 @@
 {
     "title": "PenFed Credit Union",
     "Page_Title": "PenFed Credit Union I Personal and Business Banking",
-    "Meta_Description": "As a member-owned charity, their success is inextricably linked to yours.That's why PenFed is committed to providing exceptional service and savings to its members in the spirit of 'Let's Grow Together'",
+    "Meta_Description": "As a member-owned charity, their success is inextricably linked to yours.That`s why PenFed is committed to providing exceptional service and savings to its members in the spirit of `Let`s Grow Together`",
 	"Meta_Keywords": "Best Personal Loan, Cheap Rate Loans, Low rate loans, Low Interest rate loans, Low APR Loans, Best Mortgage Loans, Best Student Loans, Best Auto Loans, Best Credit cards",
     "img_url": "penfed.png",
     "link": "https://www.penfed.org/",
@@ -23,7 +23,7 @@
                 "Applicants must be of the legal age in their state of residence.",
                 "Applicants must have at least one outstanding, completely private education loan, federally backed education loan, or Parent Loan.",
                 "On the loan application and the promissory note, applicants must be listed as the borrower.",
-                "Applicants with a bachelor's degree or above may be eligible for student loan refinancing.",
+                "Applicants with a bachelor`s degree or above may be eligible for student loan refinancing.",
                 "Applicants are required to present verification of income.",
                 "Applicants must be able to fulfill the credit standards of the borrower."
             ],
@@ -35,10 +35,10 @@
             "format": "none",
             "content": [
                 {
-                    "header":"Depending on their sources of income, the type of loan, and whether it's a buy or refinance, each borrower will have various documentation requirements.",
+                    "header":"Depending on their sources of income, the type of loan, and whether it`s a buy or refinance, each borrower will have various documentation requirements.",
                     "format": "1",
                     "content":[
-                        "Identification — A driver's license, passport, or other government-issued identification.",
+                        "Identification — A driver`s license, passport, or other government-issued identification.",
                         "2 months of bank statements (all pages)",
                         "Pay Stubs from the last 30 days",
                         "2 years of W2s or 1099s",

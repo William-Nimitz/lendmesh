@@ -178,7 +178,6 @@ const app = angular.module('mainModuleApp', ['pascalprecht.translate', 'ngAnimat
     $translateProvider.preferredLanguage('en');
 }])
 .service('customFunc', function($http, $document) {
-
     this.UsNumberFormat = new Intl.NumberFormat('US');
     this.serverUrl = "https://us-east4-lendmesh.cloudfunctions.net/";
     this.AllAvailableLoanUrl = "https://us-central1-lendmesh.cloudfunctions.net/";
@@ -188,7 +187,6 @@ const app = angular.module('mainModuleApp', ['pascalprecht.translate', 'ngAnimat
         formatNum = isNaN(formatNum)?0:formatNum;
         return formatNum;
     }
-
     this.httpRequest = function(url, method, params = {}, headers = {}) {
         return $http({
             method: method,
@@ -219,10 +217,15 @@ const app = angular.module('mainModuleApp', ['pascalprecht.translate', 'ngAnimat
     }
 
     this.customParse1 = function(str) {
-        return JSON.parse(str.replace(/\'/g, "\"")
+		//console.log(str);
+		/*var newStr = str.replace(/\'/g, "\"")
                 .replace(/True/g, "true")
                 .replace(/False/g, "false")
-                .replace(/None/g, "null"));
+                .replace(/None/g, "null");
+		console.log(newStr);		
+        return JSON.parse(newStr);
+		*/
+		return str;		
     }
 
     this.openLoading = function() {
@@ -263,6 +266,7 @@ const app = angular.module('mainModuleApp', ['pascalprecht.translate', 'ngAnimat
     this.mobileNav = function(fromPos = '') {
         if(fromPos === 'overlay') { this.open = false } else {this.open = !this.open;}
     }
+
     this.changeLanguage = function(lang) {
         $translate.use(lang);
         this.langImg = lang;

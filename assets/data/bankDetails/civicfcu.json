@@ -1,0 +1,78 @@
+{
+    "title": "Civic Federal Credit Union",
+    "Page_Title": "Civic Federal Credit Union | Personal and Business Banking",
+    "Meta_Description": "Civic Federal Credit Union is a member of the Depository Credit Intermediation Industry and is based in Raleigh, North Carolina. Civic Federal Credit Union employs 75 people across all of its sites and earns $1.57 million in revenue (USD).",
+	"Meta_Keywords": "Best Personal Loan, Cheap Rate Loans, Low rate loans, Low Interest rate loans, Low APR Loans, Best Mortgage Loans, Best Student Loans, Best Auto Loans, Best Credit cards",
+    "img_url": "civicfcu.png",
+    "link": "https://www.civicfcu.org/",
+    "content": [
+        {
+            "tab": "About Civic Federal Credit Union",
+            "format": "none",
+            "content": [
+                "Civic Federal Credit Union is a non-profit financial cooperative that provides financial services to its members. Civic Federal Credit Union first opened its doors in 2017. It is the 25th biggest credit union in North Carolina, with assets reaching $88.74 million and more than 2,000 members. Civic Federal Credit Union is a first digital federal credit union based in RALEIGH, NC that provides a variety of banking and financial services such as checking and savings accounts, an ATM/debit card programme, and more. Joining a credit union gives you access to savings, loans, and other benefits."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Membership Eligibility",
+			"header":"Civic was founded to help the hardworking people who keep North Carolina's cities, towns, and villages moving ahead. They consider it an honour to serve you, your family, and your enterprises. Here's a breakdown of who is qualified to join:",
+            "format": "disc",
+            "content": [
+                "Employees of local government agencies, both current and retired (contract, part-time, seasonal and full-time employees are included)",
+                "Businesses that are owned by local government employees or that primarily serve local government agencies",
+				"Elected officials in local government",
+				"Volunteers for municipal governments",
+				"Furthermore, all members of the family are entitled to join the Civic: spouses, parents, grandparents, grandchildren, siblings, stepparents, stepchildren, step siblings, and adopted children."
+            ],
+            "link":{
+                "label": "Refer to the link for more details",
+                "type": "button",
+                "url": "https://www.civicfcu.org/membership"
+            },			
+            "img":""
+        },
+        {
+            "tab": "Documents Required",
+            "format": "none",
+            "content": [
+                {
+                    "header":"Following are the information required to complete the application:",
+                    "format": "disc",
+                    "content":[
+                        "Personal information - SSN, address, phone number, and email address",
+                        "Identification issued by the government - a driver's license, a state ID, a passport, or a military ID",
+                        "Method of payment - credit or debit card, or routing and account number"
+                    ]
+                }
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Highlights",
+            "format": "disc",
+            "content": [
+                "The first Civic Select Savings account must be opened with a minimum deposit of $1. The minimum initial deposit for any additional Select Savings accounts is $20.",
+                "Overdraft Transfer Service is accessible from a Checking, Savings, or Money Market account, and there are no minimum increments or transfer fees.",
+                "Civic Federal Credit Union offers Mortgage Services, Credit Cards, Auto Loans, Personal Loans, and Student Loans are just a few of their best credit card and loan services.",
+				"Civic Federal Credit Union has all of your business requirements covered, from checking and savings accounts to loans, credit cards, and business tools."
+            ],
+            "link":"",
+            "img":""
+        },
+        {
+            "tab": "Bank Miscellaneous",
+            "format": "disc",
+            "content": [
+                "Civic Federal Credit Union is committed to meeting the requirements of North Carolina's fire and rescue services.",
+                "The business recently expanded its collaboration with the North Carolina Association of Fire Chiefs (NCAFC), the preeminent organisation for fire service officer and executive leadership development.",
+                "Civic is a member-led organisation that provides services to local government personnel, their families, and small companies.",
+				"Civic has redefined financial services 'beyond the branch' and increased access to financial services for individuals throughout the state by utilising secure app and online technologies for anytime and convenient banking alternatives."
+            ],
+            "button":"",
+            "img":""
+        }
+    ]
+}

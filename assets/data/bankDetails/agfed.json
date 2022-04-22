@@ -1,7 +1,7 @@
 {
     "title": "AgFed Credit Union",
     "Page_Title": "AgFed Credit Union I Personal and Business Banking",
-    "Meta_Description": "AgFed - Agriculture Federal Credit Union - Provides individuals with the best level of service by providing market-leading mortgages, auto loans, credit cards, checking, and a range of other accounts while keeping their customers' best interests in mind. AgFed has been providing financial products and services to our members for over 80 years, including auto loans, mortgages, credit cards, checking, online and mobile banking. We offer low rates and high quality member service.",
+    "Meta_Description": "AgFed - Agriculture Federal Credit Union - Provides individuals with the best level of service by providing market-leading mortgages, auto loans, credit cards, checking, and a range of other accounts while keeping their customers` best interests in mind. AgFed has been providing financial products and services to our members for over 80 years, including auto loans, mortgages, credit cards, checking, online and mobile banking. We offer low rates and high quality member service.",
 	"Meta_Keywords": "Best Personal Loan, Cheap Rate Loans, Low rate loans, Low Interest rate loans, Low APR Loans, Best Mortgage Loans, Best Student Loans, Best Auto Loans, Best Credit cards",
     "img_url": "agfed.png",
     "link": "https://www.agfed.org/",
@@ -29,7 +29,7 @@
                         "Employees, employee family members, and those who have retired as pensioners or annuitants from our Select Employee Groups (SEGs) firms and organizations",
                         "Contractors, coworkers, and family members who work with our Select Employee Groups (SEGs) companies.",
                         "Your spouse, children, siblings, parents, grandparents, grandchildren, stepparents, stepchildren, and stepsiblings are all examples of family members.",
-                        "Household members and domestic partners are also eligible to join and are defined as persons living in the same residence and maintaining a single economic unit; any person who is a permanent member of and participates in the maintenance of the household; and any person who is a permanent member of and participates in the maintenance of the household. Each one of this household's immediate family members might also join"
+                        "Household members and domestic partners are also eligible to join and are defined as persons living in the same residence and maintaining a single economic unit; any person who is a permanent member of and participates in the maintenance of the household; and any person who is a permanent member of and participates in the maintenance of the household. Each one of this household`s immediate family members might also join"
                     ]
                 }
             ],
@@ -44,7 +44,7 @@
             "tab": "Bank Highlights",
             "format": "1",
             "content": [
-                "AgFed's Account Balance is straightforward, with no minimum balance requirement or monthly service charge",
+                "AgFed`s Account Balance is straightforward, with no minimum balance requirement or monthly service charge",
                 "AgFed Credit Union support us by providing market-leading mortgages, auto loans, credit cards, checking, and a range of other accounts",
                 "AgFed Credit Union supports us through savings accounts, Business accounts, retirement accounts, and specialty accounts."
             ],
@@ -57,7 +57,7 @@
             "content": [
                 "Credit unions operate only to serve the financial needs of their member-owners. To that purpose, credit unions not only provide excellent personal service, but members frequently receive greater returns on savings while paying lower interest rates on borrowing.",
                 "Credit unions operate on a one-member, one-vote basis, allowing members the ability to shape Credit Union policy to suit member requirements.",
-                "Credit Unions' non-profit status allows them to operate at a cheaper cost than many for-profit institutions, allowing them to provide competitive lending and savings rates.",
+                "Credit Unions` non-profit status allows them to operate at a cheaper cost than many for-profit institutions, allowing them to provide competitive lending and savings rates.",
                 "The consumer of Credit Union services is also an owner, and he or she has the right to vote on crucial matters such as the election of member representatives to the Board of Directors."
             ],
             "button":"",

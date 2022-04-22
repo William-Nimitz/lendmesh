@@ -3,7 +3,7 @@
         <div class="footer-box footer-logo-wrapper">
             <div class="footer-logo">
                 <a href="./index.html">
-                    <img src="./assets/images/logowhite.png" alt="">
+                    <img src="./assets/images/logowhite.png" srcset="./assets/images/logowhite-small.png 480w, ./assets/images/logowhite.png 1080w" sizes="50vw" alt="">
                 </a>
             </div>
             <p>Lend Mesh is an easy-to-use website that allows you to compare all the best loan services in one place.
@@ -68,10 +68,25 @@
 <!-- Modal Section -->
 <div class="modal fade" id="customModal" role="dialog">
     <div class="modal-dialog">
-        <div class="modal-header"></div>
         <!-- Modal content-->
         <div class="modal-content">
+            <div class="modal-header"></div>
             <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger custom-btn-bg" data-dismiss="modal">Okay</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal error-modal fade" id="customModalError" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header"></div>
+            <div class="modal-body">
+                <p>Error Modal</p>
+            </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Okay</button>
             </div>
@@ -79,6 +94,54 @@
 
     </div>
 </div>
-<div id="loading">
-    <img src="./assets/images/loading.gif" alt="loading" />
+<div class="modal subscription-modal fade" id="customModalSubscription" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <form>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p>Subscription Modal</p>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input type="email" name="name" placeholder="Your Email" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Phone Number</label>
+                        <input type="text" name="name" placeholder="Phone Number"
+                            pattern="(\+\d*)?\s?\(?\d{3}\)?\s?-?\d{3}\s?-?\d{4}\s*" class="form-input">
+                    </div>
+                    <div class="form-group multi-select">
+                        <label class="form-label">Select Loan</label>
+                        <select multiple placeholder="Choose skills" data-allow-clear="1">
+                            <option>HTML</option>
+                            <option>CSS</option>
+                            <option>JavaScript</option>
+                            <option>PHP</option>
+                            <option>MySQL</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger custom-btn-bg" data-dismiss="modal">Send</button>
+                </div>
+        </form>
+    </div>
 </div>
+</div>
+<div id="loading">
+    <img src="./assets/images/loading.gif" srcset="./assets/images/loading-small.gif 480w, ./assets/images/loading.gif 1080w" sizes="50vw" alt="loading" />
+</div>
+<script>
+    $(function () {
+        $('.multi-select select').each(function () {
+            $(this).select2({
+                theme: 'bootstrap4',
+                width: 'style',
+                placeholder: $(this).attr('placeholder'),
+                allowClear: Boolean($(this).data('allow-clear')),
+            });
+        });
+    });
+</script>

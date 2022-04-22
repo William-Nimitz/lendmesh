@@ -18,21 +18,21 @@
 
 	<link rel="canonical" href="https://www.lendmesh.com/home-loan.html">
 
-    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+    <link rel="icon" type="image/png" href="./assets/images/favicon-small.png" />
 	<link href="./assets/css/loan-styles.css" rel="stylesheet">
 	<link href="./assets/css/global.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
 	<script>
 		//var dmd1 = new Date();
 		//var version = dmd1.getFullYear()+""+(dmd1.getMonth()+1)+""+dmd1.getDate();
 	</script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
-    <script src="./assets/js/angJs/angular-translate.min.js"></script>
-	<script src="./assets/js/angJs/mainModuleApp.js"></script>
-    <script src="./assets/js/angJs/home_loan.js"></script>
-    <script src="./assets/js/zipcode_validate.js"></script>
+	<script src="./assets/js/angJs/angular.min.js" defer></script>
+	<script src="./assets/js/angJs/angular-animate.js" defer></script>
+	<script src="./assets/js/angJs/angular-sanitize.js" defer></script>
+    <script src="./assets/js/angJs/angular-translate.min.js" defer></script>
+	<script src="./assets/js/angJs/mainModuleApp.js" defer></script>
+    <script src="./assets/js/angJs/home_loan.js" defer></script>
+    <script src="./assets/js/zipcode_validate.js" defer></script>
 	<script>
 		//document.write('<link rel="stylesheet" href="./assets/css/loan-styles.css?version=' + version + '"\><\/link>');
 		//document.write('<link rel="stylesheet" href="./assets/css/global.css?version=' + version + '"\><\/link>');
@@ -109,7 +109,7 @@
         <section class="custom-section calculator-sec">
             <div class="custom-container">
                 <div class="sec-head">
-                    <h2>Best home loan rates for {{Base.currentMonth}} {{Base.currentYear}}</h2>
+                    <h2>Best Mortage Loan Rates In USA - {{Base.currentMonth}} {{Base.currentYear}}</h2>
                 </div>
                 <div class="loan-sec-innr">
                     <div class="">
@@ -182,14 +182,14 @@
                                     <ul class="tabs --fill +mg-bottom-none" role="tablist" aria-label="tabs">
                                         <li class="tabs__item" role="presentation">
                                             <button id="foo-tab" type="button" role="tab" aria-controls="foo" aria-selected="true" class="tabs__link --is-active" ng-click="Ctrl.make_loan_tab_active('p-l-r')">
-                                                <span class="+display-none +display-block--sm">New Mortage Loan</span>
-                                                <span class="+display-none--sm +display-block">New Mortage Loan</span>
+                                                <span class="+display-none +display-block--sm">New Mortage</span>
+                                                <span class="+display-none--sm +display-block">New Mortage</span>
                                             </button>
                                         </li>
                                         <li class="tabs__item " role="presentation">
                                             <button id="bar-tab" type="button" role="tab" aria-controls="bar" aria-selected="false" class="tabs__link " ng-click="Ctrl.make_loan_tab_active('p-p-l')">
-                                                <span class="+display-none +display-block--sm">Refinance </span>
-                                                <span class="+display-none--sm +display-block">Refinance </span>
+                                                <span class="+display-none +display-block--sm">Refinance</span>
+                                                <span class="+display-none--sm +display-block">Refinance</span>
                                             </button>
                                         </li>
                                     </ul>
@@ -536,7 +536,7 @@
                         </div>
                     </div>
                     <div class="loan-about-right">
-                        <img src="assets/images/confiscation-gd637f5ff9_1920.jpg" alt="">
+                        <img src="assets/images/confiscation-gd637f5ff9_1920.jpg" srcset="./assets/images/confiscation-gd637f5ff9_1920-small.jpg 480w, ./assets/images/confiscation-gd637f5ff9_1920.jpg 1080w" sizes="50vw" alt="">
                     </div>
                 </div>
             </div>
@@ -566,12 +566,12 @@
     <footer ng-include="'footer.html'" class="footer"></footer>
     <a href="javascript:void(0)" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/popper.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/owl.carousel.min.js"></script>
-    <script src="./assets/js/bootstrap-select.min.js"></script>
-	<script src="./assets/js/custom.js"></script>
+    <script src="./assets/js/jquery.min.js" defer></script>
+    <script src="./assets/js/popper.min.js" defer></script>
+    <script src="./assets/js/bootstrap.min.js" defer></script>
+    <script src="./assets/js/owl.carousel.min.js" defer></script>
+    <script src="./assets/js/bootstrap-select.min.js" defer></script>
+	<script src="./assets/js/custom.js" defer></script>
 </body>
 
 </html>
