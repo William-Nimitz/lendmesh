@@ -60,7 +60,9 @@ div#nav-icon {
     padding: 10px 0;
     opacity: 1;
 }
-
+.mobileShowSec {
+    display: none!important;
+}
 @-webkit-keyframes fadeInDown {
     from {
         opacity: 0;

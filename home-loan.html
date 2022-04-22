@@ -279,7 +279,7 @@
                                                     </div>
                                                 </button>
                                                 </th>
-                                                <th class="rate-table-header__cell grid-cell">
+                                                <th class="rate-table-header__cell grid-cell mobileHideTr">
                                                     <button type="button" ng-click="Ctrl.customSort('variableRate')" class="button --bare +display-flex +align-items-center +pd-right-xs">
                                                     <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs ">Variable Rate</span>
                                                     <div class="table-sort +mg-left-xs">
@@ -306,7 +306,7 @@
                                                     </div>
                                                 </button>
                                                 </th>
-                                                <th class="rate-table-header__cell grid-cell">
+                                                <th class="rate-table-header__cell grid-cell mobileHideTr">
                                                     <button type="button" ng-click="Ctrl.customSort('variableApr')" class="button --bare +display-flex +align-items-center +pd-right-xs">
                                                     <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs ">Variable APR</span>
                                                     <div class="table-sort +mg-left-xs">
@@ -469,10 +469,10 @@
                                                 <td class="grid-cell">
                                                     <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap">{{obj.fixedAprRange}}<span ng-if="obj.fixedAprRange" class="numeral__accent">%</span></p>
                                                 </td>
-                                                <td class="grid-cell">
+                                                <td class="grid-cell mobileHideTr">
                                                     <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap">{{obj.variableRateRange}}<span ng-if="obj.variableRateRange" class="numeral__accent">%</span></p>
                                                 </td>
-                                                <td class="grid-cell">
+                                                <td class="grid-cell mobileHideTr">
                                                     <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap">{{obj.variableAprRange}}<span ng-if="obj.variableAprRange" class="numeral__accent">%</span></p>
                                                 </td>
                                                 <td class="grid-cell">
@@ -495,6 +495,9 @@
                                                         </div>
                                                         <div ng-show="obj.joinDetails.length > 0" class="grid-cell size-1of2 size-full--md">
                                                             <button type="button" ng-click="Ctrl.moreDetail($event)" class="button --full-width modal__trigger--button expand-toggle">More Details</button>
+                                                        </div>
+                                                        <div class="grid-cell size-1of2 size-full--md mobileShowSec">
+                                                            <span style="text-align: right;"><i class="up_down"></i></span>
                                                         </div>
                                                     </div>
                                                 </td>

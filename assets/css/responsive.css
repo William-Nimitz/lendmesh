@@ -26,7 +26,14 @@
         margin-top: 5px;
     }
 }
-
+@media (max-width: 1125px) {
+    .mobileHideTr {
+        display: none;
+    }
+    .mobileShowSec {
+        display: block!important;
+    }
+}
 @media (max-width: 991px) {
     .menu-open {
         overflow: hidden;
@@ -244,14 +251,11 @@
         margin: 0;
         padding: 15px;
     }
-    .inrpage-banner-inr {
-        height: 270px;
-    }
     .inrpage-banner-inr h1 {
         font-size: 45px;
     }
     main {
-        margin-top: 50px;
+        margin-top: 63px;
     }
     .inrpage-inr h1 {
         font-size: 35px;
@@ -286,9 +290,6 @@
     .leave-comment {
         padding: 30px;
         margin-top: 30px;
-    }
-    .inrpage-banner-inr {
-        height: 170px;
     }
     .inrpage-banner-inr h1 {
         font-size: 30px;
