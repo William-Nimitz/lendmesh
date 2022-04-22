@@ -184,7 +184,7 @@ div#nav-icon {
 
 .banner {
     position: relative;
-    background-image: url(../images/businessman-3213659_1920.jpg);
+    background-image: url(../images/businessman-3213659_1920-small.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -204,7 +204,7 @@ div#nav-icon {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: calc(600px - 90px);
+    min-height: calc(360px - 90px);
     position: relative;
     z-index: 2;
 }
@@ -235,6 +235,15 @@ main {
     line-height: 48px;
     font-weight: 700;
 }
+
+.banner-left h2 {
+    color: #fff;
+    font-size: 21px;
+    line-height: 36px;
+    font-weight: 500;
+}
+
+
 
 .appy-btn {
     margin-top: 40px;
@@ -418,7 +427,7 @@ main {
 }
 
 .service-box-inr {
-    padding: 30px;
+    padding: 10px;
 }
 
 .service-box div {
@@ -662,7 +671,7 @@ main {
 
 .newsletter-section {
     position: relative;
-    background-image: url(../images/bg-shape.png);
+    background-image: url(../images/bg-shape-small.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;

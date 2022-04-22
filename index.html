@@ -21,35 +21,37 @@
 
 	<link rel="canonical" href="https://www.lendmesh.com/index.html">
 
-    <link rel="icon" type="image/png" href="./assets/images/favicon.png"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="./assets/images/favicon-small.png"/>
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
     <link href="./assets/css/global.css" rel="stylesheet">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
-    <script src="./assets/js/angJs/angular-translate.min.js"></script>
-    <script src="./assets/js/angJs/mainModuleApp.js"></script>
-    <script src="./assets/js/angJs/index.js"></script>
-    <script src="./assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="./assets/js/angJs/angular.min.js" defer></script>
+	<script src="./assets/js/angJs/angular-animate.js" defer></script>
+	<script src="./assets/js/angJs/angular-sanitize.js" defer></script>
+    <script src="./assets/js/angJs/angular-translate.min.js" defer></script>
+    <script src="./assets/js/angJs/mainModuleApp.js" defer></script>
+    <script src="./assets/js/angJs/index.js" defer></script>
+    <script src="./assets/js/jquery.min.js" defer></script>
+    <script src="./assets/js/slick.min.js" defer></script>
 </head>
 
+
+
 <body ng-cloak ng-app="mainModuleApp" ng-controller="BaseCtrl as Base" ng-class="{'menu-open': Base.open}">
-    <header ng-include="'header.html'" class="header-main">
+	
+	<header ng-include="'header.html'" class="header-main">
     </header>
     <main ng-controller="indexCtrl as Ctrl">
         <section class="banner">
             <div class="custom-container">
                 <div class="banner-inr">
                     <div class="banner-left">
-                        <h1>We know how difficult it is to find the best loan to suit your needs, so LendMesh has made it easier for you – For FREE. LendMesh connects you to the best offers from different lending providers across the USA.</h1>
+                        <h2>We know how difficult it is to find the best loan to suit your needs, so LendMesh has made it easier for you – For FREE. LendMesh connects you to the best offers from different lending providers across the USA.</h2>
                         <div class="appy-btn">
                             <!--<a href="">Apply now</a> -->
                         </div>
                     </div>
                     <div class="banner-right">
-                        <img src="./assets/images/banner-bg.png" alt="Lend Mesh connects you to the best offers from different Lend providers for best loan offers.">
+                        <img src="./assets/images/banner-bg.png" srcset="./assets/images/banner-bg-small.png 480w, ./assets/images/banner-bg.png 1080w" sizes="50vw" alt="Lend Mesh connects you to the best offers from different Lend providers for best loan offers.">
                     </div>
                 </div>
             </div>
@@ -162,7 +164,7 @@
                 <div class="about-inr">
                     <div class="about-top">
                         <div class="about-img">
-                            <img src="./assets/images/about-sec.jpg" alt="">
+                            <img src="./assets/images/about-sec.jpg" srcset="./assets/images/about-sec-small.jpg 480w, ./assets/images/about-sec.jpg 1080w" sizes="50vw" alt="">
                         </div>
                         <div class="about-content">
                             <div class="about-content-left">
@@ -261,7 +263,7 @@
                         </div>
                     </div>
                     <div class="testimonial-right">
-                        <img src="./assets/images/feedback.png" alt="">
+                        <img src="./assets/images/feedback.png" srcset="./assets/images/feedback-small.png 480w, ./assets/images/feedback.png 1080w" sizes="50vw" alt="">
                     </div>
                 </div>
             </div>
@@ -294,11 +296,11 @@
     </main>
     <footer ng-include="'footer.html'" class="footer"></footer>
     <a href="javascript:void(0)" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
-    <script src="./assets/js/popper.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/owl.carousel.min.js"></script>
-    <script src="./assets/js/bootstrap-select.min.js"></script>
-    <script src="./assets/js/custom.js"></script>
+    <script src="./assets/js/popper.min.js" defer></script>
+    <script src="./assets/js/bootstrap.min.js" defer></script>
+    <script src="./assets/js/owl.carousel.min.js" defer></script>
+    <script src="./assets/js/bootstrap-select.min.js" defer></script>
+    <script src="./assets/js/custom.js" defer></script>
 	<!--
 	<script type="application/ld+json">
 		{

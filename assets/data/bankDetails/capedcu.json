@@ -35,7 +35,7 @@
                     "header":"To start a credit union account, the following documents are normally required.",
                     "format": "disc",
                     "content":[
-                        "One current, valid form of identification is permitted, such as a passport or driver's license, a National ID Card is required.",
+                        "One current, valid form of identification is permitted, such as a passport or driver`s license, a National ID Card is required.",
                         "One proof-of-address document, such as a utility bill or a bank statement dated within the last three months.",
                         "You may also be requested a PPS number."
                     ]
@@ -63,10 +63,10 @@
             "tab": "Bank Miscellaneous",
             "format": "disc",
             "content": [
-                "CapEd is well-known in Idaho's Treasure and Magic Valleys as a provider of financial products, services, and educational resources that assist teachers, their families, and others involved in the education community in maintaining good financial well-being.",
-                "They inform you about budgeting, financing, retirement, and a variety of other financial subjects. You may start enhancing your financial knowledge right now by visiting CapEd's Online Learning Center.",
+                "CapEd is well-known in Idaho`s Treasure and Magic Valleys as a provider of financial products, services, and educational resources that assist teachers, their families, and others involved in the education community in maintaining good financial well-being.",
+                "They inform you about budgeting, financing, retirement, and a variety of other financial subjects. You may start enhancing your financial knowledge right now by visiting CapEd`s Online Learning Center.",
                 "If you satisfy the requirements, the $100 will be transferred into your CapEd bank account, and the $100 School District/Foundation monies will be sent straight to them.",
-                "CapEd Credit Union membership not only saves you money over traditional banks and lenders at one of Idaho's best credit unions. It also contributes to Idaho education by funding activities and events that assist students and instructors."
+                "CapEd Credit Union membership not only saves you money over traditional banks and lenders at one of Idaho`s best credit unions. It also contributes to Idaho education by funding activities and events that assist students and instructors."
             ],
             "button":"",
             "img":""

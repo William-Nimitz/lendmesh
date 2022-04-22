@@ -19,17 +19,18 @@
 
     <link rel="canonical" href={{Ctrl.canonical}} />
 
-    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="./assets/images/favicon-small.png" />
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
     <link href="./assets/css/global.css" rel="stylesheet">
     <link href="./assets/css/bankDetails.css" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
-    <script src="./assets/js/angJs/angular-translate.min.js"></script>
-    <script src="./assets/js/angJs/mainModuleApp.js"></script>
-    <script src="./assets/js/angJs/bankDetails.js"></script>
+	<script src="./assets/js/angJs/angular.min.js" defer></script>
+	<script src="./assets/js/angJs/angular-animate.js" defer></script>
+	<script src="./assets/js/angJs/angular-sanitize.js" defer></script>
+
+    <script src="./assets/js/angJs/angular-translate.min.js" defer></script>
+    <script src="./assets/js/angJs/mainModuleApp.js" defer></script>
+    <script src="./assets/js/angJs/bankDetails.js" defer></script>
 </head>
 
 <body ng-cloak ng-controller="BaseCtrl as Base" ng-class="{'menu-open': Base.open}">
@@ -51,7 +52,7 @@
                     <a href="{{Ctrl.backUrl}}" target="_self" ng-if="Ctrl.backUrl"><button type="button"
                             class="btn custom-btn-bg">Back</button></a>
                     <a href="{{Ctrl.bankContent.link}}" target="_blank"><button type="button"
-                            class="btn custom-btn-bg">{{Ctrl.bankShortName}}</button></a>
+                            class="btn custom-btn-bg">{{Ctrl.bankContent.title}}</button></a>
                 </div>
             </div>
             <div class="custom-container">
@@ -246,12 +247,12 @@
     <footer ng-include="'footer.html'" class="footer"></footer>
     <a href="javascript:void(0)" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/popper.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/owl.carousel.min.js"></script>
-    <script src="./assets/js/bootstrap-select.min.js"></script>
-    <script src="./assets/js/custom.js"></script>
+    <script src="./assets/js/jquery.min.js" defer></script>
+    <script src="./assets/js/popper.min.js" defer></script>
+    <script src="./assets/js/bootstrap.min.js" defer></script>
+    <script src="./assets/js/owl.carousel.min.js" defer></script>
+    <script src="./assets/js/bootstrap-select.min.js" defer></script>
+    <script src="./assets/js/custom.js" defer></script>
 </body>
 
 </html>

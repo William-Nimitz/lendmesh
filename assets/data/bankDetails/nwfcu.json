@@ -10,7 +10,7 @@
             "tab": "About Northwest Federal Credit Union",
             "format": "none",
             "content": [
-                "Northwest Federal Credit Union is a full-service financial organisation that offers excellent financial products and services to its members. Northwest Federal Credit Union was founded in 1947 and is based in Herndon, Virginia. It is Virginia's fourth biggest credit union, with $4.35 billion in assets and over 258,000 members. Northwest Federal Credit Union got an A rating for its health."
+                "Northwest Federal Credit Union is a full-service financial organisation that offers excellent financial products and services to its members. Northwest Federal Credit Union was founded in 1947 and is based in Herndon, Virginia. It is Virginia`s fourth biggest credit union, with $4.35 billion in assets and over 258,000 members. Northwest Federal Credit Union got an A rating for its health."
             ],
             "link":"",
             "img":""
@@ -41,7 +41,7 @@
                     "header":"Following are the information required to complete the application:",
                     "format": "disc",
                     "content":[
-                        "Unexpired government-issued ID, driver's license, state ID, or passport with current address",
+                        "Unexpired government-issued ID, driver`s license, state ID, or passport with current address",
                         "A secondary form of identities, such as a Social Security card, an unexpired passport, or a state-issued ID.",
                         "Date of Birth.",
                         "Your full physical address",

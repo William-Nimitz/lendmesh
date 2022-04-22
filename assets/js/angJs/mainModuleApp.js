@@ -217,10 +217,15 @@ const app = angular.module('mainModuleApp', ['pascalprecht.translate', 'ngAnimat
     }
 
     this.customParse1 = function(str) {
-        return JSON.parse(str.replace(/\'/g, "\"")
+		//console.log(str);
+		/*var newStr = str.replace(/\'/g, "\"")
                 .replace(/True/g, "true")
                 .replace(/False/g, "false")
-                .replace(/None/g, "null"));
+                .replace(/None/g, "null");
+		console.log(newStr);		
+        return JSON.parse(newStr);
+		*/
+		return str;		
     }
 
     this.openLoading = function() {

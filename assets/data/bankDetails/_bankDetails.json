@@ -16,7 +16,7 @@
         },
         {
             "highlight": false,
-            "name": "America's Credit Union",
+            "name": "America`s Credit Union",
             "shortName": "youracu",
             "file": "youracu.json",
             "imgUrl": "youracu.png"
@@ -195,6 +195,27 @@
             "shortName": "salliemae",
             "file": "salliemae.json",
             "imgUrl": "salliemae.png"
+        },
+        {
+            "highlight": false,
+            "name": "Civic Federal Credit Union",
+            "shortName": "civicfcu",
+            "file": "civicfcu.json",
+            "imgUrl": "civicfcu.png"
+        },
+        {
+            "highlight": false,
+            "name": "State Department Federal Credit Union",
+            "shortName": "sdfcu",
+            "file": "sdfcu.json",
+            "imgUrl": "sdfcu.png"
+        },
+        {
+            "highlight": false,
+            "name": "Hawaii State Federal Credit Union",
+            "shortName": "hawaiistatefcu",
+            "file": "hawaiistatefcu.json",
+            "imgUrl": "hawaiistatefcu.png"
         }
     ]
 }
