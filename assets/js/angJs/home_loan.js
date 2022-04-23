@@ -1,6 +1,7 @@
-app.controller('homeLoanCtrl', function(customFunc) {
+app.controller('homeLoanCtrl', function(customFunc, $window) {
     // to bank information
     const thisObj = this;
+    const appWindow = angular.element($window);
 	var dmd1 = new Date();
 	//var version=dmd1.getFullYear()+""+(dmd1.getMonth()+1)+""+dmd1.getDate()+""+Math.random();
 	var version=dmd1.getFullYear()+""+(dmd1.getMonth()+1)+""+dmd1.getDate();
@@ -23,7 +24,16 @@ app.controller('homeLoanCtrl', function(customFunc) {
     this.maindataLoan = [];    // display information
 
     this.Showed = 1; // show *purchase* type, false -> *refinance*
+    appWindow.bind('resize', function () {
+        const ScreenWidth = $window.innerWidth;
+        if(ScreenWidth >= 1125) {
+            const expandTrs = $(".expandMobileViewTr"),
+                  collapsedIcons = $(".up_down");
 
+            expandTrs.css("display", "none");
+            collapsedIcons.removeClass("collapsed");
+        }
+    });
     this.fetchData = function(zip, creditScore) {
 		var url = "";
 		var indexLendMesh = window.location.hostname.indexOf("lendmesh");
@@ -286,11 +296,26 @@ app.controller('homeLoanCtrl', function(customFunc) {
         this.fetchData(this.zip, this.creditScore, this.loanAmountVal);
     }
     this.moreDetail = function(event) {
-
         const currentTr = event.currentTarget.closest("tr"),
+              nextTr = angular.element(currentTr).next().next(),
+              nextTrDisplay = nextTr.css('display');
+        let displayCss = (nextTrDisplay === "none") ? "table-row" : "none";  
+        nextTr.css({'display': displayCss});
+    }
+    this.expand = function(event) {
+        const Current = angular.element(event.currentTarget),
+              isCollapsed = Current.hasClass("collapsed"),
+              currentTr = event.currentTarget.closest("tr"),
               nextTr = angular.element(currentTr).next(),
               nextTrDisplay = nextTr.css('display');
         let displayCss = (nextTrDisplay === "none") ? "table-row" : "none";  
         nextTr.css({'display': displayCss});
+
+        if(isCollapsed) {
+            Current.removeClass("collapsed");
+        } else {
+            Current.addClass("collapsed");
+        }
+        
     }
 }); 

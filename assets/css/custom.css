@@ -16,7 +16,23 @@
     margin: auto;
     padding: 0 15px;
 }
-
+.expand-wrap-mobileView .mobileView-container {
+    display: inline-flex;
+}
+.mobileView-container > .mobileViewCon-child {
+    /* display: inline-flex; */
+}
+.mobileView-container > .mobileViewCon-child button{
+    margin:auto;
+}
+.variableRate ~ p {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+.variableApr ~ p {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
 .custom-section {
     padding: 10px 0;
 }

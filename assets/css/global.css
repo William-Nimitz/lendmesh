@@ -69,12 +69,12 @@ i.up_down {
     background-position-y: -32px;
     margin-top: 10px;
 }
-.collapsed i.up_down {
+i.up_down.collapsed {
     background-position-y: 0px;
 }
 ::-webkit-scrollbar {
   width: 3px;
-  height: 5px;
+  height: 7px;
 }
 
 /* Track */
