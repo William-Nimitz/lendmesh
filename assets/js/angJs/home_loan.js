@@ -24,16 +24,22 @@ app.controller('homeLoanCtrl', function(customFunc, $window) {
     this.maindataLoan = [];    // display information
 
     this.Showed = 1; // show *purchase* type, false -> *refinance*
+    this.IsDesktop = 0;
     appWindow.bind('resize', function () {
+        thisObj.getDevice();
+    });
+    this.getDevice = function() {
         const ScreenWidth = $window.innerWidth;
         if(ScreenWidth >= 1125) {
-            const expandTrs = $(".expandMobileViewTr"),
-                  collapsedIcons = $(".up_down");
-
+            this.IsDesktop = 1;
+            const expandTrs = $(".expandMobileViewTr");
             expandTrs.css("display", "none");
-            collapsedIcons.removeClass("collapsed");
+
+            console.log(this.IsDesktop);
+        } else {
+            this.IsDesktop = 0;
         }
-    });
+    }
     this.fetchData = function(zip, creditScore) {
 		var url = "";
 		var indexLendMesh = window.location.hostname.indexOf("lendmesh");
@@ -55,6 +61,7 @@ app.controller('homeLoanCtrl', function(customFunc, $window) {
                   .then(function(res) {
         const parse = customFunc.customParse(res.data),
               personalInfo = [];
+              console.log(parse);
             parse.forEach((val) => {
 
                 let purchaseObj = {},
@@ -188,6 +195,7 @@ app.controller('homeLoanCtrl', function(customFunc, $window) {
             thisObj.Showed = 1;
         })
     };
+    this.getDevice();
     this.fetchData();
     // function section 
     this.make_loan_tab_active = function(type) {
@@ -297,25 +305,15 @@ app.controller('homeLoanCtrl', function(customFunc, $window) {
     }
     this.moreDetail = function(event) {
         const currentTr = event.currentTarget.closest("tr"),
-              nextTr = angular.element(currentTr).next().next(),
-              nextTrDisplay = nextTr.css('display');
-        let displayCss = (nextTrDisplay === "none") ? "table-row" : "none";  
-        nextTr.css({'display': displayCss});
-    }
-    this.expand = function(event) {
-        const Current = angular.element(event.currentTarget),
-              isCollapsed = Current.hasClass("collapsed"),
-              currentTr = event.currentTarget.closest("tr"),
               nextTr = angular.element(currentTr).next(),
-              nextTrDisplay = nextTr.css('display');
-        let displayCss = (nextTrDisplay === "none") ? "table-row" : "none";  
-        nextTr.css({'display': displayCss});
+              secondTr = angular.element(currentTr).next().next(),
+              secondTrDisplay = secondTr.css('display');
+        let displayCss = (secondTrDisplay === "none") ? "table-row" : "none"; 
 
-        if(isCollapsed) {
-            Current.removeClass("collapsed");
-        } else {
-            Current.addClass("collapsed");
+        secondTr.css({'display': displayCss});
+        console.log(this.IsDesktop, "moreDetail");
+        if(!this.IsDesktop) {
+            nextTr.css({'display': displayCss});
         }
-        
     }
 }); 
