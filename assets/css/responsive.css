@@ -1,10 +1,10 @@
 .less850Show {
     display: none!important;
 }
-.less630Show {
+.less795Show {
     display: none!important;
 }
-.less465Show {
+.less625Show {
     display: none!important;
 }
 @media (max-width: 1400px) {
@@ -290,6 +290,14 @@
         display:inline-block!important;
     }
 }
+@media (max-width: 795px) {
+    .greater795Show {
+        display: none;
+    }
+    .less795Show {
+        display:inline-block!important;
+    }
+}
 @media (max-width: 767px) {
     .ico-list li {
         width: calc(50% - 30px);
@@ -450,21 +458,21 @@
     .form-head h1 {
         font-size: 26px;
     }
-.post-detail h3 {
-    font-size: 20px;
+    .post-detail h3 {
+        font-size: 20px;
+    }
+    .blog-meta-detail ul li {
+        font-size: 13px;
+    }
+    .blog-detail-inr {
+        padding: 15px;
+    }
 }
-.blog-meta-detail ul li {
-    font-size: 13px;
-}
-.blog-detail-inr {
-    padding: 15px;
-}
-}
-@media (max-width: 630px) {
-    .greater630Show {
+@media (max-width: 625px) {
+    .greater625Show {
         display: none;
     }
-    .less630Show {
+    .less625Show {
         display:inline-block!important;
     }
 }
@@ -482,18 +490,58 @@
     .grid-cell .blog-box {
         width: 100%;
     }
- .blog-box {
+    .blog-box {
            width: 100%;
     }
 }
-@media (max-width: 465px) {
-    .greater465Show {
-        display: none;
-    }
-    .less465Show {
-        display:inline-block!important;
+@media (max-width: 495px) {
+    .table.--spacing-md td, .table.--spacing-md th {
+        padding: 0.5rem 0.2rem;
     }
 }
+@media (max-width: 465px) {
+    .rate-table-header__copy {
+        font-size: 12px !important;
+    }
+    .tabs__link {
+        padding: 0.444444rem 0.2rem 0.222222rem;
+    }
+}
+@media (max-width: 375px) {
+    .custom-container {
+        padding: 0 8px;
+    }
+    .lender-logo {
+        width: 5.75rem;
+        height: 2.75rem;
+    }
+    button.lender-logo {
+        padding: 0.25rem 0.25rem;
+    }
+    .lender-logo::before {
+        padding-bottom: 5%;
+    }
+    .lender-logo__image {
+        width: 60px;
+    }
+    .rating-stars__icon {
+        margin-right: 0;
+    }
+    .lendmesh {
+        display: none;
+    }
+    .icon.--icon-xs {
+        width: 0.6rem;
+        height: 0.6rem;
+    }
+    .numeral {
+        font-size: 12.5px;
+    }
+    .\+pd-right-xs {
+        padding-right: 0.1rem !important;
+    }
+}
+
 @media (max-width: 350px) {
     .rate-table-row > .grid-cell div {
         margin: 0;
@@ -508,6 +556,6 @@
         font-size: 14px!important;
     }
     .table.--spacing-md td, .table.--spacing-md th {
-        padding: 0.45rem;
+        padding: 0.5rem 0.1rem;
     }
 } 
