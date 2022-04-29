@@ -96,7 +96,7 @@ app.controller('BankDetailCtrl', function (customFunc) {
         customFunc.httpRequest(allAvailableLoansUrl, "GET")
             .then(res => {
                 //console.log(res.data)
-                const parse = customFunc.customParse1(res.data);
+                const parse = customFunc.customParse(res.data);
                 const homeLoans = parse.find(loan => loan.bankDetails.loanType === "mortgageLoan");
                 if (homeLoans) {
                     const purchaseObj = {}, refinanceObj = {};
