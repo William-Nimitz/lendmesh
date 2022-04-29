@@ -14,6 +14,7 @@ app.controller('homeLoanCtrl', function(customFunc, $window) {
         variableApr:true,
         variableRate:true,
         term:true,
+        variableTerm: true,
         _name:true
     };
     this.selectedSort = 'fixedApr'; // sort type
@@ -24,18 +25,21 @@ app.controller('homeLoanCtrl', function(customFunc, $window) {
     this.maindataLoan = [];    // display information
 
     this.Showed = 1; // show *purchase* type, false -> *refinance*
-    this.IsDesktop = 0;
+    this.IsDesktop = 1;
     appWindow.bind('resize', function () {
         thisObj.getDevice();
     });
     this.getDevice = function() {
         const ScreenWidth = $window.innerWidth;
+        const expandTrs = $(".expand-wrap-mobileView");
         if(ScreenWidth >= 1125) {
-            this.IsDesktop = 1;
-            const expandTrs = $(".expandMobileViewTr");
             expandTrs.css("display", "none");
+        } else {
+            expandTrs.css("display", "inline-block");
+        }
 
-            console.log(this.IsDesktop);
+        if(ScreenWidth > 820) {
+            this.IsDesktop = 1;
         } else {
             this.IsDesktop = 0;
         }
@@ -61,7 +65,6 @@ app.controller('homeLoanCtrl', function(customFunc, $window) {
                   .then(function(res) {
         const parse = customFunc.customParse(res.data),
               personalInfo = [];
-              console.log(parse);
             parse.forEach((val) => {
 
                 let purchaseObj = {},
@@ -81,6 +84,8 @@ app.controller('homeLoanCtrl', function(customFunc, $window) {
                             purchaseObj.variableRateTo = childVal.rateTo;
                             purchaseObj.variableAprFrom = childVal.aprFrom;
                             purchaseObj.variableAprTo = childVal.aprTo;
+                            purchaseObj.variableMinPeriod = purchaseObj.variableMinPeriod ?? childVal.minPeriod;
+                            purchaseObj.variableMaxPeriod = purchaseObj.variableMaxPeriod ?? childVal.maxPeriod;
                         }
                         purchaseObj.minPeriod = purchaseObj.minPeriod ?? childVal.minPeriod;
                         purchaseObj.maxPeriod = purchaseObj.maxPeriod ?? childVal.maxPeriod;
@@ -97,6 +102,8 @@ app.controller('homeLoanCtrl', function(customFunc, $window) {
                             refinanceObj.variableRateTo = childVal.rateTo;
                             refinanceObj.variableAprFrom = childVal.aprFrom;
                             refinanceObj.variableAprTo = childVal.aprTo;
+                            refinanceObj.variableMinPeriod = refinanceObj.variableMinPeriod ?? childVal.minPeriod;
+                            refinanceObj.variableMaxPeriod = refinanceObj.variableMaxPeriod ?? childVal.maxPeriod;
                         }
                         refinanceObj.minPeriod = refinanceObj.minPeriod ?? childVal.minPeriod;
                         refinanceObj.maxPeriod = refinanceObj.maxPeriod ?? childVal.maxPeriod;
@@ -111,24 +118,28 @@ app.controller('homeLoanCtrl', function(customFunc, $window) {
                         fixedAprBetween = (purchaseObj.fixedAprTo !== "" && purchaseObj.fixedAprTo !== undefined)?" - ":"",
                         variableRateBetween = (purchaseObj.variableRateTo !== "" && purchaseObj.variableRateTo !== undefined)?" - ":"",
                         variableAprBetween = (purchaseObj.variableAprTo !== "" && purchaseObj.variableAprTo !== undefined)?" - ":"",
-                        periodBetween = (purchaseObj.minPeriod !== ""  && purchaseObj.maxPeriod !== "" && purchaseObj.maxPeriod !== undefined)?" - ":"";
+                        periodBetween = (purchaseObj.minPeriod !== ""  && purchaseObj.maxPeriod !== "" && purchaseObj.maxPeriod !== undefined)?" - ":"",
+                        variablePeriodBetween = (purchaseObj.variableMinPeriod !== ""  && purchaseObj.variableMaxPeriod !== "" && purchaseObj.variableMaxPeriod !== undefined)?" - ":"";
                     personalInfo.push({
                         bankName: val.bankShortName??val.bankName,
                         bankUrl:val.bankUrl,
 
                         personalLoanUrl:purchaseObj.urlLink,
-                        fixedRateFrom: purchaseObj.fixedRateFrom ?? 0,
+                        fixedRateFrom: customFunc.stringToNumber(purchaseObj.fixedRateFrom) ?? 0,
                         fixedRateRange: customFunc.checkUndefined(purchaseObj.fixedRateFrom + fixedRateBetween + purchaseObj.fixedRateTo),
-                        fixedAprFrom: purchaseObj.fixedAprFrom ?? 0,
+                        fixedAprFrom: customFunc.stringToNumber(purchaseObj.fixedAprFrom) ?? 0,
                         fixedAprRange: customFunc.checkUndefined((purchaseObj.fixedAprFrom ?? "") + fixedAprBetween + (purchaseObj.fixedAprTo ?? "")),
 
-                        variableRateFrom: purchaseObj.variableRateFrom ?? 0,
+                        variableRateFrom: customFunc.stringToNumber(purchaseObj.variableRateFrom) ?? 0,
                         variableRateRange: customFunc.checkUndefined((purchaseObj.variableRateFrom ?? '') + variableRateBetween + (purchaseObj.variableRateTo ?? '')),
-                        variableAprFrom: purchaseObj.variableAprFrom ?? 0,
+                        variableAprFrom: customFunc.stringToNumber(purchaseObj.variableAprFrom) ?? 0,
                         variableAprRange: customFunc.checkUndefined((purchaseObj.variableAprFrom ?? '') + variableAprBetween + (purchaseObj.variableAprTo ?? '')),
 
-                        minPeriod: purchaseObj.minPeriod,
+                        minPeriod: customFunc.getMinTerm(purchaseObj.minPeriod),
                         PeriodRange: customFunc.checkUndefined(purchaseObj.minPeriod + periodBetween + purchaseObj.maxPeriod),
+                        variableMinPeriod: customFunc.getMinTerm(purchaseObj.variableMinPeriod),
+                        variablePeriodRange: customFunc.checkUndefined(purchaseObj.variableMinPeriod + variablePeriodBetween + purchaseObj.variableMaxPeriod),
+
                         type: purchaseObj.type,
                         bankId:val.bankID,
 						version:version,
@@ -148,24 +159,28 @@ app.controller('homeLoanCtrl', function(customFunc, $window) {
                         fixedAprBetween = (refinanceObj.fixedAprTo !== "" && refinanceObj.fixedAprTo !== undefined)?" - ":"",
                         variableRateBetween = (refinanceObj.variableRateTo !== "" && refinanceObj.variableRateTo !== undefined)?" - ":"",
                         variableAprBetween = (refinanceObj.variableAprTo !== "" && refinanceObj.variableAprTo !== undefined)?" - ":"",
-                        periodBetween = (refinanceObj.minPeriod !== ""  && refinanceObj.maxPeriod !== "" && refinanceObj.maxPeriod !== undefined)?" - ":"";
+                        periodBetween = (refinanceObj.minPeriod !== ""  && refinanceObj.maxPeriod !== "" && refinanceObj.maxPeriod !== undefined)?" - ":"",
+                        variablePeriodBetween = (refinanceObj.variableMinPeriod !== ""  && refinanceObj.variableMaxPeriod !== "" && refinanceObj.variableMaxPeriod !== undefined)?" - ":"";
                     personalInfo.push({
                         bankName: val.bankShortName??val.bankName,
                         bankUrl:val.bankUrl,
                         
                         personalLoanUrl:refinanceObj.urlLink,
-                        fixedRateFrom: refinanceObj.fixedRateFrom ?? 0,
+                        fixedRateFrom: customFunc.stringToNumber(refinanceObj.fixedRateFrom) ?? 0,
                         fixedRateRange: customFunc.checkUndefined(refinanceObj.fixedRateFrom + fixedRateBetween + refinanceObj.fixedRateTo),
-                        fixedAprFrom: refinanceObj.fixedAprFrom ?? 0,
+                        fixedAprFrom: customFunc.stringToNumber(refinanceObj.fixedAprFrom) ?? 0,
                         fixedAprRange: customFunc.checkUndefined((refinanceObj.fixedAprFrom ?? "") + fixedAprBetween + (refinanceObj.fixedAprTo ?? "")),
                         
-                        variableRateFrom: refinanceObj.variableRateFrom ?? 0,
+                        variableRateFrom: customFunc.stringToNumber(refinanceObj.variableRateFrom) ?? 0,
                         variableRateRange: customFunc.checkUndefined((refinanceObj.variableRateFrom ?? '') + variableRateBetween + (refinanceObj.variableRateTo ?? '')),
-                        variableAprFrom: refinanceObj.variableAprFrom ?? 0,
+                        variableAprFrom: customFunc.stringToNumber(refinanceObj.variableAprFrom) ?? 0,
                         variableAprRange: customFunc.checkUndefined((refinanceObj.variableAprFrom ?? '') + variableAprBetween + (refinanceObj.variableAprTo ?? '')),
                         
-                        minPeriod: refinanceObj.minPeriod,
+                        minPeriod: customFunc.getMinTerm(refinanceObj.minPeriod),
                         PeriodRange: customFunc.checkUndefined(refinanceObj.minPeriod + periodBetween + refinanceObj.maxPeriod),
+                        variableMinPeriod: customFunc.getMinTerm(refinanceObj.variableMinPeriod),
+                        variablePeriodRange: customFunc.checkUndefined(refinanceObj.variableMinPeriod + variablePeriodBetween + refinanceObj.variableMaxPeriod),
+
                         type: refinanceObj.type,
                         bankId:val.bankID,
 						version:version,
@@ -211,7 +226,6 @@ app.controller('homeLoanCtrl', function(customFunc, $window) {
     }
 
     this.customSort = function(sortType) {
-
         switch (sortType) {
             case 'fixedApr':
                 this.maindataLoan.sort(function(a, b) {
@@ -236,6 +250,11 @@ app.controller('homeLoanCtrl', function(customFunc, $window) {
             case 'term':
                 this.maindataLoan.sort(function(a, b) {
                     return  (thisObj.sortObj[sortType])?a.minPeriod - b.minPeriod:b.minPeriod - a.minPeriod;
+                });
+                break;
+            case 'variableTerm':
+                this.maindataLoan.sort(function(a, b) {
+                    return  (thisObj.sortObj[sortType])?a.variableMinPeriod - b.variableMinPeriod:b.variableMinPeriod - a.variableMinPeriod;
                 });
                 break;
             case '_name':
@@ -306,14 +325,9 @@ app.controller('homeLoanCtrl', function(customFunc, $window) {
     this.moreDetail = function(event) {
         const currentTr = event.currentTarget.closest("tr"),
               nextTr = angular.element(currentTr).next(),
-              secondTr = angular.element(currentTr).next().next(),
-              secondTrDisplay = secondTr.css('display');
-        let displayCss = (secondTrDisplay === "none") ? "table-row" : "none"; 
+              nextTrDisplay = nextTr.css('display');
+        let displayCss = (nextTrDisplay === "none") ? "table-row" : "none"; 
 
-        secondTr.css({'display': displayCss});
-        console.log(this.IsDesktop, "moreDetail");
-        if(!this.IsDesktop) {
-            nextTr.css({'display': displayCss});
-        }
+        nextTr.css({'display': displayCss});
     }
 }); 

@@ -206,7 +206,24 @@ const app = angular.module('mainModuleApp', ['pascalprecht.translate', 'ngAnimat
 			return value;	
 		}
     }
-
+    this.stringToNumber = function(value) {
+        if(!isNaN(Number(value))) {
+            return Number(value);
+        } else {
+            return 0;
+        }
+    }
+    this.getMinTerm = function(value) {
+        if(value === undefined) {
+            return 0;
+        }else if(value.toString().search(/^\d+\/\d+$/i) >= 0) {
+            return Number(value.split("/")[0]);
+        } else if(!isNaN(Number(value))) {
+            return Number(value);
+        } else {
+            return 0;
+        }
+    }
     this.customParse = function(str) {
         /*return JSON.parse(str.replace(/\'/g, "\"")
                 .replace(/True/g, "true")
@@ -215,19 +232,6 @@ const app = angular.module('mainModuleApp', ['pascalprecht.translate', 'ngAnimat
 			return str;		
 		//return JSON.parse(str);		
     }
-
-    this.customParse1 = function(str) {
-		//console.log(str);
-		/*var newStr = str.replace(/\'/g, "\"")
-                .replace(/True/g, "true")
-                .replace(/False/g, "false")
-                .replace(/None/g, "null");
-		console.log(newStr);		
-        return JSON.parse(newStr);
-		*/
-		return str;		
-    }
-
     this.openLoading = function() {
         document.getElementById("loading").style.display = "flex";
     }
