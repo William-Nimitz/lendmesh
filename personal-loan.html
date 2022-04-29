@@ -278,35 +278,35 @@
                                                 </div>
                                             </button>
                                             </th>
-                                            <th class="rate-table-header__cell grid-cell">
+                                            <th class="rate-table-header__cell grid-cell greater795Show">
                                                 <button type="button" ng-click="Ctrl.customSort('maxLoanAmount')" class="button --bare +display-flex +align-items-center +pd-right-xs">
-                                                <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs">Max Loan Amount</span>
-                                                <div class="table-sort +mg-left-xs ">
-                                                    <span ng-class="{selected: Ctrl.selectedSort == 'maxLoanAmount' && !Ctrl.sortObj.maxLoanAmount}" class="table-sort__icon icon">
-                                                        <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph">
-                                                            <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
-                                                                <g transform="translate(-134.000000, -43.000000)" fill="">
-                                                                    <polygon
-                                                                        points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
-                                                                    </polygon>
+                                                    <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs">Max Loan Amount</span>
+                                                    <div class="table-sort +mg-left-xs ">
+                                                        <span ng-class="{selected: Ctrl.selectedSort == 'maxLoanAmount' && !Ctrl.sortObj.maxLoanAmount}" class="table-sort__icon icon">
+                                                            <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph">
+                                                                <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                    <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                        <polygon
+                                                                            points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                        </polygon>
+                                                                    </g>
                                                                 </g>
-                                                            </g>
-                                                        </svg>
-                                                    </span>
-                                                    <span ng-class="{selected: Ctrl.selectedSort == 'maxLoanAmount' && Ctrl.sortObj.maxLoanAmount}" class="table-sort__icon icon">
-                                                        <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1"
-                                                            xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
-                                                            <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
-                                                                <g transform="translate(-134.000000, -43.000000)" fill="">
-                                                                    <polygon
-                                                                        points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
-                                                                    </polygon>
+                                                            </svg>
+                                                        </span>
+                                                        <span ng-class="{selected: Ctrl.selectedSort == 'maxLoanAmount' && Ctrl.sortObj.maxLoanAmount}" class="table-sort__icon icon">
+                                                            <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1"
+                                                                xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
+                                                                <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                    <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                        <polygon
+                                                                            points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                        </polygon>
+                                                                    </g>
                                                                 </g>
-                                                            </g>
-                                                        </svg>
-                                                    </span>
-                                                </div>
-                                            </button>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                </button>
                                             </th>
                                             <th class="rate-table-header__cell grid-cell"></th>
                                         </tr>
@@ -418,7 +418,7 @@
                                             <td class="grid-cell">
                                                 <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap">{{obj.PeriodRange}}<span ng-if="obj.PeriodRange" class="numeral__accent">yr</span></p>
                                             </td>
-                                            <td class="grid-cell">
+                                            <td class="grid-cell greater795Show">
                                                 <span class="numeral +mg-top-auto--md-max +mg-bottom">
                                                 {{obj.personalLoanMaxAmount | currency}}</span>
                                             </td>
@@ -446,6 +446,101 @@
                                         </tr>
                                         <tr class="expand-wrap" style="display:none">
                                             <td colspan="5">
+                                                <div class="expand-wrap-mobileView">
+                                                    <!-- <div class="mobileView-container less465Show" ng-if="obj.fixedRateRange">
+                                                        <div class="fixedRate">
+                                                            <button type="button" ng-click="Ctrl.customSort('fixedRate')" class="button --bare +display-flex +align-items-center +pd-right-xs">
+                                                                <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs ">Fixed Rate</span>
+                                                                <div class="table-sort +mg-left-xs">
+                                                                    <span ng-class="{selected: Ctrl.selectedSort == 'fixedRate' && !Ctrl.sortObj.fixedRate}" class="table-sort__icon icon">
+                                                                        <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph">
+                                                                            <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                                <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                                    <polygon points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                                    </polygon>
+                                                                                </g>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span ng-class="{selected: Ctrl.selectedSort == 'fixedRate' && Ctrl.sortObj.fixedRate}" class="table-sort__icon icon">
+                                                                        <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
+                                                                            <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                                <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                                    <polygon points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                                    </polygon>
+                                                                                </g>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <p class="numeral +white-space-pre-wrap">{{obj.fixedRateRange}}<span class="numeral__accent">%</span></p>
+                                                    </div>
+                                                    <div class="mobileView-container less630Show" ng-if="obj.fixedAprRange">
+                                                        <div class="fixedApr">
+                                                            <button type="button" ng-click="Ctrl.customSort('fixedApr')" class="button --bare +display-flex +align-items-center +pd-right-xs">
+                                                                <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs ">Fixed APR</span>
+                                                                <div class="table-sort +mg-left-xs">
+                                                                    <span ng-class="{selected: Ctrl.selectedSort == 'fixedApr' && !Ctrl.sortObj.fixedApr}" class="table-sort__icon icon">
+                                                                        <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph">
+                                                                            <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                                <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                                    <polygon points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                                    </polygon>
+                                                                                </g>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span ng-class="{selected: Ctrl.selectedSort == 'fixedApr' && Ctrl.sortObj.fixedApr}" class="table-sort__icon icon">
+                                                                        <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
+                                                                            <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                                <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                                    <polygon points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                                    </polygon>
+                                                                                </g>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <p class="numeral +white-space-pre-wrap">{{obj.fixedAprRange}}<span class="numeral__accent">%</span></p>
+                                                    </div> -->
+                                                    <div class="mobileView-container less795Show">
+                                                        <div class="maxLoanAmount">
+                                                            <button type="button" ng-click="Ctrl.customSort('maxLoanAmount')" class="button --bare +display-flex +align-items-center +pd-right-xs">
+                                                                <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs">Max Loan Amount</span>
+                                                                <div class="table-sort +mg-left-xs ">
+                                                                    <span ng-class="{selected: Ctrl.selectedSort == 'maxLoanAmount' && !Ctrl.sortObj.maxLoanAmount}" class="table-sort__icon icon">
+                                                                        <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph">
+                                                                            <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                                <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                                    <polygon
+                                                                                        points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                                    </polygon>
+                                                                                </g>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span ng-class="{selected: Ctrl.selectedSort == 'maxLoanAmount' && Ctrl.sortObj.maxLoanAmount}" class="table-sort__icon icon">
+                                                                        <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1"
+                                                                            xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
+                                                                            <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                                <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                                    <polygon
+                                                                                        points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                                    </polygon>
+                                                                                </g>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <p class="numeral +white-space-pre-wrap">{{obj.personalLoanMaxAmount | currency}}</p>
+                                                    </div>
+                                                </div>
                                                 <div>
                                                     <p ng-repeat="joindetail in obj.joinDetails track by $index">{{joindetail}}</p>
                                                 </div>

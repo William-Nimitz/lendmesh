@@ -35,7 +35,7 @@ app.controller('homeLoanCtrl', function(customFunc, $window) {
         if(ScreenWidth >= 1125) {
             expandTrs.css("display", "none");
         } else {
-            expandTrs.css("display", "inline-block");
+            expandTrs.css("display", "block");
         }
 
         if(ScreenWidth > 820) {

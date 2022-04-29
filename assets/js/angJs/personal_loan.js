@@ -1,6 +1,7 @@
-app.controller('personalLoanCtrl', function(customFunc) {
+app.controller('personalLoanCtrl', function(customFunc, $window) {
     // to bank information
     const thisObj = this;
+    const appWindow = angular.element($window);
 	var dmd1 = new Date();
 	//var version=dmd1.getFullYear()+""+(dmd1.getMonth()+1)+""+dmd1.getDate()+""+Math.random();
 	var version=dmd1.getFullYear()+""+(dmd1.getMonth()+1)+""+dmd1.getDate();
@@ -21,6 +22,18 @@ app.controller('personalLoanCtrl', function(customFunc) {
     this.maindataLoan = [];    // display information
     
     this.Showed = "personalLoan"; // show *personalLoan* type, false -> *consolidateLoan*
+    appWindow.bind('resize', function () {
+        thisObj.getDevice();
+    });
+    this.getDevice = function() {
+        const ScreenWidth = $window.innerWidth;
+        const expandTrs = $(".expand-wrap-mobileView");
+        if(ScreenWidth >= 800) {
+            expandTrs.css("display", "none");
+        } else {
+            expandTrs.css("display", "inline-block");
+        }
+    }
     this.fetchData = function(zip, creditScore, neededAmount) {
         //customFunc.httpRequest("https://us-east4-lendmesh.cloudfunctions.net/fetchPersonalLoanRates", "GET")
 		console.log("hostname" + window.location.hostname);
