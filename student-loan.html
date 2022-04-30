@@ -261,34 +261,34 @@
                                                 </div>
                                             </button>
                                             </th>
-                                            <th class="rate-table-header__cell grid-cell">
+                                            <th class="rate-table-header__cell grid-cell greater795Show">
                                                 <button type="button" ng-click="Ctrl.customSort('term')" class="button --bare +display-flex +align-items-center +pd-right-xs">
-                                                <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs">Term</span>
-                                                <div class="table-sort +mg-left-xs ">
-                                                    <span ng-class="{selected: Ctrl.selectedSort == 'term' && !Ctrl.sortObj.term}" class="table-sort__icon icon">
-                                                        <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
-                                                            <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
-                                                                <g transform="translate(-134.000000, -43.000000)" fill="">
-                                                                    <polygon
-                                                                        points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
-                                                                    </polygon>
+                                                    <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs">Term</span>
+                                                    <div class="table-sort +mg-left-xs ">
+                                                        <span ng-class="{selected: Ctrl.selectedSort == 'term' && !Ctrl.sortObj.term}" class="table-sort__icon icon">
+                                                            <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
+                                                                <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                    <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                        <polygon
+                                                                            points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                        </polygon>
+                                                                    </g>
                                                                 </g>
-                                                            </g>
-                                                        </svg>
-                                                    </span>
-                                                    <span ng-class="{selected: Ctrl.selectedSort == 'term' && Ctrl.sortObj.term}" class="table-sort__icon icon">
-                                                        <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
-                                                            <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
-                                                                <g transform="translate(-134.000000, -43.000000)" fill="">
-                                                                    <polygon
-                                                                        points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
-                                                                    </polygon>
+                                                            </svg>
+                                                        </span>
+                                                        <span ng-class="{selected: Ctrl.selectedSort == 'term' && Ctrl.sortObj.term}" class="table-sort__icon icon">
+                                                            <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
+                                                                <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                    <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                        <polygon
+                                                                            points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                        </polygon>
+                                                                    </g>
                                                                 </g>
-                                                            </g>
-                                                        </svg>
-                                                    </span>
-                                                </div>
-                                            </button>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                </button>
                                             </th>
                                             <th class="rate-table-header__cell grid-cell"></th>
                                         </tr>
@@ -393,15 +393,32 @@
                                                 </div>
                                             </td>
                                             <td class="grid-cell">
-                                                <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap">{{obj.fixedrateRange}}<span ng-if="obj.fixedrateRange" class="numeral__accent">%</span></p>
+                                                <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap" style="display:block">{{obj.fixedrateRange}}<span ng-if="obj.fixedrateRange" class="numeral__accent">%</span></p>
+                                                <div ng-show="obj.joinDetails.length > 0" class="grid-cell size-1of2 size-full--md less625Show">
+                                                    <button type="button" ng-click="Ctrl.moreDetail($event)" class="button --full-width modal__trigger--button">More Details</button>
+                                                </div>
                                             </td>
                                             <td class="grid-cell">
-                                                <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap">{{obj.variablerateRange}}<span ng-if="obj.variablerateRange" class="numeral__accent">%</span></p>
+                                                <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap" style="display:block">{{obj.variablerateRange}}<span ng-if="obj.variablerateRange" class="numeral__accent">%</span></p>
+                                                <div class="grid-cell size-1of2 size-full--md text-center less625Show">
+                                                    <a href="{{ obj.personalLoanUrl }}" target="_blank">
+                                                        <button class="btn custom-btn-bg">Next<svg
+                                                            class="button__icon icon --icon-xs +mg-left-sm" width="24px"
+                                                            height="15px" viewBox="0 0 24 15">
+                                                            <g id="Arrow" stroke="" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                <path
+                                                                    d="M18.73577,6.31578947 L14.4214286,2.0739346 L16.0787699,0.444438785 L23.2214286,7.46709159 L16.0787699,14.4897444 L14.4214286,12.8602486 L18.6688284,8.68421053 L0.642857143,8.68421053 L0.642857143,6.31578947 L18.73577,6.31578947 Z"
+                                                                    fill="" fill-rule="nonzero"></path>
+                                                            </g>
+                                                        </svg>
+                                                    </button>
+                                                    </a>
+                                                </div>
                                             </td>
-                                            <td class=" grid-cell">
+                                            <td class="grid-cell greater795Show">
                                                 <span class="numeral +mg-top-auto--md-max +mg-bottom">{{obj.PeriodRange}}<span ng-if="obj.PeriodRange" class="numeral__accent">yr</span></span>
                                             </td>
-                                            <td class="grid-cell">
+                                            <td class="grid-cell greater625Show">
                                                 <div class="grid --with-gutter --align-middle +flex-direction-row-reverse +flex-direction-row--md">
                                                     <div class="grid-cell size-1of2 size-full--md text-center">
                                                         <a href="{{obj.personalLoanUrl}}" target="_blank">
@@ -425,6 +442,40 @@
                                         </tr>
                                         <tr class="expand-wrap" style="display: none;">
                                             <td colspan="5">
+                                                <div class="expand-wrap-mobileView" style="text-align:left!important">
+                                                    <div class="mobileView-container less795Show">
+                                                        <div class="term">
+                                                            <button type="button" ng-click="Ctrl.customSort('term')" class="button --bare +display-flex +align-items-center +pd-right-xs">
+                                                                <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs">Term</span>
+                                                                <div class="table-sort +mg-left-xs ">
+                                                                    <span ng-class="{selected: Ctrl.selectedSort == 'term' && !Ctrl.sortObj.term}" class="table-sort__icon icon">
+                                                                        <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
+                                                                            <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                                <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                                    <polygon
+                                                                                        points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                                    </polygon>
+                                                                                </g>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span ng-class="{selected: Ctrl.selectedSort == 'term' && Ctrl.sortObj.term}" class="table-sort__icon icon">
+                                                                        <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
+                                                                            <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                                <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                                    <polygon
+                                                                                        points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                                    </polygon>
+                                                                                </g>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <p class="numeral +mg-top-auto--md-max +mg-bottom">{{obj.PeriodRange}}<span ng-if="obj.PeriodRange" class="numeral__accent">yr</p>
+                                                    </div>
+                                                </div>
                                                 <div>
                                                     <p ng-repeat="joindetail in obj.joinDetails track by $index">{{joindetail}}</p>
                                                 </div>
