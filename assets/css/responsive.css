@@ -324,7 +324,6 @@
     }
     a.btn.custom-btn-bg {
         font-size: 12px;
-        padding: 8px 20px;
     }
     .help-us-inr {
         flex-wrap: wrap;
@@ -493,6 +492,15 @@
     .blog-box {
            width: 100%;
     }
+    .greater550Show {
+        display: none;
+    }
+    button.custom-btn-bg {
+        padding: 5px 10px !important;
+    }
+    .rate-table-row > .grid-cell  button.button {
+        padding: 9px 0;
+    }
 }
 @media (max-width: 495px) {
     .table.--spacing-md td, .table.--spacing-md th {
@@ -526,9 +534,6 @@
     }
     .rating-stars__icon {
         margin-right: 0;
-    }
-    .lendmesh {
-        display: none;
     }
     .icon.--icon-xs {
         width: 0.6rem;
