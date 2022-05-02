@@ -286,6 +286,9 @@
     .greater850Show {
         display: none;
     }
+    .greater850ShowWithCondition {
+        display: none!important;
+    }
     .less850Show {
         display:inline-block!important;
     }
