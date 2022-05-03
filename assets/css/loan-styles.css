@@ -296,7 +296,7 @@ svg:not(:root) {
     fill: currentcolor;
     height: 100%;
     user-select: none;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     width: 100%;
 }
 
