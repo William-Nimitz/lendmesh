@@ -3270,7 +3270,6 @@ letter-spacing: -0.0138889rem !important;
     .size-full--md {
         box-sizing: border-box !important;
         display: block !important;
-        width: 100% !important;
     }
     @media (min-width: 62.4375em) {
         .\+mg-bottom--md {
