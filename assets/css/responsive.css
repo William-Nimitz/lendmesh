@@ -389,9 +389,6 @@
     .help-us-inr {
         flex-wrap: wrap;
     }
-    .custom-section {
-        padding: 35px 0;
-    }
     .help-us-left,
     .help-us-right {
         width: 100%;
@@ -440,8 +437,6 @@
         padding: 20px;
     }
     .filterW.m-r-1 {
-        width: 100%;
-        margin-right: 0;
         margin-bottom: 15px;
     }
     .apl-btn.custom-btn-bg {
@@ -476,6 +471,34 @@
     }
     .less625Show {
         display:inline-block!important;
+    }
+    .custom-section {
+        padding: 0;
+    }
+    .inrpage-inr {
+        padding: 0;
+    }
+    .inrpage-inr h1 {
+        font-size: 28px;
+    }
+    .sec-head h2 {
+        font-size: 14px;
+        line-height: 12px;
+    }
+    .calculator-sec .sec-head {
+        padding-bottom: 8px;
+    }
+    .rate-table-filters {
+        padding: 0 10px;
+    }
+    .\+mg-bottom-md {
+        margin-bottom: 0.5rem !important;
+    }
+    .filterW {
+        width: 100%;
+    }
+    .filterW.m-r-1 {
+        margin-bottom: 10px;
     }
 }
 @media (max-width: 37.4375em) {
