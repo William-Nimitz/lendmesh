@@ -198,10 +198,10 @@
                                             </button>
                                             </th>
                                             <th class="rate-table-header__cell grid-cell">
-                                                <button type="button" ng-click="Ctrl.customSort('apr')" class="button --bare +display-flex +align-items-center +pd-right-xs">
-                                                <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs">APR</span>
+                                                <button type="button" ng-click="Ctrl.customSort('rate')" class="button --bare +display-flex +align-items-center +pd-right-xs">
+                                                <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs">Rate</span>
                                                 <div class="table-sort +mg-left-xs ">
-                                                    <span class="table-sort__icon icon" ng-class="{selected: Ctrl.selectedSort == 'apr' && !Ctrl.sortObj.apr}">
+                                                    <span class="table-sort__icon icon" ng-class="{selected: Ctrl.selectedSort == 'rate' && !Ctrl.sortObj.rate}">
                                                         <svg width="7px" height="4px"
                                                             viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                                             class="icon__glyph ">
@@ -214,7 +214,7 @@
                                                             </g>
                                                         </svg>
                                                     </span>
-                                                    <span class="table-sort__icon icon" ng-class="{selected: Ctrl.selectedSort == 'apr' && Ctrl.sortObj.apr}">
+                                                    <span class="table-sort__icon icon" ng-class="{selected: Ctrl.selectedSort == 'rate' && Ctrl.sortObj.rate}">
                                                         <svg width="7px"
                                                             height="4px" viewBox="0 0 7 4" version="1.1"
                                                             xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
@@ -292,10 +292,40 @@
                                                     </div>
                                                 </button>
                                             </th>
+                                            <th class="rate-table-header__cell grid-cell greater795Show">
+                                                <button type="button" ng-click="Ctrl.customSort('itv')" class="button --bare +display-flex +align-items-center +pd-right-xs">
+                                                    <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs">ITV</span>
+                                                    <div class="table-sort +mg-left-xs ">
+                                                        <span ng-class="{selected: Ctrl.selectedSort == 'itv' && !Ctrl.sortObj.itv}" class="table-sort__icon icon">
+                                                            <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph">
+                                                                <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                    <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                        <polygon
+                                                                            points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                        </polygon>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                        <span ng-class="{selected: Ctrl.selectedSort == 'itv' && Ctrl.sortObj.itv}" class="table-sort__icon icon">
+                                                            <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1"
+                                                                xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
+                                                                <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                    <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                        <polygon
+                                                                            points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                        </polygon>
+                                                                    </g>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                </button>
+                                            </th>
                                             <th class="rate-table-header__cell grid-cell"></th>
                                         </tr>
                                     </thead>
-                                    <tbody ng-repeat="obj in Ctrl.maindataLoan" ng-show="Ctrl.Showed == obj.type || (obj.consolidatePerLoan && Ctrl.Showed == 'consolidateLoan')">
+                                    <tbody ng-repeat="obj in Ctrl.maindataLoan">
                                         <tr class="rate-table-row">
                                             <td class="grid-cell">
                                                 <div class="grid --align-middle">
@@ -404,7 +434,7 @@
                                             <td class="grid-cell">
                                                 <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap" style="display:block">{{obj.PeriodRange}}<span ng-if="obj.PeriodRange" class="numeral__accent">yr</span></p>
                                                 <div class="grid-cell size-1of2 size-full--md text-center less625Show">
-                                                    <a href="{{ obj.personalLoanUrl }}" target="_blank">
+                                                    <a href="{{ obj.helocLoanUrl }}" target="_blank">
                                                         <button class="btn custom-btn-bg">Next<svg
                                                             class="button__icon icon --icon-xs +mg-left-sm" width="24px"
                                                             height="15px" viewBox="0 0 24 15">
@@ -425,7 +455,7 @@
                                             <td class="grid-cell greater625Show">
                                                 <div class="grid --with-gutter --align-middle +flex-direction-row-reverse +flex-direction-row--md">
                                                     <div class="grid-cell size-1of2 size-full--md text-center">
-                                                        <a href="{{ obj.personalLoanUrl }}" target="_blank">
+                                                        <a href="{{ obj.helocLoanUrl }}" target="_blank">
                                                             <button class="btn custom-btn-bg">Next<svg
                                                                 class="button__icon icon --icon-xs +mg-left-sm" width="24px"
                                                                 height="15px" viewBox="0 0 24 15">
@@ -438,53 +468,139 @@
                                                         </button>
                                                         </a>
                                                     </div>
-                                                    <div class="grid-cell size-1of2 size-full--md" ng-show="obj.joinDetails.length > 0">
+                                                    <div class="grid-cell size-1of2 size-full--md" ng-show="obj.childs.length > 0">
                                                         <button type="button" ng-click="Ctrl.moreDetail($event)" class="button --full-width modal__trigger--button">More Details</button>
                                                     </div>
                                                 </div>
                                             </td>
                                         </tr>
-                                        <tr class="expand-wrap" style="display:none">
-                                            <td colspan="5">
-                                                <div class="expand-wrap-mobileView">
-                                                    <div class="mobileView-container less795Show">
-                                                        <div class="maxLoanAmount">
-                                                            <button type="button" ng-click="Ctrl.customSort('maxLoanAmount')" class="button --bare +display-flex +align-items-center +pd-right-xs">
-                                                                <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs">Max Loan Amount</span>
-                                                                <div class="table-sort +mg-left-xs ">
-                                                                    <span ng-class="{selected: Ctrl.selectedSort == 'maxLoanAmount' && !Ctrl.sortObj.maxLoanAmount}" class="table-sort__icon icon">
-                                                                        <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph">
-                                                                            <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
-                                                                                <g transform="translate(-134.000000, -43.000000)" fill="">
-                                                                                    <polygon
-                                                                                        points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
-                                                                                    </polygon>
-                                                                                </g>
-                                                                            </g>
+                                        <tr ng-repeat="childobj in obj.childs" class="rate-table-row expand-wrap" style="display:none">
+                                            <td class="grid-cell">
+                                                <div class="grid --align-middle">
+                                                    <div class="grid-cell size-1of2 size-full--md text-center">
+                                                        <!--<a href="{{childobj.bankUrl}}" target="_blank"> -->
+                                                        <a href="./bankDetails.html?name={{childobj.bankShortName}}" title="{{childobj.bankUrl}}" target="_self">
+                                                            <button type="button" class="button lender-logo">
+                                                            <img class="lender-logo__image +display-block +center-content"
+                                                                 src="./assets/images/bank/{{childobj.bankName}}.png" alt="{{childobj.bankUrl}}" loading="lazy" width="120" style="max-height: 50px;">
+                                                        </button>
+                                                        </a>
+                                                    </div>
+                                                    <div class="grid-cell size-1of2 size-full--md" ng-show="childobj.lendmeshScore > 0">
+                                                        <div class=" +display-flex +align-items-center +justify-content-center">
+                                                            <div class="rating-stars +mg-right-xs" aria-label="star rating">
+                                                                <div class="rating-stars__icon-mask" ng-style="{'width': ((childobj.lendmeshScore * 20) + '%')}">
+                                                                    <ul class="rating-stars__icon-container">
+                                                                        <li class="rating-stars__icon icon --icon-xs +fill-blue">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
+                                                                            <path
+                                                                                d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
+                                                                            </path>
                                                                         </svg>
-                                                                    </span>
-                                                                    <span ng-class="{selected: Ctrl.selectedSort == 'maxLoanAmount' && Ctrl.sortObj.maxLoanAmount}" class="table-sort__icon icon">
-                                                                        <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1"
-                                                                            xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
-                                                                            <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
-                                                                                <g transform="translate(-134.000000, -43.000000)" fill="">
-                                                                                    <polygon
-                                                                                        points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
-                                                                                    </polygon>
-                                                                                </g>
-                                                                            </g>
+                                                                        </li>
+                                                                        <li class="rating-stars__icon icon --icon-xs +fill-blue">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
+                                                                            <path
+                                                                                d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
+                                                                            </path>
                                                                         </svg>
-                                                                    </span>
+                                                                        </li>
+                                                                        <li class="rating-stars__icon icon --icon-xs +fill-blue">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
+                                                                            <path
+                                                                                d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
+                                                                            </path>
+                                                                        </svg>
+                                                                        </li>
+                                                                        <li class="rating-stars__icon icon --icon-xs +fill-blue">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
+                                                                            <path
+                                                                                d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
+                                                                            </path>
+                                                                        </svg>
+                                                                        </li>
+                                                                        <li class="rating-stars__icon icon --icon-xs +fill-blue">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
+                                                                            <path
+                                                                                d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
+                                                                            </path>
+                                                                        </svg>
+                                                                        </li>
+                                                                    </ul>
                                                                 </div>
-                                                            </button>
+                                                                <ul class="rating-stars__icon-container +mg-bottom-xs">
+                                                                    <li class="rating-stars__icon icon --icon-xs +fill-gray">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
+                                                                        <path
+                                                                            d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
+                                                                        </path>
+                                                                    </svg>
+                                                                    </li>
+                                                                    <li class="rating-stars__icon icon --icon-xs +fill-gray">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
+                                                                        <path
+                                                                            d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
+                                                                        </path>
+                                                                    </svg>
+                                                                    </li>
+                                                                    <li class="rating-stars__icon icon --icon-xs +fill-gray">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
+                                                                        <path
+                                                                            d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
+                                                                        </path>
+                                                                    </svg>
+                                                                    </li>
+                                                                    <li class="rating-stars__icon icon --icon-xs +fill-gray">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
+                                                                        <path
+                                                                            d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
+                                                                        </path>
+                                                                    </svg>
+                                                                    </li>
+                                                                    <li class="rating-stars__icon icon --icon-xs +fill-gray">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
+                                                                        <path
+                                                                            d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
+                                                                        </path>
+                                                                    </svg>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p class="+type-body-one +font-circular-bold +mg-bottom-xs +mg-right-sm">{{childobj.lendmeshScore}}
+                                                            </p>
                                                         </div>
-                                                        <p class="numeral +white-space-pre-wrap">{{obj.personalLoanMaxAmount | currency}}</p>
+                                                        <div class="+type-body-two +fg-slate +text-center +mg-top-sm greater550Show">LendMesh Rating</div>
                                                     </div>
                                                 </div>
-                                                <div>
-                                                    <p ng-repeat="joindetail in obj.joinDetails track by $index">{{joindetail}}</p>
+                                            </td>
+                                            <td class="grid-cell">
+                                                <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap" style="display:block">{{childobj.rateRange}}<span class="numeral__accent">%</span></p>
+                                                <div class="grid-cell size-1of2 size-full--md less625Show">
+                                                    <button type="button" ng-click="Ctrl.moreDetail($event)" class="button --full-width modal__trigger--button">More Details</button>
                                                 </div>
                                             </td>
+                                            <td class="grid-cell">
+                                                <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap" style="display:block">{{childobj.PeriodRange}}<span ng-if="childobj.PeriodRange" class="numeral__accent">yr</span></p>
+                                                <div class="grid-cell size-1of2 size-full--md text-center less625Show">
+                                                    <a href="{{ childobj.helocLoanUrl }}" target="_blank">
+                                                        <button class="btn custom-btn-bg">Next<svg
+                                                            class="button__icon icon --icon-xs +mg-left-sm" width="24px"
+                                                            height="15px" viewBox="0 0 24 15">
+                                                            <g id="Arrow" stroke="" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                <path
+                                                                    d="M18.73577,6.31578947 L14.4214286,2.0739346 L16.0787699,0.444438785 L23.2214286,7.46709159 L16.0787699,14.4897444 L14.4214286,12.8602486 L18.6688284,8.68421053 L0.642857143,8.68421053 L0.642857143,6.31578947 L18.73577,6.31578947 Z"
+                                                                    fill="" fill-rule="nonzero"></path>
+                                                            </g>
+                                                        </svg>
+                                                    </button>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="grid-cell greater795Show">
+                                                <span class="numeral +mg-top-auto--md-max +mg-bottom">
+                                                {{childobj.personalLoanMaxAmount | currency}}</span>
+                                            </td>
+                                            <td class="grid-cell"></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -499,8 +615,8 @@
                 <div class="loan-about-inr">
                     <div class="loan-about-left">
                         <div class="sec-head">
-                            <h2>About Personal Loan</h2>
-                            <p>Are you looking for a Personal Loan?.</p>
+                            <h2>About Heloc Loan</h2>
+                            <p>Are you looking for a Heloc Loan?.</p>
                             <p>LendMesh offers a first-of-its-kind decentralized loan process by connecting best interest rate providers with the customer to choose the personal loan that suits their needs. LendMesh eliminates the need for a middleman in lending by connecting lenders and borrowers directly through smart contracts. <strong class="+font-calibre-semibold">No hidden fees or commissions — LendMesh doesn’t take any of your money!</strong></p>
                             <ul class="aboutcontent-list">
                                 <li><i class="fa fa-check"> </i>Offers from several banks and credit unions</li>
@@ -522,7 +638,7 @@
         <section class="custom-section newsletter-section">
             <div class="custom-container">
                 <div class="sec-head">
-                    <h2>LendMesh can help with your new personal loan or a debt consolidation loan!</h2>
+                    <h2>LendMesh can help with your new heloc loan or a debt consolidation loan!</h2>
                     <p></p>
                 </div>
 				<!--

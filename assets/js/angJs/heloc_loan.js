@@ -8,12 +8,13 @@ app.controller('HelocLoanCtrl', function(customFunc, $window) {
     this.specBank = []; // for detail information(how to join)
     // sort manage 
     this.sortObj = {
-        apr:false,
+        rate:false,
         term:true,
         maxLoanAmount:true,
+        itv:true,
         _name:true
     };
-    this.selectedSort = 'apr'; // sort type
+    this.selectedSort = 'rate'; // sort type
     // filter manage 
     this.loanAmountVal = ''; // Max loan amount
     this.creditScore = "700";
@@ -21,7 +22,6 @@ app.controller('HelocLoanCtrl', function(customFunc, $window) {
     this.maindata_source = []; // source information (for filter)
     this.maindataLoan = [];    // display information
     
-    this.Showed = "personalLoan"; // show *personalLoan* type, false -> *consolidateLoan*
     appWindow.bind('resize', function () {
         thisObj.getDevice();
     });
@@ -60,26 +60,29 @@ app.controller('HelocLoanCtrl', function(customFunc, $window) {
               helocInfo = [];
 
               console.log(parse);
-            parse.forEach((val, index) => {
-                let consolidatePerLoan = val.bankDetails.itemType.some((childVal) => {
-                    return childVal.type === "consolidateLoan";
-                })
+            parse.forEach((val) => {
+                let bankItems = {};
                 val.bankDetails.itemType.forEach((childVal) => {
-                    let rateBetween = (childVal.rateTo !== "" && childVal.rateTo !== undefined)?" - ":"",
+                    let rateBetween = (childVal.rateFrom !== "" && childVal.rateTo !== "" && childVal.rateTo !== undefined)?" - ":"",
                         rateRange = (childVal.rateFrom == childVal.rateTo) ? childVal.rateFrom : childVal.rateFrom + rateBetween + (childVal.rateTo??''),
                         minPeriod = (childVal.minPeriod === "" || childVal.minPeriod === undefined) ? (val.personalMinTerm ?? "") : childVal.minPeriod,
                         maxPeriod = (childVal.maxPeriod === "" || childVal.maxPeriod === undefined) ? (val.personalMaxTerm ?? "") : childVal.maxPeriod,
-                        periodBetween = (maxPeriod !== "" && minPeriod !== maxPeriod)?" - ":"";
+                        periodBetween = (maxPeriod !== "" && minPeriod !== maxPeriod)?" - ":"",
+                        itvBetween = (childVal.ltvTo !== "" && childVal.ltvTo !== undefined)?" - ":"",
+                        itvRange = (childVal.ltvFrom == childVal.ltvTo) ? childVal.ltvFrom : childVal.ltvFrom + itvBetween + (childVal.ltvTo??'');
                     maxPeriod = (minPeriod !== maxPeriod) ? maxPeriod : "";
-                    personalInfo.push({
+                    
+                    const helocEle = {
                         bankName: val.bankShortName??val.bankName,
                         bankShortName: val.bankShortName,
                         bankUrl:val.bankUrl,
-                        personalLoanUrl:childVal.urlLink,
+                        helocLoanUrl:childVal.urlLink,
                         minPeriod:minPeriod,
                         PeriodRange: customFunc.checkUndefined(minPeriod + periodBetween + maxPeriod),
                         rateFrom:childVal.rateFrom,
                         rateRange: customFunc.checkUndefined(rateRange),
+                        ltvFrom:childVal.ltvFrom,
+                        itvRange: customFunc.checkUndefined(itvRange),
                         type:childVal.type,
                         bankId:val.bankID,
                         personalLoanMaxAmount: (childVal.maxAmount)?childVal.maxAmount:val.personalLoanMaxAmount,
@@ -93,12 +96,19 @@ app.controller('HelocLoanCtrl', function(customFunc, $window) {
                         allowExcellentCredit:val.allowExcellentCredit??false,
                         joinDetails:val.joinDetails ?? '',
                         joinLinkUrl:val.joinLinkUrl ?? '',
-						version:version,
-                        consolidatePerLoan:!consolidatePerLoan && (val.consolidatePerLoan ?? false)
-                    });
+                        version:version,
+                        defaultStatus: childVal.default,
+                        childs: []
+                    };
+                    if(childVal.default === true) {
+                        bankItems = helocEle;
+                    } else {
+                        bankItems.childs.push(helocEle);
+                    }
                 })
+                helocInfo.push(bankItems);
             })
-            personalInfo.sort(function(a, b) {
+            helocInfo.sort(function(a, b) {
                 let x = a.displayPriority,
                     y = b.displayPriority;
                     if(x !== y){ 
@@ -107,9 +117,10 @@ app.controller('HelocLoanCtrl', function(customFunc, $window) {
                         return  a.rateFrom - b.rateFrom;
                     }
             });
-            thisObj.maindata_source = personalInfo;
-            thisObj.maindataLoan = personalInfo;
-            thisObj.Showed = "personalLoan";
+            thisObj.maindata_source = helocInfo;
+            thisObj.maindataLoan = helocInfo;
+
+            console.log(helocInfo);
         })
 		
 		$(".set > a").on("click", function () {
@@ -146,11 +157,9 @@ app.controller('HelocLoanCtrl', function(customFunc, $window) {
         if(type == 'p-l-r'){
                 document.getElementById("bar-tab").classList.remove("--is-active");
                 document.getElementById("foo-tab").classList.add("--is-active");
-                this.Showed = "personalLoan";
         } else if(type === 'p-p-l'){
             document.getElementById("foo-tab").classList.remove("--is-active");
             document.getElementById("bar-tab").classList.add("--is-active");
-            this.Showed = "consolidateLoan";
         }
     }
     this.usNumber10 = function() {
@@ -160,7 +169,7 @@ app.controller('HelocLoanCtrl', function(customFunc, $window) {
     this.customSort = function(sortType) {
 
         switch (sortType) {
-            case 'apr':
+            case 'rate':
                 this.maindataLoan.sort(function(a, b) {
                     return  (thisObj.sortObj[sortType])?a.rateFrom - b.rateFrom:b.rateFrom - a.rateFrom;
                 });
@@ -245,10 +254,11 @@ app.controller('HelocLoanCtrl', function(customFunc, $window) {
     
     this.moreDetail = function(event) {
 
-        const currentTr = event.currentTarget.closest("tr"),
-              nextTr = angular.element(currentTr).next(),
-              nextTrDisplay = nextTr.css('display');
-        let displayCss = (nextTrDisplay === "none") ? "table-row" : "none";  
-        nextTr.css({'display': displayCss});
+        const currentTbody = event.currentTarget.closest("tr"),
+              Trs = angular.element(currentTbody).next(),
+              nextTrDisplay = Trs.css('display');
+        // let displayCss = (nextTrDisplay === "none") ? "table-row" : "none";  
+        // nextTr.css({'display': displayCss});
+        console.log(Trs, nextTrDisplay)
     }
 }); 
