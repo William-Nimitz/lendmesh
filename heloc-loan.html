@@ -293,10 +293,10 @@
                                                 </button>
                                             </th>
                                             <th class="rate-table-header__cell grid-cell greater795Show">
-                                                <button type="button" ng-click="Ctrl.customSort('itv')" class="button --bare +display-flex +align-items-center +pd-right-xs">
-                                                    <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs">ITV</span>
+                                                <button type="button" ng-click="Ctrl.customSort('ltv')" class="button --bare +display-flex +align-items-center +pd-right-xs">
+                                                    <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs">LTV</span>
                                                     <div class="table-sort +mg-left-xs ">
-                                                        <span ng-class="{selected: Ctrl.selectedSort == 'itv' && !Ctrl.sortObj.itv}" class="table-sort__icon icon">
+                                                        <span ng-class="{selected: Ctrl.selectedSort == 'ltv' && !Ctrl.sortObj.ltv}" class="table-sort__icon icon">
                                                             <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph">
                                                                 <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
                                                                     <g transform="translate(-134.000000, -43.000000)" fill="">
@@ -307,7 +307,7 @@
                                                                 </g>
                                                             </svg>
                                                         </span>
-                                                        <span ng-class="{selected: Ctrl.selectedSort == 'itv' && Ctrl.sortObj.itv}" class="table-sort__icon icon">
+                                                        <span ng-class="{selected: Ctrl.selectedSort == 'ltv' && Ctrl.sortObj.ltv}" class="table-sort__icon icon">
                                                             <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1"
                                                                 xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
                                                                 <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
@@ -452,6 +452,9 @@
                                                 <span class="numeral +mg-top-auto--md-max +mg-bottom">
                                                 {{obj.personalLoanMaxAmount | currency}}</span>
                                             </td>
+                                            <td class="grid-cell greater795Show">
+                                                <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap" style="display:block">{{obj.ltvRange}}<span ng-if="obj.ltvRange" class="numeral__accent">%</span></p>
+                                            </td>
                                             <td class="grid-cell greater625Show">
                                                 <div class="grid --with-gutter --align-middle +flex-direction-row-reverse +flex-direction-row--md">
                                                     <div class="grid-cell size-1of2 size-full--md text-center">
@@ -486,91 +489,6 @@
                                                         </button>
                                                         </a>
                                                     </div>
-                                                    <div class="grid-cell size-1of2 size-full--md" ng-show="childobj.lendmeshScore > 0">
-                                                        <div class=" +display-flex +align-items-center +justify-content-center">
-                                                            <div class="rating-stars +mg-right-xs" aria-label="star rating">
-                                                                <div class="rating-stars__icon-mask" ng-style="{'width': ((childobj.lendmeshScore * 20) + '%')}">
-                                                                    <ul class="rating-stars__icon-container">
-                                                                        <li class="rating-stars__icon icon --icon-xs +fill-blue">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
-                                                                            <path
-                                                                                d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
-                                                                            </path>
-                                                                        </svg>
-                                                                        </li>
-                                                                        <li class="rating-stars__icon icon --icon-xs +fill-blue">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
-                                                                            <path
-                                                                                d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
-                                                                            </path>
-                                                                        </svg>
-                                                                        </li>
-                                                                        <li class="rating-stars__icon icon --icon-xs +fill-blue">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
-                                                                            <path
-                                                                                d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
-                                                                            </path>
-                                                                        </svg>
-                                                                        </li>
-                                                                        <li class="rating-stars__icon icon --icon-xs +fill-blue">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
-                                                                            <path
-                                                                                d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
-                                                                            </path>
-                                                                        </svg>
-                                                                        </li>
-                                                                        <li class="rating-stars__icon icon --icon-xs +fill-blue">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
-                                                                            <path
-                                                                                d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
-                                                                            </path>
-                                                                        </svg>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                                <ul class="rating-stars__icon-container +mg-bottom-xs">
-                                                                    <li class="rating-stars__icon icon --icon-xs +fill-gray">
-                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
-                                                                        <path
-                                                                            d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
-                                                                        </path>
-                                                                    </svg>
-                                                                    </li>
-                                                                    <li class="rating-stars__icon icon --icon-xs +fill-gray">
-                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
-                                                                        <path
-                                                                            d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
-                                                                        </path>
-                                                                    </svg>
-                                                                    </li>
-                                                                    <li class="rating-stars__icon icon --icon-xs +fill-gray">
-                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
-                                                                        <path
-                                                                            d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
-                                                                        </path>
-                                                                    </svg>
-                                                                    </li>
-                                                                    <li class="rating-stars__icon icon --icon-xs +fill-gray">
-                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
-                                                                        <path
-                                                                            d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
-                                                                        </path>
-                                                                    </svg>
-                                                                    </li>
-                                                                    <li class="rating-stars__icon icon --icon-xs +fill-gray">
-                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="icon__glyph" viewBox="0 0 51 48">
-                                                                        <path
-                                                                            d="M25 1l6 17h18L35 29l5 17-15-10-15 10 5-17L1 18h18z">
-                                                                        </path>
-                                                                    </svg>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                            <p class="+type-body-one +font-circular-bold +mg-bottom-xs +mg-right-sm">{{childobj.lendmeshScore}}
-                                                            </p>
-                                                        </div>
-                                                        <div class="+type-body-two +fg-slate +text-center +mg-top-sm greater550Show">LendMesh Rating</div>
-                                                    </div>
                                                 </div>
                                             </td>
                                             <td class="grid-cell">
@@ -599,6 +517,9 @@
                                             <td class="grid-cell greater795Show">
                                                 <span class="numeral +mg-top-auto--md-max +mg-bottom">
                                                 {{childobj.personalLoanMaxAmount | currency}}</span>
+                                            </td>
+                                            <td class="grid-cell greater795Show">
+                                                <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap" style="display:block">{{childobj.ltvRange}}<span ng-if="childobj.ltvRange" class="numeral__accent">%</span></p>
                                             </td>
                                             <td class="grid-cell"></td>
                                         </tr>

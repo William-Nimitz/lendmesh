@@ -11,7 +11,7 @@ app.controller('HelocLoanCtrl', function(customFunc, $window) {
         rate:false,
         term:true,
         maxLoanAmount:true,
-        itv:true,
+        ltv:true,
         _name:true
     };
     this.selectedSort = 'rate'; // sort type
@@ -68,8 +68,8 @@ app.controller('HelocLoanCtrl', function(customFunc, $window) {
                         minPeriod = (childVal.minPeriod === "" || childVal.minPeriod === undefined) ? (val.personalMinTerm ?? "") : childVal.minPeriod,
                         maxPeriod = (childVal.maxPeriod === "" || childVal.maxPeriod === undefined) ? (val.personalMaxTerm ?? "") : childVal.maxPeriod,
                         periodBetween = (maxPeriod !== "" && minPeriod !== maxPeriod)?" - ":"",
-                        itvBetween = (childVal.ltvTo !== "" && childVal.ltvTo !== undefined)?" - ":"",
-                        itvRange = (childVal.ltvFrom == childVal.ltvTo) ? childVal.ltvFrom : childVal.ltvFrom + itvBetween + (childVal.ltvTo??'');
+                        ltvBetween = (childVal.ltvFrom !== "" && childVal.ltvTo !== "" && childVal.ltvTo !== undefined)?" - ":"",
+                        ltvRange = (childVal.ltvFrom == childVal.ltvTo) ? childVal.ltvFrom : childVal.ltvFrom + ltvBetween + (childVal.ltvTo??'');
                     maxPeriod = (minPeriod !== maxPeriod) ? maxPeriod : "";
                     
                     const helocEle = {
@@ -82,7 +82,7 @@ app.controller('HelocLoanCtrl', function(customFunc, $window) {
                         rateFrom:childVal.rateFrom,
                         rateRange: customFunc.checkUndefined(rateRange),
                         ltvFrom:childVal.ltvFrom,
-                        itvRange: customFunc.checkUndefined(itvRange),
+                        ltvRange: customFunc.checkUndefined(ltvRange),
                         type:childVal.type,
                         bankId:val.bankID,
                         personalLoanMaxAmount: (childVal.maxAmount)?childVal.maxAmount:val.personalLoanMaxAmount,
@@ -184,6 +184,11 @@ app.controller('HelocLoanCtrl', function(customFunc, $window) {
                     let x = a.personalLoanMaxAmount,
                         y = b.personalLoanMaxAmount;
                     return  (thisObj.sortObj[sortType])?x - y:y - x;
+                });
+                break;
+            case 'ltv':
+                this.maindataLoan.sort(function(a, b) {
+                    return  (thisObj.sortObj[sortType])?a.ltvRange - b.ltvRange:b.ltvRange - a.ltvRange;
                 });
                 break;
             case '_name':
