@@ -254,11 +254,14 @@ app.controller('HelocLoanCtrl', function(customFunc, $window) {
     
     this.moreDetail = function(event) {
 
-        const currentTbody = event.currentTarget.closest("tr"),
-              Trs = angular.element(currentTbody).next(),
-              nextTrDisplay = Trs.css('display');
-        // let displayCss = (nextTrDisplay === "none") ? "table-row" : "none";  
-        // nextTr.css({'display': displayCss});
-        console.log(Trs, nextTrDisplay)
+        const currentTbody = event.currentTarget.closest("tbody"),
+              Trs = angular.element(currentTbody).children(),
+              nextTrDisplay = Trs[1].style.display;
+        let displayCss = (nextTrDisplay === "none") ? "table-row" : "none";  
+
+        for (let i = 1; i < Trs.length; i++) {
+            const ele = Trs[i];
+            ele.style.display = displayCss;
+        }
     }
 }); 
