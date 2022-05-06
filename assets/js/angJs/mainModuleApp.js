@@ -198,6 +198,7 @@ const app = angular.module('mainModuleApp', ['pascalprecht.translate', 'ngAnimat
     
     this.checkUndefined = function(value) {
 		//console.log (value)
+		value = value+"";
 		let result = value.indexOf("undefined");
 		//console.log (result)
 		if(result >= 0) {
