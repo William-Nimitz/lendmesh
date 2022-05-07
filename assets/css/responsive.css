@@ -7,6 +7,9 @@
 .less625Show {
     display: none!important;
 }
+.less1076TrShow {
+    display: none;
+}
 @media (max-width: 1400px) {
     .banner-left h1 {
         font-size: 42px;
@@ -41,6 +44,11 @@
     }
     .mobileShowSec {
         display: block!important;
+    }
+}
+@media (max-width: 1076px) {
+    .less1076TrShow {
+        display: table-row;
     }
 }
 @media (max-width: 991px) {

@@ -261,10 +261,10 @@ app.controller('HelocLoanCtrl', function(customFunc, $window) {
 
         const currentTbody = event.currentTarget.closest("tbody"),
               Trs = angular.element(currentTbody).children(),
-              nextTrDisplay = Trs[1].style.display;
+              nextTrDisplay = Trs[2].style.display;
         let displayCss = (nextTrDisplay === "none") ? "table-row" : "none";  
 
-        for (let i = 1; i < Trs.length; i++) {
+        for (let i = 2; i < Trs.length; i++) {
             const ele = Trs[i];
             ele.style.display = displayCss;
         }
