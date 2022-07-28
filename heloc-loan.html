@@ -112,7 +112,7 @@
                 <div class="sec-head">
                     <h2>Best Heloc Loan Rates In USA - {{Base.currentMonth}} {{Base.currentYear}}</h2>
                 </div>
-                <div class="loan-sec-innr">
+                <div class="loan-sec-innr helocLoanNextButt">
                     <div class="grid --with-gutter --equal-height">
                         <div class="grid-cell size-1of4--md +flex-direction-column">
                             <div id="abcdef" class="rate-table-filters box +bg-gray-lightest +mg-bottom ">
@@ -262,7 +262,7 @@
                                                 </div>
                                             </button>
                                             </th>
-                                            <th class="rate-table-header__cell grid-cell greater795Show">
+                                            <th class="rate-table-header__cell grid-cell greater730Show">
                                                 <button type="button" ng-click="Ctrl.customSort('maxLoanAmount')" class="button --bare +display-flex +align-items-center +pd-right-xs">
                                                     <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs">Max Loan Amount</span>
                                                     <div class="table-sort +mg-left-xs ">
@@ -292,7 +292,7 @@
                                                     </div>
                                                 </button>
                                             </th>
-                                            <th class="rate-table-header__cell grid-cell greater795Show">
+                                            <th class="rate-table-header__cell grid-cell greater850Show">
                                                 <button type="button" ng-click="Ctrl.customSort('ltv')" class="button --bare +display-flex +align-items-center +pd-right-xs">
                                                     <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs">LTV</span>
                                                     <div class="table-sort +mg-left-xs ">
@@ -427,7 +427,7 @@
                                             </td>
                                             <td class="grid-cell">
                                                 <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap" style="display:block">{{obj.rateRange}}<span class="numeral__accent">%</span></p>
-                                                <div class="grid-cell size-1of2 size-full--md less625Show">
+                                                <div class="grid-cell size-1of2 size-full--md less625Show" ng-show="obj.childs.length > 0">
                                                     <button type="button" ng-click="Ctrl.moreDetail($event)" class="button --full-width modal__trigger--button">More Details</button>
                                                 </div>
                                             </td>
@@ -448,11 +448,11 @@
                                                     </a>
                                                 </div>
                                             </td>
-                                            <td class="grid-cell greater795Show">
+                                            <td class="grid-cell greater730Show">
                                                 <span class="numeral +mg-top-auto--md-max +mg-bottom">
-                                                {{obj.personalLoanMaxAmount | currency}}</span>
+                                                {{obj.helocLoanMaxAmount | currency}}</span>
                                             </td>
-                                            <td class="grid-cell greater795Show">
+                                            <td class="grid-cell greater850Show">
                                                 <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap" style="display:block">{{obj.ltvRange}}<span ng-if="obj.ltvRange" class="numeral__accent">%</span></p>
                                             </td>
                                             <td class="grid-cell greater625Show">
@@ -477,53 +477,91 @@
                                                 </div>
                                             </td>
                                         </tr>
-                                        <tr class="less1076TrShow">
+                                        <tr class="less850TrShow">
                                             <td colspan="5">
-
-                                            </td>
-                                        </tr>
-                                        <tr ng-repeat="childobj in obj.childs" class="rate-table-row expand-wrap" style="display:none">
-                                            <td class="grid-cell">
-                                                <div class="grid --align-middle">
-                                                    <div class="grid-cell size-1of2 size-full--md text-center">
-                                                        <!--<a href="{{childobj.bankUrl}}" target="_blank"> -->
-                                                        <a href="./bankDetails.html?name={{childobj.bankShortName}}" title="{{childobj.bankUrl}}" target="_self">
-                                                            <button type="button" class="button lender-logo">
-                                                            <img class="lender-logo__image +display-block +center-content"
-                                                                 src="./assets/images/bank/{{childobj.bankName}}.png" alt="{{childobj.bankUrl}}" loading="lazy" width="120" style="max-height: 50px;">
-                                                        </button>
-                                                        </a>
+                                                <div class="expand-wrap-mobileView" style="text-align:left">
+                                                    <div class="mobileView-container less850Show" ng-if="obj.ltvRange">
+                                                        <div class="ltv">
+                                                            <button type="button" ng-click="Ctrl.customSort('ltv')" class="button --bare +display-flex +align-items-center +pd-right-xs">
+                                                                <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs">LTV</span>
+                                                                <div class="table-sort +mg-left-xs ">
+                                                                    <span ng-class="{selected: Ctrl.selectedSort == 'ltv' && !Ctrl.sortObj.ltv}" class="table-sort__icon icon">
+                                                                        <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph">
+                                                                            <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                                <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                                    <polygon
+                                                                                        points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                                    </polygon>
+                                                                                </g>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span ng-class="{selected: Ctrl.selectedSort == 'ltv' && Ctrl.sortObj.ltv}" class="table-sort__icon icon">
+                                                                        <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1"
+                                                                            xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
+                                                                            <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                                <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                                    <polygon
+                                                                                        points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                                    </polygon>
+                                                                                </g>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <p class="numeral +white-space-pre-wrap">{{obj.ltvRange}}<span class="numeral__accent">%</span></p>
+                                                    </div>
+                                                    <div class="mobileView-container less730Show" ng-if="obj.helocLoanMaxAmount">
+                                                        <div class="maxLoanAmount">
+                                                            <button type="button" ng-click="Ctrl.customSort('maxLoanAmount')" class="button --bare +display-flex +align-items-center +pd-right-xs">
+                                                                <span class="rate-table-header__copy +type-heading-five +fg-slate +mg-right-xs">Max Loan Amount</span>
+                                                                <div class="table-sort +mg-left-xs ">
+                                                                    <span ng-class="{selected: Ctrl.selectedSort == 'maxLoanAmount' && !Ctrl.sortObj.maxLoanAmount}" class="table-sort__icon icon">
+                                                                        <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" class="icon__glyph">
+                                                                            <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                                <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                                    <polygon
+                                                                                        points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                                    </polygon>
+                                                                                </g>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span ng-class="{selected: Ctrl.selectedSort == 'maxLoanAmount' && Ctrl.sortObj.maxLoanAmount}" class="table-sort__icon icon">
+                                                                        <svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1"
+                                                                            xmlns="http://www.w3.org/2000/svg" class="icon__glyph ">
+                                                                            <g stroke="none" stroke-width="1" fill="" fill-rule="evenodd">
+                                                                                <g transform="translate(-134.000000, -43.000000)" fill="">
+                                                                                    <polygon
+                                                                                        points="134.707107 43 134 43.6965437 137.353553 47 140.707107 43.6965437 140 43 137.358734 45.6018093">
+                                                                                    </polygon>
+                                                                                </g>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </span>
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <p class="numeral +white-space-pre-wrap">{{obj.helocLoanMaxAmount | currency}}</p>
                                                     </div>
                                                 </div>
                                             </td>
+                                        </tr>
+                                        <tr ng-repeat="childobj in obj.childs" class="rate-table-row expand-wrap" style="display: none">
+                                            <td class="grid-cell greater730Show"></td>
                                             <td class="grid-cell">
                                                 <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap" style="display:block">{{childobj.rateRange}}<span class="numeral__accent">%</span></p>
-                                                <div class="grid-cell size-1of2 size-full--md less625Show">
-                                                    <button type="button" ng-click="Ctrl.moreDetail($event)" class="button --full-width modal__trigger--button">More Details</button>
-                                                </div>
                                             </td>
                                             <td class="grid-cell">
                                                 <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap" style="display:block">{{childobj.PeriodRange}}<span ng-if="childobj.PeriodRange" class="numeral__accent">yr</span></p>
-                                                <div class="grid-cell size-1of2 size-full--md text-center less625Show">
-                                                    <a href="{{ childobj.helocLoanUrl }}" target="_blank">
-                                                        <button class="btn custom-btn-bg">Next<svg
-                                                            class="button__icon icon --icon-xs +mg-left-sm" width="24px"
-                                                            height="15px" viewBox="0 0 24 15">
-                                                            <g id="Arrow" stroke="" stroke-width="1" fill="" fill-rule="evenodd">
-                                                                <path
-                                                                    d="M18.73577,6.31578947 L14.4214286,2.0739346 L16.0787699,0.444438785 L23.2214286,7.46709159 L16.0787699,14.4897444 L14.4214286,12.8602486 L18.6688284,8.68421053 L0.642857143,8.68421053 L0.642857143,6.31578947 L18.73577,6.31578947 Z"
-                                                                    fill="" fill-rule="nonzero"></path>
-                                                            </g>
-                                                        </svg>
-                                                    </button>
-                                                    </a>
-                                                </div>
                                             </td>
-                                            <td class="grid-cell greater795Show">
+                                            <td class="grid-cell">
                                                 <span class="numeral +mg-top-auto--md-max +mg-bottom">
-                                                {{childobj.personalLoanMaxAmount | currency}}</span>
+                                                {{childobj.helocLoanMaxAmount | currency}}</span>
                                             </td>
-                                            <td class="grid-cell greater795Show">
+                                            <td class="grid-cell">
                                                 <p class="numeral +mg-top-auto--md-max +mg-bottom +white-space-pre-wrap" style="display:block">{{childobj.ltvRange}}<span ng-if="childobj.ltvRange" class="numeral__accent">%</span></p>
                                             </td>
                                             <td class="grid-cell"></td>

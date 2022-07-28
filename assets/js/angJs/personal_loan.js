@@ -70,6 +70,13 @@ app.controller('personalLoanCtrl', function(customFunc, $window) {
                         maxPeriod = (childVal.maxPeriod === "" || childVal.maxPeriod === undefined) ? (val.personalMaxTerm ?? "") : childVal.maxPeriod,
                         periodBetween = (maxPeriod !== "" && minPeriod !== maxPeriod)?" - ":"";
                     maxPeriod = (minPeriod !== maxPeriod) ? maxPeriod : "";
+					/*
+					if (typeof(rateRange) === "undefined" && rateRange === null ) {
+						rateRange = "undefined";
+					}
+					*/
+					console.log(val.bankShortName)
+                    console.log(val.rateRange)
                     personalInfo.push({
                         bankName: val.bankShortName??val.bankName,
                         bankShortName: val.bankShortName,
@@ -95,6 +102,7 @@ app.controller('personalLoanCtrl', function(customFunc, $window) {
 						version:version,
                         consolidatePerLoan:!consolidatePerLoan && (val.consolidatePerLoan ?? false)
                     });
+					console.log(personalInfo)
                 })
             })
             personalInfo.sort(function(a, b) {

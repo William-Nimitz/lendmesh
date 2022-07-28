@@ -28,7 +28,7 @@ app.controller('HelocLoanCtrl', function(customFunc, $window) {
     this.getDevice = function() {
         const ScreenWidth = $window.innerWidth;
         const expandTrs = $(".expand-wrap-mobileView");
-        if(ScreenWidth >= 800) {
+        if(ScreenWidth > 850) {
             expandTrs.css("display", "none");
         } else {
             expandTrs.css("display", "inline-block");
@@ -58,8 +58,6 @@ app.controller('HelocLoanCtrl', function(customFunc, $window) {
                   .then(function(res) {
         const parse = customFunc.customParse(res.data),
               helocInfo = [];
-
-              console.log(parse);
             parse.forEach((val) => {
                 let bankItems = {};
                 val.bankDetails.itemType.forEach((childVal) => {
@@ -85,9 +83,8 @@ app.controller('HelocLoanCtrl', function(customFunc, $window) {
                         ltvRange: customFunc.checkUndefined(ltvRange),
                         type:childVal.type,
                         bankId:val.bankID,
-                        personalLoanMaxAmount: (childVal.maxAmount)?childVal.maxAmount:val.personalLoanMaxAmount,
+                        helocLoanMaxAmount: (childVal.maxAmount)?childVal.maxAmount:val.helocLoanMaxAmount,
                         lendmeshScore:val.lendmeshScore ?? 0,
-                        // personalLoanMaxAmount:customFunc.UsNumberFormat.format(val.personalLoanMaxAmount??0),
                         displayPriority:val.displayPriority??1000,
 
                         allowBadCredit:val.allowBadCredit??false,
@@ -120,7 +117,7 @@ app.controller('HelocLoanCtrl', function(customFunc, $window) {
             thisObj.maindata_source = helocInfo;
             thisObj.maindataLoan = helocInfo;
 
-            console.log(helocInfo);
+            console.log(helocInfo, 'helocInfo');
         })
 		
 		$(".set > a").on("click", function () {
@@ -181,8 +178,8 @@ app.controller('HelocLoanCtrl', function(customFunc, $window) {
                 break;
             case 'maxLoanAmount':
                 this.maindataLoan.sort(function(a, b) {
-                    let x = a.personalLoanMaxAmount,
-                        y = b.personalLoanMaxAmount;
+                    let x = a.helocLoanMaxAmount,
+                        y = b.helocLoanMaxAmount;
                     return  (thisObj.sortObj[sortType])?x - y:y - x;
                 });
                 break;
@@ -217,7 +214,7 @@ app.controller('HelocLoanCtrl', function(customFunc, $window) {
     /* 
     this.customFilter = function() {
         this.maindataLoan = this.maindata_source;
-        this.maindataLoan = this.maindataLoan.filter(e => e.personalLoanMaxAmount >= customFunc.strToNum(this.loanAmountVal));
+        this.maindataLoan = this.maindataLoan.filter(e => e.helocLoanMaxAmount >= customFunc.strToNum(this.loanAmountVal));
         switch (Number(this.creditScore)) {
             case 639:
                 this.maindataLoan = this.maindataLoan.filter(e => {

@@ -4,11 +4,7 @@
     "Meta_Description": "Consumer Credit Unions' nonprofit structure allows them to operate at a lesser cost than for-profit banks, allowing them to provide competitive lending and savings rates.",
 	"Meta_Keywords": "Best Personal Loan, Cheap Rate Loans, Low rate loans, Low Interest rate loans, Low APR Loans, Best Mortgage Loans, Best Student Loans, Best Auto Loans, Best Credit cards",
     "img_url": "myconsumers.png",
-<<<<<<< HEAD
     "link": "https://www.myconsumers.org/home",
-=======
-    "link": "https://www.myconsumers.org/",
->>>>>>> origin/development
     "content": [
         {
             "tab": "About Consumer Credit Union",
@@ -51,11 +47,7 @@
             "link":{
                 "label": "Refer to the link for more details",
                 "type": "button",
-<<<<<<< HEAD
                 "url": "https://www.myconsumers.org/about/what-we-do/membership"
-=======
-                "url": "https://www.consumersfcu.org/eligibility/"
->>>>>>> origin/development
             },
             "img":""
         },

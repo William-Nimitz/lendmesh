@@ -1,9 +1,9 @@
 // sticky header
-
+/*
 var dmd1 = new Date();
 var version = dmd1.getFullYear() + "" + (dmd1.getMonth() + 1) + "" + dmd1.getDate();
 $("head").append("<script src='./assets/js/gatag.js?ver=" + version + "'></script>");
-
+*/
 jQuery(window).scroll(function () {
     var st = jQuery(this).scrollTop();
     if (st > 90) {

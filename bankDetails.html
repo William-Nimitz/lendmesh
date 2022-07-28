@@ -31,6 +31,7 @@
     <script src="./assets/js/angJs/angular-translate.min.js" defer></script>
     <script src="./assets/js/angJs/mainModuleApp.js" defer></script>
     <script src="./assets/js/angJs/bankDetails.js" defer></script>
+    <script src="./assets/js/gatag.js" defer></script>
 </head>
 
 <body ng-cloak ng-controller="BaseCtrl as Base" ng-class="{'menu-open': Base.open}">
@@ -79,25 +80,25 @@
         <section class="custom-section">
             <div class="custom-container loanIconsWrapper">
                 <div class="loanIcon" ng-if="Ctrl.homeLoans.length > 0">
-                    <img src="./assets/images/icons/001-credit.png" alt="home loan" title="home loan" />
+                    <img loading="lazy" src="./assets/images/icons/001-credit.png" alt="home loan" title="home loan" />
                     <div>
                         <p>Mortgage / Home Loan</p>
                     </div>
                 </div>
                 <div class="loanIcon" ng-if="Ctrl.autoLoans.length > 0">
-                    <img src="./assets/images/icons/002-automobile.png" alt="auto loan" title="auto loan" />
+                    <img loading="lazy" src="./assets/images/icons/002-automobile.png" alt="auto loan" title="auto loan" />
                     <div>
                         <p>Car Loan</p>
                     </div>
                 </div>
                 <div class="loanIcon" ng-if="Ctrl.personalLoans.length > 0">
-                    <img src="./assets/images/icons/003-profits.png" alt="personal loan" title="personal loan" />
+                    <img loading="lazy" src="./assets/images/icons/003-profits.png" alt="personal loan" title="personal loan" />
                     <div>
                         <p>Personal Loan</p>
                     </div>
                 </div>
                 <div class="loanIcon" ng-if="Ctrl.studentLoans.length > 0">
-                    <img src="./assets/images/icons/005-mortarboard.png" alt="student loan" title="student loan" />
+                    <img loading="lazy" src="./assets/images/icons/005-mortarboard.png" alt="student loan" title="student loan" />
                     <div>
                         <p>Education Loan</p>
                     </div>

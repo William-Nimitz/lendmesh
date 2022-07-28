@@ -31,6 +31,7 @@ app.controller('studentLoanCtrl', function(customFunc) {
 			url = "https://us-central1-lendmesh.cloudfunctions.net/realTimeFetchStudentLoan?";
 		else 
 			url = "https://us-central1-lendmesh.cloudfunctions.net/realTimeFetchAllLoansData?loanType=studentLoan&";
+		
         if(zip) {
 			zip = zip.split(",").join("");
             url += "zipCode=" + zip + '&';

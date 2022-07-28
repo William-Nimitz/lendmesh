@@ -216,7 +216,7 @@ select {
 .rate-table-filters {
     flex: 1 1 0%;
     background: rgb(54 37 86 / 3%);
-    padding: 25px;
+    padding: 15px;
 }
 
 .\+mg-bottom-md {
@@ -296,7 +296,7 @@ svg:not(:root) {
     fill: currentcolor;
     height: 100%;
     user-select: none;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     width: 100%;
 }
 
@@ -766,7 +766,8 @@ tr.grid.rate-table-header__row {
 
 .table.--spacing-md td,
 .table.--spacing-md th {
-    padding: 1.33333rem;
+    /*padding: 1.33333rem;*/
+	padding: 0.93333rem;
 }
 
 .\+pd-right-xs {
@@ -1274,23 +1275,27 @@ img {
     }
 }
 
-/* @media (max-width: 37.4375em) {
+@media (max-width: 37.4375em) {
     .rate-table-filters {
         z-index: 20;
         border-top-left-radius: 0.222222rem;
         border-top-right-radius: 0.222222rem;
         box-shadow: transparent 0px -14px 14px 7px;
-        height: calc(100% - 1.88889rem);
-        left: 0px;
+        /* height: calc(100% - 1.88889rem); */
+        /* left: 0px; */
         overflow: auto;
-        position: fixed;
-        transform: translateY(calc(100% + 1.88889rem));
+        position: relative;
+        /* transform: translateY(calc(100% + 1.88889rem)); */
         transition: transform 0.2s ease-in 0s, -webkit-transform 0.2s ease-in 0s, -moz-transform 0.2s ease-in 0s;
         width: 100vw;
-        bottom: 0px;
+        /* bottom: 0px; */
         background: rgb(255, 255, 255);
+        /* box-shadow: border-box ;
+        clear: both; */
+        width: auto;
+        
     }
-} */
+}
 
 @media (min-width: 62.4375em) {
     /* .rate-table-filters {
@@ -3265,7 +3270,6 @@ letter-spacing: -0.0138889rem !important;
     .size-full--md {
         box-sizing: border-box !important;
         display: block !important;
-        width: 100% !important;
     }
     @media (min-width: 62.4375em) {
         .\+mg-bottom--md {
